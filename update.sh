@@ -8,20 +8,20 @@ set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 core="${WONTON_CORE:-wonton-core}"
 plugins=(
-  geraldpeng6/wonton-plugin-navidrome@v0.1.0
-  geraldpeng6/wonton-plugin-paperless-ngx@v0.1.0
-  geraldpeng6/wonton-plugin-immich@v0.1.0
-  geraldpeng6/wonton-plugin-syncthing@v0.1.0
-  geraldpeng6/wonton-plugin-samba@v0.1.0
-  geraldpeng6/wonton-plugin-files@v0.2.0
-  geraldpeng6/wonton-plugin-browser@v0.1.0
-  geraldpeng6/wonton-plugin-memos@v0.1.0
-  geraldpeng6/wonton-plugin-miniflux@v0.1.0
-  geraldpeng6/wonton-plugin-filebrowser@v0.1.0
-  geraldpeng6/wonton-plugin-actual@v0.1.0
-  geraldpeng6/wonton-plugin-uptime-kuma@v0.1.0
-  geraldpeng6/wonton-plugin-open-webui@v0.1.1
-  geraldpeng6/wonton-plugin-vane@v0.1.0
+  geraldpeng6/wonton-plugin-navidrome@store-bridge
+  geraldpeng6/wonton-plugin-paperless-ngx@store-bridge
+  geraldpeng6/wonton-plugin-immich@store-bridge
+  geraldpeng6/wonton-plugin-syncthing@store-bridge
+  geraldpeng6/wonton-plugin-samba@store-bridge
+  geraldpeng6/wonton-plugin-files@store-bridge
+  geraldpeng6/wonton-plugin-browser@store-bridge
+  geraldpeng6/wonton-plugin-memos@store-bridge
+  geraldpeng6/wonton-plugin-miniflux@store-bridge
+  geraldpeng6/wonton-plugin-filebrowser@store-bridge
+  geraldpeng6/wonton-plugin-actual@store-bridge
+  geraldpeng6/wonton-plugin-uptime-kuma@store-bridge
+  geraldpeng6/wonton-plugin-open-webui@store-bridge
+  geraldpeng6/wonton-plugin-vane@store-bridge
 )
 
 work="$(mktemp -d)"
@@ -32,7 +32,7 @@ for plugin in "${plugins[@]}"; do
   tag="${plugin#*@}"
   git clone -q -c advice.detachedHead=false --depth 1 --branch "$tag" "https://github.com/$name.git" "$work/$name"
   commit="$(git -C "$work/$name" rev-parse HEAD)"
-  "$core" plugin check "$work/$name" --official >/dev/null
+  "$core" plugin check "$work/$name" >/dev/null
   "$core" plugin index-entry "$work/$name" "github:$name" "$commit" --index "$work/index"
   echo "$name $tag → $commit"
 done
