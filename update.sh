@@ -20,7 +20,7 @@ plugins=(
   geraldpeng6/wonton-plugin-filebrowser@v0.1.0
   geraldpeng6/wonton-plugin-actual@v0.1.0
   geraldpeng6/wonton-plugin-uptime-kuma@v0.1.0
-  geraldpeng6/wonton-plugin-open-webui@v0.1.0
+  geraldpeng6/wonton-plugin-open-webui@v0.1.1
   geraldpeng6/wonton-plugin-vane@v0.1.0
 )
 
