@@ -22,7 +22,6 @@ plugins=(
   geraldpeng6/wonton-plugin-uptime-kuma@v0.1.0
   geraldpeng6/wonton-plugin-open-webui@v0.1.0
   geraldpeng6/wonton-plugin-vane@v0.1.0
-  geraldpeng6/wonton-plugin-template@v0.1.0
 )
 
 work="$(mktemp -d)"

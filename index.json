@@ -169,19 +169,6 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-vane",
       "version": "0.1.0"
-    },
-    {
-      "commit": "e96a22b95c71cfd6e31fb5eada0f5e00a9163384",
-      "compose": "# 示例插件：nginx 显示一个网页，向登录的人问好。照着 README 的“写插件”换成你的应用。\nservices:\n  web:\n    # 镜像按摘要固定（多架构镜像写清单列表的摘要），标签只给人看。\n    image: nginx:1.30.6-alpine@sha256:0e52bd054126cdc040b1276c0af347aeb02a41b9cfe305d6094767ac30e97949\n    # 包里的文件经 configs 交给容器（核心在启动前写进去），不能用卷挂载。\n    configs:\n      - source: site\n        target: /etc/nginx/conf.d/default.conf\n      - source: page\n        target: /usr/share/nginx/html/index.html\n    healthcheck:\n      test: [\"CMD\", \"wget\", \"-q\", \"-O\", \"/dev/null\", \"http://127.0.0.1/healthz\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 1s\n\nconfigs:\n  site:\n    file: web/default.conf\n  page:\n    file: web/index.html\n\nx-wonton:\n  spec: \"0.4\"\n  # 换成你自己的：反向域名形式，装上以后不能改。\n  id: app.example.hello\n  version: 0.1.0\n  kind: app\n  title: { zh: 你好, en: Hello }\n  description: { zh: 向登录的人问好的示例网页, en: An example page that greets whoever is signed in }\n  icon: icon.svg\n  notices: [NOTICE]\n  category: tools\n  screenshots: [screenshots/home.png]\n  author: { name: Example }\n  homepage: https://nginx.org\n  # 应用（这里是 nginx）的许可证；插件包自己的许可证写在仓库的 LICENSE 里。\n  license: BSD-2-Clause\n  tags: [示例, example]\n  about:\n    zh: |\n      插件模板里的示例：网关认出主人后，经请求头把用户名交给应用，网页上就是“你好，<用户名>”。\n    en: |\n      The example from the plugin template: once the gateway recognises the owner, it passes the user name to\n      the app in a request header, and the page says hello to them.\n  release_notes: { zh: 第一版。, en: First release. }\n  webui:\n    service: web\n    port: 80\n    # 应用不认 OIDC 时，由网关在请求上加上用户名（README 的“网页入口和登录”）。\n    sso: proxy\n    proxy:\n      headers:\n        Remote-User: \"{user}\"\n  permissions: []\n",
-      "files": {
-        "NOTICE": "3e8ae3ab2a222f93ff7115f341ce94899d10bba707476a99c75576bcddacc4ef",
-        "docker-compose.yml": "40b9b03abf5a8569b821eddc04a6be15efe228c511c60920fe7856c492054482",
-        "icon.svg": "c621eea94e75175ea0f1d8ed50b65fe68f298af55a8c05c60d92efbd66e676ec",
-        "web/default.conf": "abbb4cb64fb97af399d4bd76be311f2908952c2cbc90ea364598ae119c6587d6",
-        "web/index.html": "404955e94055c6586d01e5bd17ca21c7ab3a8da9281baaada7bffae04c0d3327"
-      },
-      "source": "github:geraldpeng6/wonton-plugin-template",
-      "version": "0.1.0"
     }
   ]
 }
