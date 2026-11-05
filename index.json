@@ -186,5 +186,239 @@
       "source": "github:geraldpeng6/wonton-plugin-hermes",
       "version": "0.5.3"
     }
-  ]
+  ],
+  "onboarding": {
+    "agents": [
+      "com.nousresearch.hermes"
+    ],
+    "needs": [
+      {
+        "id": "photos",
+        "title": {
+          "zh": "备份照片",
+          "en": "Back up photos"
+        },
+        "plugins": [
+          "app.immich.immich"
+        ]
+      },
+      {
+        "id": "music",
+        "title": {
+          "zh": "听音乐",
+          "en": "Listen to music"
+        },
+        "plugins": [
+          "org.navidrome.navidrome"
+        ]
+      },
+      {
+        "id": "documents",
+        "title": {
+          "zh": "整理文档",
+          "en": "Organize documents"
+        },
+        "plugins": [
+          "com.paperless-ngx.paperless-ngx"
+        ]
+      },
+      {
+        "id": "sync",
+        "title": {
+          "zh": "同步文件",
+          "en": "Sync files"
+        },
+        "plugins": [
+          "net.syncthing.syncthing"
+        ]
+      },
+      {
+        "id": "notes",
+        "title": {
+          "zh": "记笔记",
+          "en": "Take notes"
+        },
+        "plugins": [
+          "com.usememos.memos"
+        ]
+      },
+      {
+        "id": "rss",
+        "title": {
+          "zh": "看订阅",
+          "en": "Read feeds"
+        },
+        "plugins": [
+          "app.miniflux.miniflux"
+        ]
+      },
+      {
+        "id": "budget",
+        "title": {
+          "zh": "记账",
+          "en": "Track spending"
+        },
+        "plugins": [
+          "org.actualbudget.actual"
+        ]
+      }
+    ],
+    "providers": {
+      "zh": [
+        {
+          "id": "deepseek",
+          "key_url": "https://platform.deepseek.com/api_keys"
+        },
+        {
+          "id": "zhipu",
+          "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys"
+        },
+        {
+          "id": "moonshot-cn",
+          "key_url": "https://platform.moonshot.cn/console/api-keys"
+        },
+        {
+          "id": "qwen-cn",
+          "key_url": "https://bailian.console.aliyun.com/?tab=model#/api-key"
+        }
+      ],
+      "en": [
+        {
+          "id": "openai",
+          "key_url": "https://platform.openai.com/api-keys"
+        },
+        {
+          "id": "anthropic",
+          "key_url": "https://console.anthropic.com/settings/keys"
+        },
+        {
+          "id": "google",
+          "key_url": "https://aistudio.google.com/apikey"
+        },
+        {
+          "id": "openrouter",
+          "key_url": "https://openrouter.ai/settings/keys"
+        }
+      ]
+    },
+    "more_providers": [
+      {
+        "id": "openai",
+        "key_url": "https://platform.openai.com/api-keys"
+      },
+      {
+        "id": "anthropic",
+        "key_url": "https://console.anthropic.com/settings/keys"
+      },
+      {
+        "id": "google",
+        "key_url": "https://aistudio.google.com/apikey"
+      },
+      {
+        "id": "deepseek",
+        "key_url": "https://platform.deepseek.com/api_keys"
+      },
+      {
+        "id": "zhipu",
+        "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys"
+      },
+      {
+        "id": "moonshot-cn",
+        "key_url": "https://platform.moonshot.cn/console/api-keys"
+      },
+      {
+        "id": "qwen-cn",
+        "key_url": "https://bailian.console.aliyun.com/?tab=model#/api-key"
+      },
+      {
+        "id": "openrouter",
+        "key_url": "https://openrouter.ai/settings/keys"
+      },
+      {
+        "id": "xai",
+        "key_url": "https://console.x.ai/team/default/api-keys"
+      },
+      {
+        "id": "zai",
+        "key_url": "https://z.ai/manage-apikey/apikey-list"
+      },
+      {
+        "id": "moonshot",
+        "key_url": "https://platform.kimi.ai/console/api-keys"
+      },
+      {
+        "id": "qwen",
+        "key_url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/model/settings/api-key"
+      },
+      {
+        "id": "minimax",
+        "key_url": "https://platform.minimax.io/console/keys"
+      },
+      {
+        "id": "minimax-cn",
+        "key_url": "https://platform.minimax.cn/console/keys?tab=api-keys"
+      },
+      {
+        "id": "mistral",
+        "key_url": "https://console.mistral.ai/api-keys/"
+      },
+      {
+        "id": "groq",
+        "key_url": "https://console.groq.com/keys"
+      },
+      {
+        "id": "volcengine",
+        "key_url": "https://console.volcengine.com/ark/region:cn-beijing/apiKey"
+      },
+      {
+        "id": "baidu-qianfan",
+        "key_url": "https://console.bce.baidu.com/iam/#/iam/apikey/list"
+      },
+      {
+        "id": "tencent-cloud",
+        "key_url": "https://console.cloud.tencent.com/tokenhub/tokenplan"
+      },
+      {
+        "id": "stepfun",
+        "key_url": "https://platform.stepfun.ai/interface-key"
+      }
+    ],
+    "prompts": [
+      {
+        "zh": "你能帮我做什么",
+        "en": "What can you help me with"
+      },
+      {
+        "zh": "我想备份手机里的照片，该怎么做",
+        "en": "How can I back up the photos on my phone"
+      },
+      {
+        "zh": "怎么再加一台手机",
+        "en": "How do I add another phone"
+      }
+    ]
+  },
+  "docs": {
+    "source": "github:geraldpeng6/wonton-docs",
+    "commit": "0e732eea950624c123b271296f95db9c16d76235",
+    "min_core": "0.1.0-beta.1",
+    "files": {
+      "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
+      "user/en/confirmations.md": "231f812d7b4c3fde22d773cf1b4ca7b8604388fc7f43871e76f753d2266d2b61",
+      "user/en/connection.md": "9151e627a0b8fec844a1308f34f127918f3c253e9d8825af488accaa03d75054",
+      "user/en/devices.md": "5bf0376011558050ee1497f56e1c4554e4976460c2dead00bf60981dc7ada0b4",
+      "user/en/models.md": "be02e7b32e5f68a78cadb617ef34fe3da8393fd5116b84ed42f41d67ac14c963",
+      "user/en/plugins.md": "3d6e8c437f78800936c74dc49dee9e21b8fee4212e95fb12b81e58fd38c4c5d5",
+      "user/en/tabs.md": "389aaa890ff0055ca2d60c2602f93e57ee5bcad6c3b3e4622374043b8c02b68e",
+      "user/en/upgrade.md": "3be24a219f209ad2fd075212b4b6f2dd4e94d4c5b8fe6d91eb88e1aa758cb796",
+      "user/zh/backup.md": "7006af19d43f187e9bae683d3d48e73d6d87fa9d7e064e10501fa9c023b7778b",
+      "user/zh/confirmations.md": "2efa3055ba33cb25303e78968c16d2a0912a453b7974aa0f1aded0316f853975",
+      "user/zh/connection.md": "2b04cf9027c20e55c27b788d46c39db463366f62cc58ad9f5fedecfab109f1d9",
+      "user/zh/devices.md": "513d6f4a2f1aa44c5c5532f459b5d5e29a19941025774b8fd7ba7ef41f28fd4f",
+      "user/zh/models.md": "3dd0d6490cbe728b73fda688b73c7fd0a80ebb8177ddd773103c5da51dcb2e98",
+      "user/zh/plugins.md": "e51f586a5bdcea6c62269149a950c39286a3df98829d3c9eeca0b406eb827586",
+      "user/zh/tabs.md": "752acf43fde7229a3c472dc47a852720dbf1a73c305dd3d2024c605b7b0ba4dc",
+      "user/zh/upgrade.md": "ad1530a52ea2f2ca7c2e606ed37e11e5b01fa41bcda00e785bb6bfe2defb0efc"
+    }
+  }
 }
