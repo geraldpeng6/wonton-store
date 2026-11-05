@@ -1,0 +1,81 @@
+{
+  "agents": ["com.nousresearch.hermes"],
+  "needs": [
+    {
+      "id": "photos",
+      "title": { "zh": "备份照片", "en": "Back up photos" },
+      "plugins": ["app.immich.immich"]
+    },
+    {
+      "id": "music",
+      "title": { "zh": "听音乐", "en": "Listen to music" },
+      "plugins": ["org.navidrome.navidrome"]
+    },
+    {
+      "id": "documents",
+      "title": { "zh": "整理文档", "en": "Organize documents" },
+      "plugins": ["com.paperless-ngx.paperless-ngx"]
+    },
+    {
+      "id": "sync",
+      "title": { "zh": "同步文件", "en": "Sync files" },
+      "plugins": ["net.syncthing.syncthing"]
+    },
+    {
+      "id": "notes",
+      "title": { "zh": "记笔记", "en": "Take notes" },
+      "plugins": ["com.usememos.memos"]
+    },
+    {
+      "id": "rss",
+      "title": { "zh": "看订阅", "en": "Read feeds" },
+      "plugins": ["app.miniflux.miniflux"]
+    },
+    {
+      "id": "budget",
+      "title": { "zh": "记账", "en": "Track spending" },
+      "plugins": ["org.actualbudget.actual"]
+    }
+  ],
+  "providers": {
+    "zh": [
+      { "id": "deepseek", "key_url": "https://platform.deepseek.com/api_keys" },
+      { "id": "zhipu", "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys" },
+      { "id": "moonshot-cn", "key_url": "https://platform.moonshot.cn/console/api-keys" },
+      { "id": "qwen-cn", "key_url": "https://bailian.console.aliyun.com/?tab=model#/api-key" }
+    ],
+    "en": [
+      { "id": "openai", "key_url": "https://platform.openai.com/api-keys" },
+      { "id": "anthropic", "key_url": "https://console.anthropic.com/settings/keys" },
+      { "id": "google", "key_url": "https://aistudio.google.com/apikey" },
+      { "id": "openrouter", "key_url": "https://openrouter.ai/settings/keys" }
+    ]
+  },
+  "more_providers": [
+    { "id": "openai", "key_url": "https://platform.openai.com/api-keys" },
+    { "id": "anthropic", "key_url": "https://console.anthropic.com/settings/keys" },
+    { "id": "google", "key_url": "https://aistudio.google.com/apikey" },
+    { "id": "deepseek", "key_url": "https://platform.deepseek.com/api_keys" },
+    { "id": "zhipu", "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys" },
+    { "id": "moonshot-cn", "key_url": "https://platform.moonshot.cn/console/api-keys" },
+    { "id": "qwen-cn", "key_url": "https://bailian.console.aliyun.com/?tab=model#/api-key" },
+    { "id": "openrouter", "key_url": "https://openrouter.ai/settings/keys" },
+    { "id": "xai", "key_url": "https://console.x.ai/team/default/api-keys" },
+    { "id": "zai", "key_url": "https://z.ai/manage-apikey/apikey-list" },
+    { "id": "moonshot", "key_url": "https://platform.kimi.ai/console/api-keys" },
+    { "id": "qwen", "key_url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/model/settings/api-key" },
+    { "id": "minimax", "key_url": "https://platform.minimax.io/console/keys" },
+    { "id": "minimax-cn", "key_url": "https://platform.minimax.cn/console/keys?tab=api-keys" },
+    { "id": "mistral", "key_url": "https://console.mistral.ai/api-keys/" },
+    { "id": "groq", "key_url": "https://console.groq.com/keys" },
+    { "id": "volcengine", "key_url": "https://console.volcengine.com/ark/region:cn-beijing/apiKey" },
+    { "id": "baidu-qianfan", "key_url": "https://console.bce.baidu.com/iam/#/iam/apikey/list" },
+    { "id": "tencent-cloud", "key_url": "https://console.cloud.tencent.com/tokenhub/tokenplan" },
+    { "id": "stepfun", "key_url": "https://platform.stepfun.ai/interface-key" }
+  ],
+  "prompts": [
+    { "zh": "你能帮我做什么", "en": "What can you help me with" },
+    { "zh": "我想备份手机里的照片，该怎么做", "en": "How can I back up the photos on my phone" },
+    { "zh": "怎么再加一台手机", "en": "How do I add another phone" }
+  ]
+}

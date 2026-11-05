@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 重新生成 index.json：按下面列的 tag 取每个插件仓库，用 `wonton-core plugin index-entry` 写进来。
-# 要有 wonton-core 命令，或者用 WONTON_CORE 指定它的路径。
+# 要有 Git、Python 3、Docker Compose 和 wonton-core 命令，或者用 WONTON_CORE 指定核心路径。
 #
 #   ./update.sh
 set -euo pipefail
@@ -25,9 +25,9 @@ plugins=(
   geraldpeng6/wonton-plugin-hermes@v0.5.3
 )
 
-work="$(mktemp -d)"
+work="$(mktemp -d "$here/.update.XXXXXX")"
 trap 'rm -rf "$work"' EXIT
-rm -f "$here/index.json"
+mkdir "$work/manifests"
 for plugin in "${plugins[@]}"; do
   name="${plugin%@*}"
   tag="${plugin#*@}"
@@ -35,6 +35,59 @@ for plugin in "${plugins[@]}"; do
   commit="$(git -C "$work/$name" rev-parse HEAD)"
   "$core" plugin check "$work/$name" >/dev/null
   "$core" plugin index-entry "$work/$name" "github:$name" "$commit" --index "$work/index"
+  # 核心 CLI 不输出 kind；由 Compose 解析扩展字段，不展开变量或补齐宿主路径。
+  docker compose -p wonton-store -f "$work/$name/docker-compose.yml" config \
+    --format json --no-interpolate --no-normalize --no-consistency \
+    --no-env-resolution --no-path-resolution --output "$work/manifests/${name##*/}.json"
   echo "$name $tag → $commit"
 done
-cp "$work/index/index.json" "$here/index.json"
+python3 - "$here" "$work" <<'PY'
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+
+here, work = map(Path, sys.argv[1:])
+index_path = work / "index/index.json"
+index = json.loads(index_path.read_text(encoding="utf-8"))
+onboarding = json.loads((here / "onboarding.json").read_text(encoding="utf-8"))
+manifests = [
+    json.loads(path.read_text(encoding="utf-8"))["x-wonton"]
+    for path in sorted((work / "manifests").glob("*.json"))
+]
+kinds = {manifest["id"]: manifest["kind"] for manifest in manifests}
+for plugin_id in onboarding["agents"]:
+    if plugin_id not in kinds:
+        sys.exit(f"onboarding.agents 的插件不在索引里：{plugin_id}")
+    if kinds[plugin_id] != "agent":
+        sys.exit(f"onboarding.agents 的插件不是 kind: agent：{plugin_id}")
+for need in onboarding["needs"]:
+    for plugin_id in need["plugins"]:
+        if plugin_id not in kinds:
+            sys.exit(f"onboarding.needs[{need['id']}] 的插件不在索引里：{plugin_id}")
+index["onboarding"] = onboarding
+
+docs = work / "docs"
+subprocess.run([
+    "git", "clone", "-q", "--depth", "1", "--branch", "main", "--single-branch",
+    "https://github.com/geraldpeng6/wonton-docs.git", str(docs),
+], check=True)
+commit = subprocess.check_output(["git", "-C", str(docs), "rev-parse", "HEAD"], text=True).strip()
+files = {
+    path.relative_to(docs).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+    for path in sorted((docs / "user").rglob("*")) if path.is_file()
+}
+if not files:
+    sys.exit("wonton-docs 的 user/ 下没有文件")
+index["docs"] = {
+    "source": "github:geraldpeng6/wonton-docs",
+    "commit": commit,
+    "min_core": "0.1.0-beta.1",
+    "files": files,
+}
+index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(f"wonton-docs main → {commit}（{len(files)} 个文件）")
+PY
+"$core" plugin check-index "$work/index/index.json"
+mv "$work/index/index.json" "$here/index.json"
