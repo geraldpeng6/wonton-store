@@ -400,11 +400,10 @@
   },
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "c267d465373fd26d1ce6df99c080d90cc31e2f56",
+    "commit": "0e732eea950624c123b271296f95db9c16d76235",
     "min_core": "0.1.0-beta.1",
     "files": {
-      "user/README.md": "4a851d56625f113a7d936d577aa2c5835893d3ba0fae7dbc7fbe8b70c7868f72",
-      "user/en/backup.md": "8065ce5810083a9478fbeb7a4e7f590c3e49c0a31366e3111b0a3bd8a8e8f728",
+      "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
       "user/en/confirmations.md": "231f812d7b4c3fde22d773cf1b4ca7b8604388fc7f43871e76f753d2266d2b61",
       "user/en/connection.md": "9151e627a0b8fec844a1308f34f127918f3c253e9d8825af488accaa03d75054",
       "user/en/devices.md": "5bf0376011558050ee1497f56e1c4554e4976460c2dead00bf60981dc7ada0b4",
@@ -412,7 +411,7 @@
       "user/en/plugins.md": "3d6e8c437f78800936c74dc49dee9e21b8fee4212e95fb12b81e58fd38c4c5d5",
       "user/en/tabs.md": "389aaa890ff0055ca2d60c2602f93e57ee5bcad6c3b3e4622374043b8c02b68e",
       "user/en/upgrade.md": "3be24a219f209ad2fd075212b4b6f2dd4e94d4c5b8fe6d91eb88e1aa758cb796",
-      "user/zh/backup.md": "94ed80e32272f8d95a059080ae0494d86c0a6eefe2fc6ff3895d838bd469c898",
+      "user/zh/backup.md": "7006af19d43f187e9bae683d3d48e73d6d87fa9d7e064e10501fa9c023b7778b",
       "user/zh/confirmations.md": "2efa3055ba33cb25303e78968c16d2a0912a453b7974aa0f1aded0316f853975",
       "user/zh/connection.md": "2b04cf9027c20e55c27b788d46c39db463366f62cc58ad9f5fedecfab109f1d9",
       "user/zh/devices.md": "513d6f4a2f1aa44c5c5532f459b5d5e29a19941025774b8fd7ba7ef41f28fd4f",

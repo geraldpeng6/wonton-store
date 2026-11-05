@@ -76,10 +76,11 @@ subprocess.run([
 commit = subprocess.check_output(["git", "-C", str(docs), "rev-parse", "HEAD"], text=True).strip()
 files = {
     path.relative_to(docs).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
-    for path in sorted((docs / "user").rglob("*")) if path.is_file()
+    for path in sorted((docs / "user").rglob("*"))
+    if path.is_file() and path.parent != docs / "user"
 }
 if not files:
-    sys.exit("wonton-docs 的 user/ 下没有文件")
+    sys.exit("wonton-docs 的 user/ 下没有文档页")
 index["docs"] = {
     "source": "github:geraldpeng6/wonton-docs",
     "commit": commit,
