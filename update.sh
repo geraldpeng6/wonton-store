@@ -71,6 +71,7 @@ for need in onboarding["needs"]:
         if plugin_id not in kinds:
             sys.exit(f"onboarding.needs[{need['id']}] 的插件不在索引里：{plugin_id}")
 index["onboarding"] = onboarding
+index["registry_mirrors"] = json.loads((here / "registry-mirrors.json").read_text(encoding="utf-8"))
 
 docs = work / "docs"
 subprocess.run([
