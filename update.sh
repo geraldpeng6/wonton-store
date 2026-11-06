@@ -12,7 +12,7 @@ plugins=(
   geraldpeng6/wonton-plugin-paperless-ngx@v0.1.2
   geraldpeng6/wonton-plugin-immich@v0.3.0
   geraldpeng6/wonton-plugin-syncthing@v0.1.1
-  geraldpeng6/wonton-plugin-samba@v0.1.1
+  geraldpeng6/wonton-plugin-samba@v0.1.2
   geraldpeng6/wonton-plugin-files@v0.2.3
   geraldpeng6/wonton-plugin-browser@v0.1.1
   geraldpeng6/wonton-plugin-memos@v0.1.2
