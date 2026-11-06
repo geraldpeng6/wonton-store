@@ -24,6 +24,7 @@ plugins=(
   geraldpeng6/wonton-plugin-vane@v0.1.1
   geraldpeng6/wonton-plugin-ollama@v0.1.0
   geraldpeng6/wonton-plugin-hermes@v0.5.4
+  geraldpeng6/wonton-plugin-openclaw@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
