@@ -210,12 +210,25 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-openclaw",
       "version": "0.1.0"
+    },
+    {
+      "commit": "bf539498f12235465369c1bded2fb8a4d9ad871c",
+      "compose": "# omp Agent：bridge 说 ACP，agent 跑固定版本的 omp。两个服务只共享 ACP socket 所在的 run/ 子目录；bridge 的\n# crypto store 和 Matrix 令牌不给 agent，agent 的 HOME 和工作区不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/geraldpeng6/wonton-plugin-omp:0.1.0@sha256:52640a740d556cae17a76c04d41e1978c6e132b887012931a991b5a96a4810da\n    # 镜像里固定用 65532，入口脚本不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同，否则核心拒绝安装。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # omp 不读 OPENAI_BASE_URL/OPENAI_MODEL，入口脚本把它们转成 models.yml 和 config.yml；密钥只引用变量名。\n      OPENAI_BASE_URL: ${WONTON_MODEL_BASE_URL:?需要模型网关地址}\n      OPENAI_API_KEY: ${WONTON_MODEL_API_KEY:?需要模型网关凭据}\n      OPENAI_MODEL: ${WONTON_MODEL_DEFAULT:?需要默认模型}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 插件网络是内部网络，到模型网关和 Matrix 都直连；Docker 注入的代理变量会让内部请求走代理，这里清掉。\n      HTTP_PROXY: \"\"\n      HTTPS_PROXY: \"\"\n      http_proxy: \"\"\n      https_proxy: \"\"\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是入口脚本建好 ACP 转发后才有的，有这个文件就说明 Agent 侧能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 60s\n      start_interval: 2s\n\n  bridge:\n    image: ghcr.io/geraldpeng6/wonton-acp-bridge:0.1.0-beta.2@sha256:5b34b9dadd5548182034b972dfffce64ec62b31c26a65a97bf3fb7f5a318cb80\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # omp 在 ACP 里的可用模式只有 default 和 plan，plan 是其中更严的一个：exec 一律问主人。\n      WONTON_ACP_MODE: plan\n      HTTP_PROXY: \"\"\n      HTTPS_PROXY: \"\"\n      http_proxy: \"\"\n      https_proxy: \"\"\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.omp.agent\n  version: 0.1.0\n  kind: agent\n  title: { zh: omp, en: omp }\n  description:\n    zh: 会用工具写代码、跑命令的 Agent，在聊天里按你的确认动手\n    en: A tool-using coding agent that acts in chat, asking before it runs commands\n  icon: icon.svg\n  screenshots: [screenshots/home.png]\n  notices: [NOTICE, images/wonton-plugin-omp/LICENSE.omp]\n  author: { name: Wonton plugin authors }\n  homepage: https://omp.sh\n  # omp 的许可证；插件包自己的许可证在 LICENSE。\n  license: MIT\n  tags: { zh: [AI, 开发], en: [AI, Development] }\n  about:\n    zh: |\n      Agent 的模型经模型网关走，不用账号，也不用填任何 key。它住在自己的容器里，用工作区里的 shell 和文件工具，\n      跑命令前经确认卡片问你；Wonton 插件的工具从聊天里调。\n\n      和它的对话是核心建的加密私聊，重启后接着聊。\n    en: |\n      The agent calls models through the model gateway, with no account and no key to fill in. It lives in its own\n      container, uses the shell and file tools in its workspace, and asks through confirmation cards before running\n      commands; plugin tools from Wonton are called from the chat.\n\n      The chat is an encrypted direct message the core creates, and it carries on after a restart.\n  release_notes: { zh: 首个版本。, en: First release. }\n  agent:\n    protocol: acp\n  bot:\n    display_name: { zh: omp, en: omp }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n  requirements:\n    arch: [amd64, arm64]\n    memory: 1G\n",
+      "files": {
+        "NOTICE": "bafc1cd1c465e814fe4c77ac4fcfcb03c880a4a21aada919643a35c020c5950a",
+        "docker-compose.yml": "6b74413910b09be2b3652fc53d597a125fd91cf1cd4f2df4c1c264d78e91edb5",
+        "icon.svg": "de40f360ab5fcfaf2b68bd2306e440c834dd15d788c076f3aac7ad3fac497743",
+        "images/wonton-plugin-omp/LICENSE.omp": "16c45f9d667442781f03fa198914cc39abcaa48ec5ed8f644643e554ca2fbf63"
+      },
+      "source": "github:geraldpeng6/wonton-plugin-omp",
+      "version": "0.1.0"
     }
   ],
   "onboarding": {
     "agents": [
       "com.nousresearch.hermes",
-      "ai.openclaw.agent"
+      "ai.openclaw.agent",
+      "ai.omp.agent"
     ],
     "needs": [
       {
