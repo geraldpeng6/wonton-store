@@ -451,9 +451,14 @@
       }
     ]
   },
+  "registry_mirrors": [
+    "dockerproxy.net",
+    "docker.1panel.live",
+    "docker.1ms.run"
+  ],
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "3fcca923081cd8eb5457002dcea221270711d819",
+    "commit": "0f55d6e5a6b988e5b7970f41e8aa98865e931219",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
