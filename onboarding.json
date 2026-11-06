@@ -1,5 +1,5 @@
 {
-  "agents": ["com.nousresearch.hermes"],
+  "agents": ["com.nousresearch.hermes", "ai.openclaw.agent"],
   "needs": [
     {
       "id": "photos",

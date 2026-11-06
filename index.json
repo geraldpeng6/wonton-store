@@ -214,7 +214,8 @@
   ],
   "onboarding": {
     "agents": [
-      "com.nousresearch.hermes"
+      "com.nousresearch.hermes",
+      "ai.openclaw.agent"
     ],
     "needs": [
       {
