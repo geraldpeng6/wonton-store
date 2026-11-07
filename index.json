@@ -261,6 +261,17 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-excalidraw",
       "version": "0.1.0"
+    },
+    {
+      "commit": "1c0698a7a74e6b07ec925b6f6275a4ba0729d56e",
+      "compose": "name: homebox\n\nservices:\n  homebox:\n    # 上游在 ghcr 只发 latest/main/nightly（没有版本标签），在 Docker Hub 发版本标签；这里用 Docker Hub 的\n    # 版本标签 0.27.1 加清单列表摘要固定，摘要与此前 ghcr latest 固定的是同一份（逐字节相同）。\n    # 装好后核对 /api/v1/status 里的版本和发布说明一致。\n    image: docker.io/sysadminsmedia/homebox:0.27.1@sha256:9d0b64776c694f018c0ca06faf52105a33ca376024f46bb58e6ab0e2b728bb61\n    # 上游镜像默认 root，这里以主人的用户跑：SQLite 和附件对属主无要求，宿主上的文件归主人。\n    user: \"${PUID}:${PGID}\"\n    environment:\n      HBOX_MODE: production\n      # 数据全在 /data：SQLite 库（下面两条是上游 Dockerfile 里的 ENV，写显了免得读镜像才知道）和附件\n      # （存储根 file:/// 加前缀 data），挂进插件数据目录。\n      HBOX_STORAGE_CONN_STRING: \"file:///?no_tmp_dir=true\"\n      # 没申请出网：关掉启动时的版本检查，免得每次启动记一条连不上 GitHub 的错误。\n      HBOX_OPTIONS_GITHUB_RELEASE_CHECK: \"false\"\n      # 只经 OIDC 用，不给注册和密码登录留入口。\n      HBOX_OPTIONS_ALLOW_REGISTRATION: \"false\"\n      HBOX_OPTIONS_ALLOW_LOCAL_LOGIN: \"false\"\n      # 网关会重设 X-Forwarded-*，据此生成 OIDC 回调地址。\n      HBOX_OPTIONS_TRUST_PROXY: \"true\"\n      HBOX_OIDC_ENABLED: \"true\"\n      HBOX_OIDC_ISSUER_URL: ${WONTON_OIDC_ISSUER}\n      HBOX_OIDC_CLIENT_ID: ${WONTON_OIDC_CLIENT_ID}\n      HBOX_OIDC_CLIENT_SECRET: ${WONTON_OIDC_CLIENT_SECRET}\n      # 打开网页直接跳 OIDC 登录。\n      HBOX_OIDC_AUTO_REDIRECT: \"true\"\n      # API 密钥的哈希混入密钥（上游要求 ≥32 字节，必须跨重启稳定），由核心生成、保管。\n      HBOX_AUTH_API_KEY_PEPPER: ${WONTON_SECRET_API_KEY_PEPPER}\n    volumes:\n      - ${WONTON_APP_DATA}:/data\n    healthcheck:\n      # /api/v1/status 只收 GET（HEAD 返回 405），不能用 --spider。\n      test: [\"CMD\", \"wget\", \"-q\", \"-O\", \"/dev/null\", \"http://127.0.0.1:7745/api/v1/status\"]\n      interval: 30s\n      timeout: 5s\n      retries: 5\n      start_period: 60s\n      start_interval: 1s\n\nx-wonton:\n  spec: \"0.4\"\n  id: software.homebox\n  version: 0.1.1\n  kind: app\n  title: { en: HomeBox }\n  description:\n    zh: 家庭物品清单：记下东西放在哪、拍了什么照片、值多少钱\n    en: \"Home inventory: track what you own, where it is and what it's worth\"\n  icon: icon.svg\n  notices: [NOTICE]\n  screenshots: [screenshots/home.png]\n  author: { name: geraldpeng6, url: https://github.com/geraldpeng6 }\n  homepage: https://homebox.software\n  license: AGPL-3.0-only\n  tags:\n    zh: [物品清单, 家庭]\n    en: [Inventory, Home]\n  about:\n    zh: |\n      把家里的东西登记成清单：每件物品记下放在哪个位置、拍了什么照片、值多少钱、保修到什么时候。位置一层层往下分，\n      每个位置和物品都有自己的资产编号和二维码，打印出来贴上，扫码就能找到。\n\n      清单存在自己家里，登录走云吞的身份，打开就是自己的清单。\n    en: |\n      Register what you own as an inventory: for each item note where it is, what it looks like, what it's worth\n      and when the warranty ends. Locations nest level by level; every location and item gets an asset ID and a\n      QR code you can print and stick on, so finding things is a scan away.\n\n      Your inventory stays at home. Sign-in goes through Wonton's identity, and it opens straight to your own\n      inventory.\n  release_notes: { zh: \"镜像改用上游的版本标签 0.27.1 固定（原来按浮动 latest 的摘要固定，内容相同，就是 2026-10-23 的安全版：上游修复了 NodeJS 的远程代码执行风险）。\", en: \"The image now pins upstream's version tag 0.27.1 (previously pinned by the digest of the floating latest tag — same content, the 2026-10-23 security release where upstream patched a NodeJS remote-code-execution risk).\" }\n  webui:\n    service: homebox\n    port: 7745\n    sso: oidc\n    oidc:\n      redirect_paths: [/api/v1/users/login/oidc/callback]\n  permissions: []\n  secrets:\n    api_key_pepper:\n      generate: { bytes: 32 }\n  # 上游没写最低内存；requirements.memory 按开发环境实测空闲占用取整（见提交时的验证记录）。镜像支持 amd64 和 arm64。\n  requirements:\n    arch: [amd64, arm64]\n    memory: 256M\n",
+      "files": {
+        "NOTICE": "4622d784152fb6cbf00f966b87c510e037dc48855fe9e92e58fdde7f218aa55a",
+        "docker-compose.yml": "95e5f13437cf27fb46d81542065a866527cc04fc8b67c022149dba50da151864",
+        "icon.svg": "c77680b311d0b9736a3ed1d67f893185b5385b4a8a36527826d905953f8dc66e"
+      },
+      "source": "github:geraldpeng6/wonton-plugin-homebox",
+      "version": "0.1.1"
     }
   ],
   "onboarding": {
@@ -484,7 +495,7 @@
   ],
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "946252826de6d21cebb553558caadd96a77609d3",
+    "commit": "a9e1fb48f3b1df5b15cd3d28cdf8c6a5383d7d01",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
