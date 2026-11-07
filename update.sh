@@ -50,6 +50,7 @@ plugins=(
   geraldpeng6/wonton-plugin-openlist@v0.1.0
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
+  geraldpeng6/wonton-plugin-qbittorrent@v0.2.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
