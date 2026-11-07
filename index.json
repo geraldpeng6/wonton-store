@@ -284,6 +284,17 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-gitea",
       "version": "0.1.0"
+    },
+    {
+      "commit": "3c932fdf83bdfc7f3f29583a2153a2fdda910bd1",
+      "compose": "# Copyparty：经云吞网关上传、下载、分享文件，带文件索引和多媒体缩略图。\nservices:\n  copyparty:\n    # 上游官方镜像（MIT），按多架构清单摘要固定，标签只给人看。\n    image: copyparty/ac:1.20.26@sha256:b2054d65e05daa8982ca17c26b12b74315c0ce586a03ff9018a59c80731b9e19\n    # 镜像能以任意 uid 运行（上游 docker 文档推荐 -u 1000）；以用户身份跑，文件属主就是 PUID:PGID。\n    user: \"${PUID}:${PGID}\"\n    environment:\n      TZ: ${TZ}\n      PYTHONUNBUFFERED: \"1\"\n    volumes:\n      # 文件和索引库（.hist）都在这里，容器重建后仍在。\n      - ${WONTON_APP_DATA}:/w\n    configs:\n      # xff-src 要引用核心地址，而 copyparty 的配置文件不做环境变量展开，\n      # 所以经 configs.content 交给核心按注入变量插值后写进容器。\n      - source: party\n        target: /cfg/copyparty.conf\n    # 服务本身只回 HTTP；网关带真实用户访问的可用性由探针和冒烟另测。\n    healthcheck:\n      test:\n        - CMD\n        - python3\n        - \"-c\"\n        - |\n          import sys, urllib.request as u\n          try: u.urlopen(\"http://127.0.0.1:3923/\", timeout=4)\n          except u.HTTPError as e: sys.exit(0 if e.code < 500 else 1)\n          except Exception: sys.exit(1)\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 1s\n    # 上游建议：给缩略图线程 10 秒收尾（docs/examples/docker/basic-docker-compose）。\n    stop_grace_period: 15s\n\nconfigs:\n  party:\n    content: |\n      [global]\n        # 网关代登录：只信任核心注入的用户名头。idp-h-key 要求请求里同时出现\n        # 这个头；两个头的名字都在清单 webui.proxy.headers 里声明，用户伪造的\n        # 同名头会被网关先删掉，直连容器的来源又被 xff-src 挡住。\n        idp-h-usr: x-wonton-user\n        idp-h-key: x-wonton-auth\n        # 只信任核心网关一个地址；其他来源一律当匿名，读不到也写不进。\n        xff-src: ${WONTON_CORE_ADDRESS}/32\n        xff-hdr: x-forwarded-for\n        rproxy: 1\n        # 文件索引和多媒体元数据（缩略图、时长、标签）\n        e2dsa\n        e2ts\n\n      [/]\n        /w/files\n        accs:\n          # @acct 是 copyparty 自动生成的\"全部已知用户\"组；匿名不在其中。\n          rwmda: @acct\n\nx-wonton:\n  spec: \"0.6\"\n  id: me.ocv.copyparty\n  version: 0.1.0\n  kind: app\n  title: { en: Copyparty }\n  description:\n    zh: 网页网盘：上传、下载、分享文件，图片视频音乐直接预览\n    en: \"Web cloud drive: upload, download and share files, with media previews\"\n  icon: icon.png\n  notices: [NOTICE]\n  screenshots: [screenshots/files.png, screenshots/photos.png]\n  author: { name: geraldpeng6, url: \"https://github.com/geraldpeng6\" }\n  homepage: https://github.com/9001/copyparty\n  # 上游 Copyparty 的许可证；插件包自己的许可证在仓库 LICENSE 里。\n  license: MIT\n  tags:\n    zh: [文件, 网盘]\n    en: [Files, Cloud drive]\n  about:\n    zh: |\n      把家里的服务器变成一个网盘：在手机或电脑的网页上上传、下载、整理文件，图片、视频、音乐、PDF 直接预览，整个文件夹打包下载。\n\n      别人给你的分享链接可以直接上传，你也能给任意文件或文件夹生成下载链接和限时口令。\n\n      文件存在插件自己的数据目录里，卸载插件选保留数据时文件不动。\n    en: |\n      Turn your home server into a cloud drive: upload, download and organize files from your phone or computer, with built-in previews for images, videos, music and PDFs, and folder downloads as archives.\n\n      Share links can accept uploads from others, and you can generate download links with passwords and expiry for any file or folder.\n\n      Files live in the plugin's own data directory and survive uninstalling with data kept.\n  release_notes:\n    zh: 首个版本。\n    en: First release.\n  webui:\n    service: copyparty\n    port: 3923\n    # 上游没有原生 OIDC；认反向代理注入的用户名头（README#identity-providers），\n    # 由网关代登录，打开就是自己的文件，不用第二次登录。\n    sso: proxy\n    proxy:\n      headers:\n        X-Wonton-User: \"{user}\"\n        # copyparty 只认\"存在这个名字的头\"，值随意；名字在清单里声明，网关会先删掉用户伪造的同名头。\n        X-Wonton-Auth: \"1\"\n  # 文件服务只经网关访问，不申请出网和局域网端口。\n  permissions: []\n  # 上游没写最低内存；本机空闲实测约 45M（含索引），取 128M 留出转码和缩略图的余量。\n  requirements:\n    arch: [amd64, arm64]\n    memory: 128M\n",
+      "files": {
+        "NOTICE": "03b24e4bd6f7f10c9c0651e6cb65c2a3ff34216f4dec49b1ca3d9e8abe050e3d",
+        "docker-compose.yml": "5df88566087cb859f9745d558ab14100e239e403fdf316b6dfbfebd0f2fd0e49",
+        "icon.png": "f85846fea37a8f9301bdf32f7b62fa0eef1591728042108081d62a4315484325"
+      },
+      "source": "github:geraldpeng6/wonton-plugin-copyparty",
+      "version": "0.1.0"
     }
   ],
   "onboarding": {
@@ -507,7 +518,7 @@
   ],
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "a9e1fb48f3b1df5b15cd3d28cdf8c6a5383d7d01",
+    "commit": "703dce9366fe4d65e750f17658e27f579c029520",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
