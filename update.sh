@@ -40,6 +40,7 @@ plugins=(
   geraldpeng6/wonton-plugin-koel@v0.1.0
   geraldpeng6/wonton-plugin-sftpgo@v0.1.0
   geraldpeng6/wonton-plugin-trilium@v0.1.0
+  geraldpeng6/wonton-plugin-home-assistant@v0.2.0
   geraldpeng6/wonton-plugin-audiobookshelf@v0.1.0
   geraldpeng6/wonton-plugin-romm@v0.1.0
   geraldpeng6/wonton-plugin-prowlarr@v0.1.0
