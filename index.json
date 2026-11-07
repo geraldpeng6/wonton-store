@@ -499,7 +499,8 @@
       "com.nousresearch.hermes",
       "ai.openclaw.agent",
       "ai.omp.agent",
-      "ai.codex"
+      "ai.codex",
+      "ai.claude-code"
     ],
     "needs": [
       {
@@ -715,7 +716,7 @@
   ],
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "64df1a5dd89cfd3194bc82a5d2294fb3d1a7bf61",
+    "commit": "bc7d483d3f7fef77cb9c8c3365d0e8e347c48667",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
