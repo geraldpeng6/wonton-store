@@ -22,6 +22,11 @@
       "plugins": ["net.syncthing.syncthing"]
     },
     {
+      "id": "devices",
+      "title": { "zh": "控制家里的设备", "en": "Control home devices" },
+      "plugins": ["io.home-assistant.home-assistant"]
+    },
+    {
       "id": "notes",
       "title": { "zh": "记笔记", "en": "Take notes" },
       "plugins": ["com.usememos.memos"]

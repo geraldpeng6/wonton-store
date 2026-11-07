@@ -560,6 +560,16 @@
         ]
       },
       {
+        "id": "devices",
+        "title": {
+          "zh": "控制家里的设备",
+          "en": "Control home devices"
+        },
+        "plugins": [
+          "io.home-assistant.home-assistant"
+        ]
+      },
+      {
         "id": "notes",
         "title": {
           "zh": "记笔记",
@@ -732,7 +742,7 @@
   ],
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "f7495d22e00b28503754a43c0183db6d189f8327",
+    "commit": "6bf2e1753fb1e13ff173be588c32b66b181f4c45",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
