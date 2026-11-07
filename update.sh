@@ -46,6 +46,7 @@ plugins=(
   geraldpeng6/wonton-plugin-flood@v0.1.0
   geraldpeng6/wonton-plugin-komga@v0.1.0
   geraldpeng6/wonton-plugin-openlist@v0.1.0
+  geraldpeng6/wonton-plugin-frigate@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
