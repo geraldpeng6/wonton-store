@@ -36,6 +36,7 @@ plugins=(
   geraldpeng6/wonton-plugin-bookstack@v0.1.0
   geraldpeng6/wonton-plugin-cloudreve@v0.1.0
   geraldpeng6/wonton-plugin-kavita@v0.1.0
+  geraldpeng6/wonton-plugin-koel@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
