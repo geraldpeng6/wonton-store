@@ -42,6 +42,7 @@ plugins=(
   geraldpeng6/wonton-plugin-audiobookshelf@v0.1.0
   geraldpeng6/wonton-plugin-romm@v0.1.0
   geraldpeng6/wonton-plugin-prowlarr@v0.1.0
+  geraldpeng6/wonton-plugin-tubearchivist@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
