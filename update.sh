@@ -24,9 +24,9 @@ plugins=(
   geraldpeng6/wonton-plugin-vane@v0.1.1
   geraldpeng6/wonton-plugin-ollama@v0.1.0
   geraldpeng6/wonton-plugin-hermes@v0.5.5
-  geraldpeng6/wonton-plugin-openclaw@v0.1.0
-  geraldpeng6/wonton-plugin-omp@v0.1.0
-  geraldpeng6/wonton-plugin-codex@v0.1.0
+  geraldpeng6/wonton-plugin-openclaw@v0.1.1
+  geraldpeng6/wonton-plugin-omp@v0.1.1
+  geraldpeng6/wonton-plugin-codex@v0.1.1
   geraldpeng6/wonton-plugin-proxy@v0.1.0
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
   geraldpeng6/wonton-plugin-homebox@v0.1.1
