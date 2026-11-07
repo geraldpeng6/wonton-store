@@ -32,6 +32,7 @@ plugins=(
   geraldpeng6/wonton-plugin-homebox@v0.1.1
   geraldpeng6/wonton-plugin-gitea@v0.1.0
   geraldpeng6/wonton-plugin-copyparty@v0.1.0
+  geraldpeng6/wonton-plugin-changedetection@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
