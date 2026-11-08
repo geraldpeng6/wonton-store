@@ -22,7 +22,7 @@ plugins=(
   geraldpeng6/wonton-plugin-uptime-kuma@v0.2.0
   geraldpeng6/wonton-plugin-open-webui@v0.2.1
   geraldpeng6/wonton-plugin-vane@v0.2.0
-  geraldpeng6/wonton-plugin-ollama@v0.1.0
+  geraldpeng6/wonton-plugin-ollama@v0.1.1
   geraldpeng6/wonton-plugin-hermes@v0.6.2
   geraldpeng6/wonton-plugin-openclaw@v0.1.1
   geraldpeng6/wonton-plugin-omp@v0.1.1
