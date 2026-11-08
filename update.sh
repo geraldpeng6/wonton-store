@@ -52,7 +52,7 @@ plugins=(
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
   geraldpeng6/wonton-plugin-karakeep@v0.1.0
   geraldpeng6/wonton-plugin-qbittorrent@v0.2.0
-  geraldpeng6/wonton-plugin-librephotos@v0.1.0
+  geraldpeng6/wonton-plugin-librephotos@v0.1.1
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
   geraldpeng6/wonton-plugin-seerr@v0.1.0
