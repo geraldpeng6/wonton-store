@@ -57,6 +57,7 @@ plugins=(
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
   geraldpeng6/wonton-plugin-seerr@v0.1.0
   geraldpeng6/wonton-plugin-nextcloud@v0.1.0
+  geraldpeng6/wonton-plugin-terminal@v0.1.1
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"

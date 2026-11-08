@@ -592,6 +592,19 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-nextcloud",
       "version": "0.1.0"
+    },
+    {
+      "commit": "a136cb7d4be5feef033008ff0e9fd6819b16931a",
+      "compose": "name: terminal\n\nservices:\n  # Zellij 的网页终端，前面是容器内的 nginx：Zellij 只听 127.0.0.1:8082，nginx 在 8080 上接核心网关的请求，\n  # 两者同一个网络命名空间。数据卷放 Zellij 的会话快照、令牌库和 SSH 密钥。\n  web:\n    image: ghcr.io/geraldpeng6/wonton-terminal:0.1.1@sha256:295439dbc3346646b9d91ead90998adbbf8699a61a5966ac96cb35f0b14e4a3b\n    user: \"${PUID}:${PGID}\"\n    # ssh 到局域网主机、会话里跑的程序要出网：内部网络到不了外网和局域网。\n    # 声明 network.egress 后，核心的出口代理变量也会注入进来，ssh 自己不读它们，走直连。\n    environment:\n      TZ: ${TZ}\n    volumes:\n      - ${WONTON_APP_DATA}/data:/data\n    # docker 自带的 tini：zellij 起的会话进程跟着它回收。\n    init: true\n    # 终端里可能跑构建这类长进程，给足会话数；进程数不设上限时一个 fork 循环能把宿主拖死。\n    pids_limit: 1024\n    # 停容器时先让 zellij 把会话存下来。\n    stop_grace_period: 20s\n    healthcheck:\n      # 经 nginx 真的请求到 Zellij，nginx 或 Zellij 任一个没起来都会失败。\n      # 入口页是启动时生成的，页面没就绪不算健康。\n      test: [\"CMD\", \"sh\", \"-c\", \"wget -q -O /dev/null http://127.0.0.1:8080/healthz && test -s /tmp/landing.html\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 1s\n\nx-wonton:\n  spec: \"0.7\"\n  id: dev.zellij.terminal\n  version: 0.1.1\n  kind: app\n  title: { en: Zellij }\n  description:\n    zh: 在浏览器里打开服务器上的终端，也能 SSH 到局域网里的其他机器\n    en: A terminal on your server in the browser, and SSH to other machines on your LAN\n  icon: icon.svg\n  notices: [NOTICE]\n  screenshots: [screenshots/terminal.png, screenshots/landing.png]\n  author: { name: geraldpeng6, url: https://github.com/geraldpeng6 }\n  homepage: https://zellij.dev\n  license: MIT\n  tags:\n    zh: [工具, 开发]\n    en: [Tools, Developer]\n  about:\n    zh: |\n      服务器上的终端，在浏览器里用。Zellij 自己管会话：切到别的 App、关掉页面都能接回原来的会话，会话断了也能恢复。\n      手机上有专门的界面：可滚动的终端、快捷键条、窗格和标签切换、屏幕键盘。\n\n      装好后第一次打开会给一条登录令牌和一个 SSH 公钥。令牌进终端用，也留给命令行客户端；\n      公钥加到局域网目标主机的 authorized_keys，就能从终端里 ssh 过去，主机指纹首次连接时自己核对。\n\n      容器里是普通用户，没有宿主 root，不带 Docker socket。\n    en: |\n      A terminal on your server, in the browser. Zellij keeps the sessions itself: switching apps or closing the page\n      leads back to the same session, and exited sessions come back. The phone gets a dedicated interface: scrolling,\n      a key bar, pane and tab pickers, an on-screen keyboard.\n\n      The first open shows a login token and an SSH public key. The token gets you into the terminal and works with the\n      command line client; add the public key to authorized_keys on the LAN host and ssh to it from the terminal,\n      checking the host fingerprint on first connect.\n\n      The container runs an ordinary user, without host root or the Docker socket.\n  release_notes:\n    zh: 清单补 pids_limit，spec 跟到 0.7；商店截图换成 iOS 模拟器的。\n    en: \"Manifest gains pids_limit and spec 0.7; store screenshot from the iOS simulator.\"\n  webui:\n    service: web\n    port: 8080\n  tabs:\n    - id: terminal\n      title: { zh: 终端, en: Terminal }\n      icon: tabs/terminal.svg\n      icon_selected: tabs/terminal-fill.svg\n      path: /\n      # 终端要整屏：全屏打开，内容由 App 让开状态栏和 Home 条（inset）。\n      display: fullscreen\n  permissions: [network.egress]\n  requirements:\n    arch: [amd64, arm64]\n    # 空闲时约 30M，一个会话几十 M 起：按能开几个会话的余量给。\n    memory: 128M\n",
+      "files": {
+        "NOTICE": "6ab84336fbb76fff92c30eb4650dca6301e07444b1fbbc8d98f1f886e9f4801b",
+        "docker-compose.yml": "c529ecebe2dac206a8ef800138123c25d85f54a61bb3206d343ebcaca60ea742",
+        "icon.svg": "fec39873964901442fab9cf768e804619333007fe1a039939d581ec1aec49d19",
+        "tabs/terminal-fill.svg": "fc3770a529a60829a1e9aaecaa8e290f34f12de1bd6cdba0e8c8ae6a4ec42c77",
+        "tabs/terminal.svg": "3cf62a1bd641f7edd392a57258edd2c07bf7c880f470131e934f455c6f3d7546"
+      },
+      "source": "github:geraldpeng6/wonton-plugin-terminal",
+      "version": "0.1.1"
     }
   ],
   "onboarding": {
