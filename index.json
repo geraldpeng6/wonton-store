@@ -566,6 +566,18 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-vikunja",
       "version": "0.2.0"
+    },
+    {
+      "commit": "0175ea1d68cbaaa04af77397a557db884619af53",
+      "compose": "# Seerr：影视求片和订阅，配合 Jellyfin、Emby 或 Plex 使用。\nservices:\n  init:\n    # 首次写入和每次重建时更新 Jellyfin 连接信息（见 init/init-settings.js）。\n    # 与主服务同一个官方镜像，避免再引入一个工具镜像。\n    image: ghcr.io/seerr-team/seerr:v3.5.1@sha256:d8fab675b55ad293ded98fd71efcfd46054cbad9746534ae1cc4794a88c0b3be\n    user: \"${PUID}:${PGID}\"\n    entrypoint: [\"node\", \"/seed/init-settings.js\"]\n    environment:\n      WONTON_JELLYFIN_URL: ${WONTON_JELLYFIN_URL:-}\n      WONTON_JELLYFIN_KEY: ${WONTON_JELLYFIN_KEY:-}\n    volumes:\n      - ${WONTON_APP_DATA}/config:/app/config\n    configs:\n      - source: init_settings\n        target: /seed/init-settings.js\n    network_mode: none\n    restart: \"no\"\n\n  seerr:\n    depends_on:\n      init:\n        condition: service_completed_successfully\n    # Seerr v3.5.1 官方多架构镜像（amd64、arm64）。\n    # 官方镜像以 node 用户运行，这里跟随云吞注入的 PUID/PGID，数据目录属主与之一致。\n    image: ghcr.io/seerr-team/seerr:v3.5.1@sha256:d8fab675b55ad293ded98fd71efcfd46054cbad9746534ae1cc4794a88c0b3be\n    user: \"${PUID}:${PGID}\"\n    environment:\n      TZ: ${TZ}\n    volumes:\n      - ${WONTON_APP_DATA}/config:/app/config\n    healthcheck:\n      # /api/v1/settings/public 是无需登录的接口，返回 200 说明数据库迁移完成、\n      # HTTP 服务已就绪；不用 /api/v1/status，它默认会请求 GitHub 检查新版本。\n      test: [\"CMD\", \"wget\", \"-q\", \"-O\", \"/dev/null\", \"http://127.0.0.1:5055/api/v1/settings/public\"]\n      interval: 30s\n      timeout: 10s\n      retries: 5\n      start_period: 60s\n      start_interval: 2s\n\nconfigs:\n  init_settings:\n    file: init/init-settings.js\n\nx-wonton:\n  spec: \"0.7\"\n  id: app.seerr.seerr\n  version: 0.1.0\n  kind: app\n  title: { en: Seerr }\n  description:\n    zh: 给家里的媒体库求片、追新剧和电影\n    en: Request movies and shows for your home media server\n  icon: icon.svg\n  notices: [NOTICE]\n  screenshots: [screenshots/setup.png, screenshots/login.png, screenshots/requests.png]\n  author: { name: geraldpeng6, url: https://github.com/geraldpeng6 }\n  homepage: https://seerr.dev\n  license: MIT\n  tags:\n    zh: [视频, 追剧, 求片]\n    en: [Video, TV, Requests]\n  about:\n    zh: |\n      在 Seerr 里搜索想看的电影和剧集，一键求片；媒体库有了就通知你。\n\n      Seerr 连接 Jellyfin、Emby 或 Plex：第一次打开需要完成 Seerr 自己的向导，\n      填媒体服务器地址，并用它的管理员账号登录——这个账号随之成为 Seerr 管理员。\n      之后家人用各自媒体服务器账号登录就能求片。\n\n      连接 Jellyfin 的地址和 API 密钥由云吞自动注入（核心的能力依赖接口上线后生效），\n      在那之前要手填一台 Seerr 能访问到的媒体服务器地址。\n\n      出网权限用于查询 TMDB 的影视元数据和海报。想全自动下载，还要在设置里\n      连接 Radarr 或 Sonarr（以及下载器），这一步按 Seerr 自己的文档配置。\n    en: |\n      Search for movies and shows in Seerr and request them with one tap; get notified when they land in your library.\n\n      Seerr connects to Jellyfin, Emby or Plex. The first opening runs Seerr's own setup wizard: enter the media server address and sign in with an administrator account of that server — that account becomes the Seerr administrator. Family members then sign in with their own media server accounts to request titles.\n\n      The Jellyfin address and API key are injected automatically by Wonton (effective once the core's capability dependency interface ships); until then, enter an address that Seerr can reach.\n\n      The internet permission is used for TMDB metadata and posters. For fully automatic downloading, connect Radarr or Sonarr (plus a downloader) in the settings, following Seerr's own documentation.\n  release_notes: { zh: 首次发布 Seerr 3.5.1 插件。, en: First Seerr 3.5.1 plugin release. }\n  webui:\n    service: seerr\n    port: 5055\n    sso: none\n  permissions:\n    # TMDB 元数据、海报、版本检查都走外网。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    # 上游没写最低内存；官方镜像空载实测 131MiB，扫描媒体库和缓存海报按三倍余量取整。\n    memory: 512M\n",
+      "files": {
+        "NOTICE": "12e9390aef2b5615d93c98c1ec485bc15f506fe922c7d32bfba4b19cb7b7b9f4",
+        "docker-compose.yml": "a2df80ae31c60bd7dc722a339ceeb6fd4dd6c22cb1af66ea903016d73c4e24db",
+        "icon.svg": "341f40937b9102d6fb5c2babc7f64c5d5f07df383df57fcc52f67018722c3e24",
+        "init/init-settings.js": "b684de4b04079caccee408ab08f639473b8fae94c6ed0374e61a384ecb70f773"
+      },
+      "source": "github:geraldpeng6/wonton-plugin-seerr",
+      "version": "0.1.0"
     }
   ],
   "onboarding": {
@@ -655,6 +667,16 @@
         },
         "plugins": [
           "org.actualbudget.actual"
+        ]
+      },
+      {
+        "id": "movies",
+        "title": {
+          "zh": "找片看",
+          "en": "Find something to watch"
+        },
+        "plugins": [
+          "app.seerr.seerr"
         ]
       }
     ],

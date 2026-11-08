@@ -40,6 +40,11 @@
       "id": "budget",
       "title": { "zh": "记账", "en": "Track spending" },
       "plugins": ["org.actualbudget.actual"]
+    },
+    {
+      "id": "movies",
+      "title": { "zh": "找片看", "en": "Find something to watch" },
+      "plugins": ["app.seerr.seerr"]
     }
   ],
   "providers": {
