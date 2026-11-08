@@ -28,7 +28,7 @@ plugins=(
   geraldpeng6/wonton-plugin-omp@v0.1.1
   geraldpeng6/wonton-plugin-codex@v0.1.1
   geraldpeng6/wonton-plugin-claude-code@v0.1.0
-  geraldpeng6/wonton-plugin-proxy@v0.1.0
+  geraldpeng6/wonton-plugin-proxy@v0.1.2
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
   geraldpeng6/wonton-plugin-homebox@v0.1.1
   geraldpeng6/wonton-plugin-gitea@v0.1.0
@@ -50,6 +50,7 @@ plugins=(
   geraldpeng6/wonton-plugin-openlist@v0.1.0
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
+  geraldpeng6/wonton-plugin-karakeep@v0.1.0
   geraldpeng6/wonton-plugin-qbittorrent@v0.2.0
   geraldpeng6/wonton-plugin-librephotos@v0.1.0
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
