@@ -19,7 +19,7 @@
     {
       "id": "sync",
       "title": { "zh": "同步文件", "en": "Sync files" },
-      "plugins": ["net.syncthing.syncthing"]
+      "plugins": ["net.syncthing.syncthing", "com.nextcloud.nextcloud"]
     },
     {
       "id": "devices",
