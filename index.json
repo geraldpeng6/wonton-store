@@ -844,14 +844,25 @@
       }
     ]
   },
-  "registry_mirrors": [
-    "dockerproxy.net",
-    "docker.1panel.live",
-    "docker.1ms.run"
-  ],
+  "registry_mirrors": {
+    "docker.io": [
+      "dockerproxy.net",
+      "docker.1panel.live",
+      "docker.1ms.run"
+    ],
+    "ghcr.io": [
+      "ghcr.dockerproxy.net",
+      "ghcr.nju.edu.cn",
+      "ghcr.1ms.run"
+    ],
+    "quay.io": [
+      "quay.dockerproxy.net",
+      "quay.nju.edu.cn"
+    ]
+  },
   "docs": {
     "source": "github:geraldpeng6/wonton-docs",
-    "commit": "8bdd6720203865f89078011f37eb4fe5f36aa5e6",
+    "commit": "c251f99ebbe1d13ee32c66e2e1c3ab9815c3fe78",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
