@@ -108,7 +108,7 @@ index["registry_mirrors"] = json.loads((here / "registry-mirrors.json").read_tex
 docs = work / "docs"
 subprocess.run([
     "git", "clone", "-q", "--depth", "1", "--branch", "main", "--single-branch",
-    "https://github.com/geraldpeng6/wonton-docs.git", str(docs),
+    "https://github.com/wontonapp/wonton-docs.git", str(docs),
 ], check=True)
 commit = subprocess.check_output(["git", "-C", str(docs), "rev-parse", "HEAD"], text=True).strip()
 files = {
@@ -119,7 +119,7 @@ files = {
 if not files:
     sys.exit("wonton-docs 的 user/ 下没有文档页")
 index["docs"] = {
-    "source": "github:geraldpeng6/wonton-docs",
+    "source": "github:wontonapp/wonton-docs",
     "commit": commit,
     "min_core": "0.1.0-beta.1",
     "files": files,
