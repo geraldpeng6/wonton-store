@@ -64,18 +64,29 @@ plugins=(
 work="$(mktemp -d "$here/.update.XXXXXX")"
 trap 'rm -rf "$work"' EXIT
 mkdir "$work/manifests"
+# 列表项写 `owner/repo@tag` 或 `owner/repo/子目录@子目录最后一段/v版本`；子目录可以有多段，同一仓库里最后一段不能重复。
 for plugin in "${plugins[@]}"; do
-  name="${plugin%@*}"
+  path="${plugin%@*}"
   tag="${plugin#*@}"
-  git clone -q -c advice.detachedHead=false --depth 1 --branch "$tag" "https://github.com/$name.git" "$work/$name"
-  commit="$(git -C "$work/$name" rev-parse HEAD)"
-  "$core" plugin check "$work/$name" --official >/dev/null
-  "$core" plugin index-entry "$work/$name" "github:$name" "$commit" --index "$work/index"
+  owner="${path%%/*}"
+  rest="${path#*/}"
+  name="${rest%%/*}"
+  repo="$owner/$name"
+  subdir="${rest#*/}"
+  if test "$subdir" = "$rest"; then
+    dir="$work/$repo"
+  else
+    dir="$work/$repo/$subdir"
+  fi
+  git clone -q -c advice.detachedHead=false --depth 1 --branch "$tag" "https://github.com/$repo.git" "$work/$repo"
+  commit="$(git -C "$work/$repo" rev-parse HEAD)"
+  "$core" plugin check "$dir" --official >/dev/null
+  "$core" plugin index-entry "$dir" "github:$path" "$commit" --index "$work/index"
   # 核心 CLI 不输出 kind；由 Compose 解析扩展字段，不展开变量或补齐宿主路径。
-  docker compose -p wonton-store -f "$work/$name/docker-compose.yml" config \
+  docker compose -p wonton-store -f "$dir/docker-compose.yml" config \
     --format json --no-interpolate --no-normalize --no-consistency \
-    --no-env-resolution --no-path-resolution --output "$work/manifests/${name##*/}.json"
-  echo "$name $tag → $commit"
+    --no-env-resolution --no-path-resolution --output "$work/manifests/${path##*/}.json"
+  echo "$path $tag → $commit"
 done
 python3 - "$here" "$work" <<'PY'
 import hashlib
