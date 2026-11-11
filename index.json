@@ -873,7 +873,7 @@
     ]
   },
   "docs": {
-    "source": "github:geraldpeng6/wonton-docs",
+    "source": "github:wontonapp/wonton-docs",
     "commit": "e0f76517ace96bdc7ca3a0ace637bb52c30ab610",
     "min_core": "0.1.0-beta.1",
     "files": {
