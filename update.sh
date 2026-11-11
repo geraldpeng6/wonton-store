@@ -63,6 +63,7 @@ plugins=(
   geraldpeng6/wonton-plugin-radicale@v0.1.0
   geraldpeng6/wonton-plugin-drawio@v0.1.0
   geraldpeng6/wonton-plugin-kiwix@v0.1.0
+  geraldpeng6/wonton-plugin-music-assistant@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
