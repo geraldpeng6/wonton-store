@@ -28,7 +28,7 @@ plugins=(
   geraldpeng6/wonton-plugin-omp@v0.1.4
   geraldpeng6/wonton-plugin-codex@v0.1.5
   geraldpeng6/wonton-plugin-claude-code@v0.1.3
-  geraldpeng6/wonton-plugin-dsh@v0.1.2
+  wontonapp/wonton-agents/agents/dsh@dsh/v0.1.2
   geraldpeng6/wonton-plugin-proxy@v0.1.2
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
   geraldpeng6/wonton-plugin-homebox@v0.1.1
