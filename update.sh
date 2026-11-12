@@ -78,6 +78,7 @@ plugins=(
   geraldpeng6/wonton-plugin-reactive-resume@v0.1.1
   geraldpeng6/wonton-plugin-luanti@v0.1.0
   geraldpeng6/wonton-plugin-halo@v0.1.0
+  geraldpeng6/wonton-plugin-esphome@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
