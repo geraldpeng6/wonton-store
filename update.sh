@@ -82,6 +82,7 @@ plugins=(
   geraldpeng6/wonton-plugin-esphome@v0.1.0
   geraldpeng6/wonton-plugin-dawarich@v0.1.0
   geraldpeng6/wonton-plugin-mtranserver@v0.1.0
+  geraldpeng6/wonton-plugin-grist@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
