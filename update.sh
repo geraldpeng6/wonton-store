@@ -66,7 +66,7 @@ plugins=(
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
   geraldpeng6/wonton-plugin-seerr@v0.1.0
-  geraldpeng6/wonton-plugin-nextcloud@v0.1.1
+  geraldpeng6/wonton-plugin-nextcloud@v0.2.0
   geraldpeng6/wonton-plugin-ente@v0.1.0
   geraldpeng6/wonton-plugin-radicale@v0.1.0
   geraldpeng6/wonton-plugin-drawio@v0.1.0
