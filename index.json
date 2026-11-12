@@ -1042,6 +1042,19 @@
       },
       "source": "github:geraldpeng6/wonton-plugin-traccar",
       "version": "0.1.2"
+    },
+    {
+      "commit": "857e2b7f1b1c2113e9abfff6bc054d6144ea38c0",
+      "compose": "# scanservjs：把网络扫描仪变成网页，扫好的文件写进共享文件夹“文档”。\n# 网络扫描仪的地址在设置里手填（eSCL/AirScan、saned）；mDNS 自动发现要宿主网络的 dbus，不做。\nservices:\n  scanservjs:\n    # 上游官方镜像，amd64 和 arm64 都有；上游没写最低内存，按实测取整。\n    image: sbs20/scanservjs:v3.3.0@sha256:7a0c0dfd546f483c2fe8c5ccdcd8fc96301a41fb0d4309747fc8268108defb6a\n    environment:\n      TZ: ${TZ}\n      # 两项设置原样交给上游入口脚本：AIRSCAN_DEVICES 追加进 /etc/sane.d/airscan.conf，\n      # SANED_NET_HOSTS 追加进 /etc/sane.d/net.conf；为空时入口脚本跳过。\n      # :- 兜底：核心检查清单时按默认值试渲染，引用不存在的变量会让安装失败。\n      AIRSCAN_DEVICES: ${WONTON_SETTING_AIRSCAN_DEVICES:-}\n      SANED_NET_HOSTS: ${WONTON_SETTING_SANED_HOSTS:-}\n    volumes:\n      # 应用数据（preview/temp/thumbnail 和备用 output 目录）。\n      - ${WONTON_APP_DATA}:/var/lib/scanservjs\n      # 共享文件夹只能整个挂载，扫描结果经 config.local.js 指到它下面的子目录。\n      - ${WONTON_SHARE_DOCUMENTS}:/documents\n    configs:\n      - source: local\n        target: /etc/scanservjs/config.local.js\n    healthcheck:\n      # 镜像里没有别的 HTTP 客户端，用自带的 node；/api/v1/system 只读系统信息，不触发 scanimage。\n      test: [\"CMD\", \"node\", \"-e\", \"fetch('http://127.0.0.1:8080/api/v1/system').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))\"]\n      interval: 30s\n      timeout: 10s\n      start_period: 30s\n      start_interval: 1s\n\nconfigs:\n  local:\n    file: config/config.local.js\n\nx-wonton:\n  spec: \"0.12\"\n  id: io.github.sbs20.scanservjs\n  version: 0.1.0\n  kind: app\n  title: { zh: 网页扫描（scanservjs）, en: scanservjs }\n  description:\n    zh: 把网络扫描仪变成网页，手机上点一下就扫，文件自动进“文档”文件夹\n    en: Turn a network scanner into a web page — scan from your phone, files land in the Documents folder\n  icon: icon.png\n  notices: [NOTICE]\n  screenshots: [screenshots/home.png]\n  author: { name: geraldpeng6, url: https://github.com/geraldpeng6 }\n  homepage: https://github.com/sbs20/scanservjs\n  # 上游应用的许可证；插件包自己的许可证写在仓库的 LICENSE 里。\n  license: GPL-2.0-only\n  tags:\n    zh: [工具, 文档]\n    en: [Tools, Documents]\n  about:\n    zh: |\n      像把扫描仪搬进了网页：手机、平板、电脑打开就能扫描，不用装任何驱动，扫好的文件自动存进共享文件夹“文档”，可以接着交给 paperless-ngx 归档。\n\n      支持两种网络扫描仪：免驱的 eSCL/AirScan（大多数带网络扫描功能的一体机）和 SANE 网络共享（saned）。装好后把扫描仪的地址填进插件设置就能用，多台用分号隔开。\n\n      输出格式有 JPG、PNG、PDF，多页可以合成一个 PDF 或压缩包，还能做文字识别（OCR）。扫描结果存在“文档”文件夹的“扫描件”子目录里。\n\n      接在电脑 USB 口上的扫描仪暂时接不进来：底座还不能把宿主 USB 设备交给插件，支持后会在扫描仪设置里加上。也扫描不到广播出来的新扫描仪（自动发现要宿主网络），地址要手动填。\n    en: |\n      Your scanner, on a web page: open it from a phone, tablet or computer and scan — no drivers to install. Scanned files land in the Documents shared folder automatically, ready for archiving with paperless-ngx.\n\n      Two kinds of network scanners work: driverless eSCL/AirScan (most all-in-one printers with network scanning) and SANE network sharing (saned). Enter the scanner address in the plugin settings after install; separate multiple scanners with semicolons.\n\n      Output formats include JPG, PNG and PDF; multi-page scans can be merged into one PDF or a zip, with optional OCR. Scans are stored in the “扫描件” subfolder of the Documents folder.\n\n      USB scanners attached to the server are not supported yet: the platform cannot hand host USB devices to plugins. Scanners are not discovered automatically either (that needs host networking) — enter addresses manually.\n  release_notes: { zh: 首个版本。, en: Initial release. }\n  setup:\n    zh: 装好后打开插件设置，把网络扫描仪的地址填进去，例如 \"家里的一体机\" = \"http://192.0.2.10/eSCL\"。没有网络扫描仪时网页会显示“找不到扫描仪”。\n    en: After install, open the plugin settings and enter your network scanner's address, e.g. \"Home MFP\" = \"http://192.0.2.10/eSCL\". With no scanner configured the page reports “no devices”.\n  webui:\n    service: scanservjs\n    port: 8080\n    # 上游没有身份头或 OIDC 支持，默认无登录；网页始终在核心网关后面。\n    sso: none\n  settings: settings.schema.json\n  # 连局域网里的扫描仪（eSCL 的 http 端口、saned 的 6566）。\n  permissions:\n    - storage.share.documents:write\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 512M\n",
+      "files": {
+        "NOTICE": "78215721fcfc647ef150bc7012a17f243a78f7a4af912fa7bee6c0819afdd7a7",
+        "config/config.local.js": "886009b4da68752d6f60929fdf10cfc96b226b5216dd88d9ca3e8fa3a5e488cb",
+        "docker-compose.yml": "02cd1728d80ee8cc91f99302b3b2cadc68fe7d10d6ec977214426f6a9a0a3e7c",
+        "icon.png": "b0365e698518cd327c6e03ab3a8862ce62e70a2a8d81e941c2c666d1f0e1b390",
+        "settings.schema.json": "d12fbf712ed1e28223a87ac35e5c4518327e7f885d77fc5d22a303a5baeda410"
+      },
+      "source": "github:geraldpeng6/wonton-plugin-scanservjs",
+      "version": "0.1.0"
     }
   ],
   "onboarding": {
@@ -1298,7 +1311,7 @@
   },
   "docs": {
     "source": "github:wontonapp/wonton-docs",
-    "commit": "73766672cd5f08d7b923237de0e0309fae72f7c1",
+    "commit": "c4e5118e99eb7eda1332a21f7ca448c5f05924e9",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
