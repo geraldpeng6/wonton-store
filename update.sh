@@ -22,7 +22,7 @@ plugins=(
   geraldpeng6/wonton-plugin-searxng@v0.1.0
   geraldpeng6/wonton-plugin-navidrome@v0.1.1
   geraldpeng6/wonton-plugin-paperless-ngx@v0.1.2
-  geraldpeng6/wonton-plugin-immich@v0.3.4
+  geraldpeng6/wonton-plugin-immich@v0.3.6
   geraldpeng6/wonton-plugin-syncthing@v0.1.1
   geraldpeng6/wonton-plugin-samba@v0.1.2
   geraldpeng6/wonton-plugin-files@v0.2.3
@@ -35,7 +35,7 @@ plugins=(
   geraldpeng6/wonton-plugin-open-webui@v0.2.1
   geraldpeng6/wonton-plugin-vane@v0.2.0
   geraldpeng6/wonton-plugin-ollama@v0.1.1
-  geraldpeng6/wonton-plugin-hermes@v0.6.7
+  geraldpeng6/wonton-plugin-hermes@v0.6.8
   geraldpeng6/wonton-plugin-openclaw@v0.1.4
   wontonapp/wonton-agents/agents/omp@omp/v0.1.4
   wontonapp/wonton-agents/agents/codex@codex/v0.1.1
