@@ -91,6 +91,7 @@ plugins=(
   geraldpeng6/wonton-plugin-spliit@v0.1.0
   geraldpeng6/wonton-plugin-wger@v0.1.0
   geraldpeng6/wonton-plugin-babybuddy@v0.1.0
+  geraldpeng6/wonton-plugin-traccar@v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
