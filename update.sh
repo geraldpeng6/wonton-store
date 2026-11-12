@@ -67,6 +67,7 @@ plugins=(
   geraldpeng6/wonton-plugin-drawio@v0.1.0
   geraldpeng6/wonton-plugin-kiwix@v0.1.0
   geraldpeng6/wonton-plugin-music-assistant@v0.1.0
+  geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.0
   geraldpeng6/wonton-plugin-mosquitto@v0.1.0
   geraldpeng6/wonton-plugin-homebridge@v0.1.0
   geraldpeng6/wonton-plugin-grocy@v0.1.0
