@@ -74,7 +74,7 @@ plugins=(
   geraldpeng6/wonton-plugin-ente@v0.1.0
   geraldpeng6/wonton-plugin-radicale@v0.1.0
   geraldpeng6/wonton-plugin-drawio@v0.1.0
-  geraldpeng6/wonton-plugin-kiwix@v0.1.0
+  geraldpeng6/wonton-plugin-kiwix@v0.1.1
   geraldpeng6/wonton-plugin-music-assistant@v0.1.0
   geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.2
   geraldpeng6/wonton-plugin-mosquitto@v0.1.0
@@ -89,7 +89,7 @@ plugins=(
   geraldpeng6/wonton-plugin-halo@v0.1.0
   geraldpeng6/wonton-plugin-esphome@v0.1.0
   geraldpeng6/wonton-plugin-dawarich@v0.1.0
-  geraldpeng6/wonton-plugin-mtranserver@v0.1.0
+  geraldpeng6/wonton-plugin-mtranserver@v0.1.1
   geraldpeng6/wonton-plugin-grist@v0.1.0
   geraldpeng6/wonton-plugin-glance@v0.1.1
   geraldpeng6/wonton-plugin-ezbookkeeping@v0.1.0
