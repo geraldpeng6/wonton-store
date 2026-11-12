@@ -9,6 +9,7 @@ here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 core="${WONTON_CORE:-wonton-core}"
 plugins=(
   geraldpeng6/wonton-plugin-lidarr@v0.1.0
+  geraldpeng6/wonton-plugin-sonarr@v0.1.0
   geraldpeng6/wonton-plugin-n8n@v0.1.1
   geraldpeng6/wonton-plugin-sillytavern@v0.1.0
   geraldpeng6/wonton-plugin-node-red@v0.1.0
