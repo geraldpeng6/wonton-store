@@ -8,6 +8,7 @@ set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 core="${WONTON_CORE:-wonton-core}"
 plugins=(
+  geraldpeng6/wonton-plugin-autobangumi@v0.1.0
   geraldpeng6/wonton-plugin-vllm@v0.1.0
   geraldpeng6/wonton-plugin-radarr@v0.1.0
   wontonapp/wonton-plugin-minecraft@v0.1.0
@@ -65,7 +66,7 @@ plugins=(
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
   geraldpeng6/wonton-plugin-karakeep@v0.1.0
-  geraldpeng6/wonton-plugin-qbittorrent@v0.2.0
+  geraldpeng6/wonton-plugin-qbittorrent@v0.3.0
   geraldpeng6/wonton-plugin-librephotos@v0.1.1
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
