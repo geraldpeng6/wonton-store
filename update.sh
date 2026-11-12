@@ -38,8 +38,8 @@ plugins=(
   geraldpeng6/wonton-plugin-ollama@v0.1.1
   geraldpeng6/wonton-plugin-hermes@v0.7.2
   geraldpeng6/wonton-plugin-openclaw@v0.1.4
-  wontonapp/wonton-agents/agents/omp@omp/v0.1.4
-  wontonapp/wonton-agents/agents/codex@codex/v0.1.1
+  wontonapp/wonton-agents/agents/omp@omp/v0.1.5
+  wontonapp/wonton-agents/agents/codex@codex/v0.1.2
   wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.1
   wontonapp/wonton-agents/agents/dsh@dsh/v0.1.2
   geraldpeng6/wonton-plugin-proxy@v0.1.2
