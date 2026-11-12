@@ -1311,7 +1311,7 @@
   },
   "docs": {
     "source": "github:wontonapp/wonton-docs",
-    "commit": "c4e5118e99eb7eda1332a21f7ca448c5f05924e9",
+    "commit": "caf7aea8bf991d468ace459c66b42eac6c2ae86f",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
