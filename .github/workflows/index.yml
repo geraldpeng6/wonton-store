@@ -40,6 +40,15 @@ jobs:
           persist-credentials: false
       - name: 拉核心镜像
         run: docker pull --quiet "$WONTON_CORE_IMAGE"
+      # update.sh 用 docker compose config --no-interpolate 读 kind；runner 自带的 Compose 较旧，解析不了带 ${…:?…} 的短卷写法
+      # （报 too many colons）。改用核心镜像里那份（核心装插件用的就是它，静态链接）。
+      - name: 用核心镜像里的 Compose
+        run: |
+          id=$(docker create "$WONTON_CORE_IMAGE")
+          mkdir -p ~/.docker/cli-plugins
+          docker cp "$id:/usr/local/bin/docker-compose" ~/.docker/cli-plugins/docker-compose
+          docker rm "$id" >/dev/null
+          docker compose version
       - name: 重跑 update.sh
         run: |
           git show HEAD^1:update.sh > "$RUNNER_TEMP/base-update.sh"
@@ -67,6 +76,15 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: 拉核心镜像
         run: docker pull --quiet "$WONTON_CORE_IMAGE"
+      # update.sh 用 docker compose config --no-interpolate 读 kind；runner 自带的 Compose 较旧，解析不了带 ${…:?…} 的短卷写法
+      # （报 too many colons）。改用核心镜像里那份（核心装插件用的就是它，静态链接）。
+      - name: 用核心镜像里的 Compose
+        run: |
+          id=$(docker create "$WONTON_CORE_IMAGE")
+          mkdir -p ~/.docker/cli-plugins
+          docker cp "$id:/usr/local/bin/docker-compose" ~/.docker/cli-plugins/docker-compose
+          docker rm "$id" >/dev/null
+          docker compose version
       - name: 重跑 update.sh
         run: WONTON_CORE="$PWD/.github/scripts/wonton-core" ./update.sh
       - name: 有变化就提交
