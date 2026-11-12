@@ -1,0 +1,101 @@
+name: 索引
+
+# index.json 由 update.sh 整份重写。几个 PR 各自基于旧的 main 生成时，后合的会把先合的插件覆盖掉
+# （解决 update.sh 冲突时整行换掉别人的插件，index.json 跟着少一项），PR 本身看不出来。
+# - PR：在“PR 合进最新 main”的结果上重跑 update.sh，提交的 index.json 必须和它一致；列表里删了插件的要打
+#   remove-plugin 标签才放行。
+# - 合进 main 后：在 main 上再重跑一次，结果不同就自动提交，两个 PR 先后合并、各自都绿时也不会留下缺项。
+# 核心用 ghcr.io/wontonapp/wonton-core:main，和主仓库 CI 检查官方索引用的是同一份核心。
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+    paths: [update.sh, index.json, onboarding.json, registry-mirrors.json, .github/**]
+  push:
+    branches: [main]
+    paths: [update.sh, index.json, onboarding.json, registry-mirrors.json, .github/**]
+  workflow_dispatch:
+    inputs:
+      core-image:
+        description: 核心镜像（留空用 ghcr.io/wontonapp/wonton-core:main）
+        required: false
+        type: string
+        default: ''
+
+env:
+  WONTON_CORE_IMAGE: ${{ inputs.core-image || 'ghcr.io/wontonapp/wonton-core:main' }}
+
+jobs:
+  check:
+    name: 重新生成并对比
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      # pull_request 检出的是 PR 合进当前 main 的结果，HEAD^1 是当前 main。
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: 拉核心镜像
+        run: docker pull --quiet "$WONTON_CORE_IMAGE"
+      # update.sh 用 docker compose config --no-interpolate 读 kind；runner 自带的 Compose 较旧，解析不了带 ${…:?…} 的短卷写法
+      # （报 too many colons）。改用核心镜像里那份（核心装插件用的就是它，静态链接）。
+      - name: 用核心镜像里的 Compose
+        run: |
+          id=$(docker create "$WONTON_CORE_IMAGE")
+          mkdir -p ~/.docker/cli-plugins
+          docker cp "$id:/usr/local/bin/docker-compose" ~/.docker/cli-plugins/docker-compose
+          docker rm "$id" >/dev/null
+          docker compose version
+      - name: 重跑 update.sh
+        run: |
+          git show HEAD^1:update.sh > "$RUNNER_TEMP/base-update.sh"
+          cp index.json "$RUNNER_TEMP/committed-index.json"
+          WONTON_CORE="$PWD/.github/scripts/wonton-core" ./update.sh
+      - name: 对比
+        env:
+          ALLOW_REMOVAL: ${{ contains(github.event.pull_request.labels.*.name, 'remove-plugin') && '1' || '0' }}
+        run: |
+          python3 .github/scripts/compare-index.py "$RUNNER_TEMP/base-update.sh" update.sh \
+            "$RUNNER_TEMP/committed-index.json" index.json
+
+  regenerate:
+    name: 在 main 上重新生成
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    # 只有最新的 main 的结果有用；被取消的旧运行由新的那次补上。
+    concurrency:
+      group: index-regenerate
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: 拉核心镜像
+        run: docker pull --quiet "$WONTON_CORE_IMAGE"
+      # update.sh 用 docker compose config --no-interpolate 读 kind；runner 自带的 Compose 较旧，解析不了带 ${…:?…} 的短卷写法
+      # （报 too many colons）。改用核心镜像里那份（核心装插件用的就是它，静态链接）。
+      - name: 用核心镜像里的 Compose
+        run: |
+          id=$(docker create "$WONTON_CORE_IMAGE")
+          mkdir -p ~/.docker/cli-plugins
+          docker cp "$id:/usr/local/bin/docker-compose" ~/.docker/cli-plugins/docker-compose
+          docker rm "$id" >/dev/null
+          docker compose version
+      - name: 重跑 update.sh
+        run: WONTON_CORE="$PWD/.github/scripts/wonton-core" ./update.sh
+      - name: 有变化就提交
+        run: |
+          if git diff --quiet -- index.json; then
+            echo "index.json 已是最新"
+            exit 0
+          fi
+          git diff --stat -- index.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "chore(index): 在最新的 main 上重新生成 index.json" -- index.json
+          # GITHUB_TOKEN 推的提交不会再触发工作流，不会循环。main 又动了就推不上，让那次运行重新生成。
+          git push origin HEAD:main
