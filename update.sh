@@ -70,7 +70,7 @@ plugins=(
   geraldpeng6/wonton-plugin-drawio@v0.1.0
   geraldpeng6/wonton-plugin-kiwix@v0.1.0
   geraldpeng6/wonton-plugin-music-assistant@v0.1.0
-  geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.1
+  geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.2
   geraldpeng6/wonton-plugin-mosquitto@v0.1.0
   geraldpeng6/wonton-plugin-homebridge@v0.1.0
   geraldpeng6/wonton-plugin-grocy@v0.1.0
@@ -92,7 +92,7 @@ plugins=(
   geraldpeng6/wonton-plugin-spliit@v0.1.1
   geraldpeng6/wonton-plugin-wger@v0.1.0
   geraldpeng6/wonton-plugin-babybuddy@v0.1.0
-  geraldpeng6/wonton-plugin-traccar@v0.1.1
+  geraldpeng6/wonton-plugin-traccar@v0.1.2
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
