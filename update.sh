@@ -33,8 +33,8 @@ plugins=(
   geraldpeng6/wonton-plugin-hermes@v0.6.7
   geraldpeng6/wonton-plugin-openclaw@v0.1.4
   wontonapp/wonton-agents/agents/omp@omp/v0.1.4
-  geraldpeng6/wonton-plugin-codex@v0.1.5
-  geraldpeng6/wonton-plugin-claude-code@v0.1.3
+  wontonapp/wonton-agents/agents/codex@codex/v0.1.1
+  wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.1
   geraldpeng6/wonton-plugin-dsh@v0.1.2
   geraldpeng6/wonton-plugin-proxy@v0.1.2
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
@@ -107,13 +107,17 @@ for plugin in "${plugins[@]}"; do
   name="${rest%%/*}"
   repo="$owner/$name"
   subdir="${rest#*/}"
-  if test "$subdir" = "$rest"; then
-    dir="$work/$repo"
-  else
-    dir="$work/$repo/$subdir"
+  # 同一仓库可以有多行（monorepo 里几家各钉各的 tag），克隆目录按「仓库@tag」分开，同一组合只克隆一次。
+  src="$work/src/${repo//\//_}_${tag//\//_}"
+  if test ! -d "$src/.git"; then
+    git clone -q -c advice.detachedHead=false --depth 1 --branch "$tag" "https://github.com/$repo.git" "$src"
   fi
-  git clone -q -c advice.detachedHead=false --depth 1 --branch "$tag" "https://github.com/$repo.git" "$work/$repo"
-  commit="$(git -C "$work/$repo" rev-parse HEAD)"
+  commit="$(git -C "$src" rev-parse HEAD)"
+  if test "$subdir" = "$rest"; then
+    dir="$src"
+  else
+    dir="$src/$subdir"
+  fi
   "$core" plugin check "$dir" --official >/dev/null
   "$core" plugin index-entry "$dir" "github:$path" "$commit" --index "$work/index"
   # 核心 CLI 不输出 kind；由 Compose 解析扩展字段，不展开变量或补齐宿主路径。
