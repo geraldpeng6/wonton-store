@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# 用核心镜像里的 wonton-core 代替本机命令，给 update.sh 的 WONTON_CORE 用。
+# 镜像是 Debian 构建的，二进制直接拷到 runner 上可能缺新版 glibc，所以在容器里跑；
+# update.sh 传的都是仓库目录下的绝对路径，按原路径挂进去。
+set -euo pipefail
+root="$(git -C "$(dirname "${BASH_SOURCE[0]}")" rev-parse --show-toplevel)"
+exec docker run --rm --pull=never --user "$(id -u):$(id -g)" -e HOME=/tmp \
+  -v "$root:$root" -w "$PWD" "${WONTON_CORE_IMAGE:?}" "$@"
