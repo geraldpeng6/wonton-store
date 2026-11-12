@@ -102,6 +102,7 @@ plugins=(
   geraldpeng6/wonton-plugin-traccar@v0.1.2
   geraldpeng6/wonton-plugin-scanservjs@v0.1.0
   geraldpeng6/wonton-plugin-rsshub@v0.1.0
+  geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.1
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
