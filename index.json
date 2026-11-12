@@ -1348,11 +1348,11 @@
   },
   "docs": {
     "source": "github:wontonapp/wonton-docs",
-    "commit": "8952d547e31f5320e93650c5e4bb60d1f236859b",
+    "commit": "412eb30fc00e5207bee59f6f8a02d7776155cbf1",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
-      "user/en/confirmations.md": "f7f4a4979b500780025394b4b075fee12939afd3409f302fe7624ae3887ab88d",
+      "user/en/confirmations.md": "b8d6556c05bf7319587c1d83f6aa5a409dc77f09563ab04dc709bff694844b41",
       "user/en/connection.md": "1518c74320dda17a083cdd40b72c2a7f59f02c431217b8cc7258ab7796524faf",
       "user/en/devices.md": "fbbc123d4fb39569600bbc540439009081955530f4cb1b85f664ddee65d5f446",
       "user/en/models.md": "d32b43cd796546253f5f361d5e32dbc42267d8952d012ece8453cfcc78b6a877",
@@ -1360,7 +1360,7 @@
       "user/en/tabs.md": "73967e40ecc1d3f0e0d56f4ee6841208453dd2f5cf5038383cd00740317a685c",
       "user/en/upgrade.md": "2a981d2a0e28ac800ce4844b9081e36eb56d393f7cb64c155f97bfc09ff72fa1",
       "user/zh/backup.md": "7006af19d43f187e9bae683d3d48e73d6d87fa9d7e064e10501fa9c023b7778b",
-      "user/zh/confirmations.md": "ff26bf5c622749f6c1cb37364e4fd8396aa722c04ab2525ab637b6518db7205e",
+      "user/zh/confirmations.md": "a4d5bfc645f58dd159938b7aedd475f2b694c0c1cea4eadfd7f9aaddd780b9f2",
       "user/zh/connection.md": "097e6aa87105705e5c7d46caab9bd153e0fc7ded7f8914baba66ed163d5bdd12",
       "user/zh/devices.md": "b78ee16f0bc035cbe4bfc248e9cc75181e8ab27bd32120546b74401354311cd4",
       "user/zh/models.md": "882f2305aede0d1420f4e1c58f09681ce57adb312c7df768241c2a2b9f473359",
