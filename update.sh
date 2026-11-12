@@ -31,7 +31,7 @@ plugins=(
   geraldpeng6/wonton-plugin-ollama@v0.1.1
   geraldpeng6/wonton-plugin-hermes@v0.6.5
   geraldpeng6/wonton-plugin-openclaw@v0.1.4
-  geraldpeng6/wonton-plugin-omp@v0.1.4
+  wontonapp/wonton-agents/agents/omp@omp/v0.1.4
   geraldpeng6/wonton-plugin-codex@v0.1.5
   geraldpeng6/wonton-plugin-claude-code@v0.1.3
   geraldpeng6/wonton-plugin-dsh@v0.1.2
