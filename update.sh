@@ -37,8 +37,8 @@ plugins=(
   geraldpeng6/wonton-plugin-open-webui@v0.2.1
   geraldpeng6/wonton-plugin-vane@v0.2.0
   geraldpeng6/wonton-plugin-ollama@v0.1.1
-  wontonapp/wonton-plugin-hermes@v0.7.3
-  wontonapp/wonton-plugin-openclaw@v0.1.4
+  wontonapp/wonton-plugin-hermes@v0.7.4
+  wontonapp/wonton-plugin-openclaw@v0.2.1
   wontonapp/wonton-agents/agents/omp@omp/v0.1.5
   wontonapp/wonton-agents/agents/codex@codex/v0.1.2
   wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.2
@@ -105,7 +105,7 @@ plugins=(
   geraldpeng6/wonton-plugin-traccar@v0.1.2
   geraldpeng6/wonton-plugin-scanservjs@v0.1.0
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
-  geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.1
+  geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.2
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
