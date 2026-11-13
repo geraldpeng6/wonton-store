@@ -32,7 +32,7 @@ plugins=(
   geraldpeng6/wonton-plugin-memos@v0.1.4
   geraldpeng6/wonton-plugin-miniflux@v0.1.2
   geraldpeng6/wonton-plugin-filebrowser@v0.1.3
-  geraldpeng6/wonton-plugin-actual@v0.1.2
+  geraldpeng6/wonton-plugin-actual@v0.1.4
   geraldpeng6/wonton-plugin-uptime-kuma@v0.2.0
   geraldpeng6/wonton-plugin-open-webui@v0.2.1
   geraldpeng6/wonton-plugin-vane@v0.2.0
