@@ -13,7 +13,7 @@ plugins=(
   wontonapp/wonton-plugins/radarr@radarr/v0.1.1
   wontonapp/wonton-plugin-minecraft@v0.1.0
   geraldpeng6/wonton-plugin-bazarr@v0.1.0
-  geraldpeng6/wonton-plugin-lidarr@v0.1.0
+  wontonapp/wonton-plugins/lidarr@lidarr/v0.1.1
   geraldpeng6/wonton-plugin-sonarr@v0.1.0
   geraldpeng6/wonton-plugin-n8n@v0.1.1
   geraldpeng6/wonton-plugin-sillytavern@v0.1.0
@@ -54,7 +54,7 @@ plugins=(
   geraldpeng6/wonton-plugin-changedetection@v0.1.0
   wontonapp/wonton-plugins/bookstack@bookstack/v0.1.1
   geraldpeng6/wonton-plugin-cloudreve@v0.1.0
-  geraldpeng6/wonton-plugin-kavita@v0.1.0
+  wontonapp/wonton-plugins/kavita@kavita/v0.1.1
   geraldpeng6/wonton-plugin-koel@v0.1.0
   geraldpeng6/wonton-plugin-sftpgo@v0.1.0
   geraldpeng6/wonton-plugin-trilium@v0.1.0
@@ -68,9 +68,9 @@ plugins=(
   geraldpeng6/wonton-plugin-openlist@v0.1.0
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
-  geraldpeng6/wonton-plugin-karakeep@v0.1.0
+  wontonapp/wonton-plugins/karakeep@karakeep/v0.1.1
   wontonapp/wonton-plugins/qbittorrent@qbittorrent/v0.3.1
-  geraldpeng6/wonton-plugin-librephotos@v0.1.1
+  wontonapp/wonton-plugins/librephotos@librephotos/v0.1.2
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
   geraldpeng6/wonton-plugin-seerr@v0.1.0
@@ -79,9 +79,9 @@ plugins=(
   wontonapp/wonton-plugins/radicale@radicale/v0.1.1
   geraldpeng6/wonton-plugin-drawio@v0.1.0
   geraldpeng6/wonton-plugin-kiwix@v0.1.1
-  geraldpeng6/wonton-plugin-music-assistant@v0.1.0
+  wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.1
   geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.2
-  geraldpeng6/wonton-plugin-mosquitto@v0.1.0
+  wontonapp/wonton-plugins/mosquitto@mosquitto/v0.1.1
   geraldpeng6/wonton-plugin-homebridge@v0.1.0
   wontonapp/wonton-plugins/grocy@grocy/v0.1.1
   geraldpeng6/wonton-plugin-donetick@v0.1.0
@@ -89,7 +89,7 @@ plugins=(
   wontonapp/wonton-plugins/wallos@wallos/v0.1.1
   geraldpeng6/wonton-plugin-gramps-web@v0.1.0
   wontonapp/wonton-plugins/reactive-resume@reactive-resume/v0.1.2
-  geraldpeng6/wonton-plugin-luanti@v0.1.0
+  wontonapp/wonton-plugins/luanti@luanti/v0.1.1
   geraldpeng6/wonton-plugin-halo@v0.1.0
   geraldpeng6/wonton-plugin-esphome@v0.1.0
   geraldpeng6/wonton-plugin-dawarich@v0.1.0
