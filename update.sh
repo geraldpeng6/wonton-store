@@ -105,6 +105,7 @@ plugins=(
   geraldpeng6/wonton-plugin-traccar@v0.1.2
   geraldpeng6/wonton-plugin-scanservjs@v0.1.0
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
+  wontonapp/wonton-plugins/neko@neko/v0.1.0
   geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.2
 )
 
