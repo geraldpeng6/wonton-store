@@ -29,11 +29,11 @@ plugins=(
   geraldpeng6/wonton-plugin-samba@v0.1.2
   geraldpeng6/wonton-plugin-files@v0.2.3
   geraldpeng6/wonton-plugin-browser@v0.1.1
-  geraldpeng6/wonton-plugin-memos@v0.1.4
-  geraldpeng6/wonton-plugin-miniflux@v0.1.2
+  wontonapp/wonton-plugins/memos@memos/v0.1.5
+  wontonapp/wonton-plugins/miniflux@miniflux/v0.1.3
   geraldpeng6/wonton-plugin-filebrowser@v0.1.3
   geraldpeng6/wonton-plugin-actual@v0.1.4
-  geraldpeng6/wonton-plugin-uptime-kuma@v0.2.0
+  wontonapp/wonton-plugins/uptime-kuma@uptime-kuma/v0.2.1
   geraldpeng6/wonton-plugin-open-webui@v0.2.1
   geraldpeng6/wonton-plugin-vane@v0.2.0
   geraldpeng6/wonton-plugin-ollama@v0.1.1
@@ -51,7 +51,7 @@ plugins=(
   geraldpeng6/wonton-plugin-gitea@v0.1.0
   geraldpeng6/wonton-plugin-copyparty@v0.1.0
   geraldpeng6/wonton-plugin-changedetection@v0.1.0
-  geraldpeng6/wonton-plugin-bookstack@v0.1.0
+  wontonapp/wonton-plugins/bookstack@bookstack/v0.1.1
   geraldpeng6/wonton-plugin-cloudreve@v0.1.0
   geraldpeng6/wonton-plugin-kavita@v0.1.0
   geraldpeng6/wonton-plugin-koel@v0.1.0
@@ -63,7 +63,7 @@ plugins=(
   geraldpeng6/wonton-plugin-prowlarr@v0.1.0
   geraldpeng6/wonton-plugin-tubearchivist@v0.1.0
   geraldpeng6/wonton-plugin-flood@v0.1.0
-  geraldpeng6/wonton-plugin-komga@v0.1.0
+  wontonapp/wonton-plugins/komga@komga/v0.1.1
   geraldpeng6/wonton-plugin-openlist@v0.1.0
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
@@ -82,10 +82,10 @@ plugins=(
   geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.2
   geraldpeng6/wonton-plugin-mosquitto@v0.1.0
   geraldpeng6/wonton-plugin-homebridge@v0.1.0
-  geraldpeng6/wonton-plugin-grocy@v0.1.0
+  wontonapp/wonton-plugins/grocy@grocy/v0.1.1
   geraldpeng6/wonton-plugin-donetick@v0.1.0
   geraldpeng6/wonton-plugin-ghostfolio@v0.1.0
-  geraldpeng6/wonton-plugin-wallos@v0.1.0
+  wontonapp/wonton-plugins/wallos@wallos/v0.1.1
   geraldpeng6/wonton-plugin-gramps-web@v0.1.0
   geraldpeng6/wonton-plugin-reactive-resume@v0.1.1
   geraldpeng6/wonton-plugin-luanti@v0.1.0
@@ -95,12 +95,12 @@ plugins=(
   geraldpeng6/wonton-plugin-mtranserver@v0.1.1
   geraldpeng6/wonton-plugin-grist@v0.1.0
   geraldpeng6/wonton-plugin-glance@v0.1.1
-  geraldpeng6/wonton-plugin-ezbookkeeping@v0.1.0
+  wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.1
   geraldpeng6/wonton-plugin-convertx@v0.1.0
-  geraldpeng6/wonton-plugin-razzia@v0.1.0
+  wontonapp/wonton-plugins/razzia@razzia/v0.1.1
   geraldpeng6/wonton-plugin-spliit@v0.1.1
   geraldpeng6/wonton-plugin-wger@v0.1.0
-  geraldpeng6/wonton-plugin-babybuddy@v0.1.0
+  wontonapp/wonton-plugins/babybuddy@babybuddy/v0.1.1
   geraldpeng6/wonton-plugin-traccar@v0.1.2
   geraldpeng6/wonton-plugin-scanservjs@v0.1.0
   geraldpeng6/wonton-plugin-rsshub@v0.1.0
