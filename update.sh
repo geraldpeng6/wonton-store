@@ -29,7 +29,7 @@ plugins=(
   geraldpeng6/wonton-plugin-samba@v0.1.2
   geraldpeng6/wonton-plugin-files@v0.2.3
   geraldpeng6/wonton-plugin-browser@v0.1.1
-  geraldpeng6/wonton-plugin-memos@v0.1.2
+  geraldpeng6/wonton-plugin-memos@v0.1.4
   geraldpeng6/wonton-plugin-miniflux@v0.1.2
   geraldpeng6/wonton-plugin-filebrowser@v0.1.3
   geraldpeng6/wonton-plugin-actual@v0.1.2
