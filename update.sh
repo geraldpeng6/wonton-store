@@ -15,15 +15,15 @@ plugins=(
   geraldpeng6/wonton-plugin-bazarr@v0.1.0
   wontonapp/wonton-plugins/lidarr@lidarr/v0.1.1
   geraldpeng6/wonton-plugin-sonarr@v0.1.0
-  geraldpeng6/wonton-plugin-n8n@v0.1.1
+  wontonapp/wonton-plugins/n8n@n8n/v0.1.2
   geraldpeng6/wonton-plugin-sillytavern@v0.1.0
-  geraldpeng6/wonton-plugin-node-red@v0.1.0
+  wontonapp/wonton-plugins/node-red@node-red/v0.1.1
   wontonapp/wonton-plugins/qinglong@qinglong/v0.1.1
-  geraldpeng6/wonton-plugin-open-notebook@v0.1.0
+  wontonapp/wonton-plugins/open-notebook@open-notebook/v0.1.1
   geraldpeng6/wonton-plugin-astrbot@v0.1.0
   geraldpeng6/wonton-plugin-searxng@v0.1.0
-  geraldpeng6/wonton-plugin-navidrome@v0.1.1
-  geraldpeng6/wonton-plugin-paperless-ngx@v0.1.2
+  wontonapp/wonton-plugins/navidrome@navidrome/v0.1.2
+  wontonapp/wonton-plugins/paperless-ngx@paperless-ngx/v0.1.3
   geraldpeng6/wonton-plugin-immich@v0.3.6
   geraldpeng6/wonton-plugin-syncthing@v0.1.1
   wontonapp/wonton-plugins/samba@samba/v0.1.3
@@ -34,9 +34,9 @@ plugins=(
   geraldpeng6/wonton-plugin-filebrowser@v0.1.3
   geraldpeng6/wonton-plugin-actual@v0.1.4
   wontonapp/wonton-plugins/uptime-kuma@uptime-kuma/v0.2.1
-  geraldpeng6/wonton-plugin-open-webui@v0.2.1
+  wontonapp/wonton-plugins/open-webui@open-webui/v0.2.2
   geraldpeng6/wonton-plugin-vane@v0.2.0
-  geraldpeng6/wonton-plugin-ollama@v0.1.1
+  wontonapp/wonton-plugins/ollama@ollama/v0.1.2
   wontonapp/wonton-plugin-hermes@v0.7.4
   wontonapp/wonton-plugin-openclaw@v0.2.1
   geraldpeng6/wonton-plugin-zcode@v0.1.3
@@ -48,7 +48,7 @@ plugins=(
   wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.2
   wontonapp/wonton-plugins/proxy@proxy/v0.1.3
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
-  geraldpeng6/wonton-plugin-penpot@v0.1.0
+  wontonapp/wonton-plugins/penpot@penpot/v0.1.1
   geraldpeng6/wonton-plugin-homebox@v0.1.1
   geraldpeng6/wonton-plugin-gitea@v0.1.0
   geraldpeng6/wonton-plugin-copyparty@v0.1.0
@@ -66,7 +66,7 @@ plugins=(
   geraldpeng6/wonton-plugin-tubearchivist@v0.1.0
   geraldpeng6/wonton-plugin-flood@v0.1.0
   wontonapp/wonton-plugins/komga@komga/v0.1.1
-  geraldpeng6/wonton-plugin-openlist@v0.1.0
+  wontonapp/wonton-plugins/openlist@openlist/v0.1.1
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
   wontonapp/wonton-plugins/karakeep@karakeep/v0.1.1
@@ -75,7 +75,7 @@ plugins=(
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
   geraldpeng6/wonton-plugin-seerr@v0.1.0
-  geraldpeng6/wonton-plugin-nextcloud@v0.2.0
+  wontonapp/wonton-plugins/nextcloud@nextcloud/v0.2.1
   geraldpeng6/wonton-plugin-ente@v0.1.0
   wontonapp/wonton-plugins/radicale@radicale/v0.1.1
   geraldpeng6/wonton-plugin-drawio@v0.1.0
