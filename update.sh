@@ -47,6 +47,7 @@ plugins=(
   wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.2
   geraldpeng6/wonton-plugin-proxy@v0.1.2
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
+  geraldpeng6/wonton-plugin-penpot@v0.1.0
   geraldpeng6/wonton-plugin-homebox@v0.1.1
   geraldpeng6/wonton-plugin-gitea@v0.1.0
   geraldpeng6/wonton-plugin-copyparty@v0.1.0
