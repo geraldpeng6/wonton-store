@@ -10,7 +10,7 @@ core="${WONTON_CORE:-wonton-core}"
 plugins=(
   geraldpeng6/wonton-plugin-autobangumi@v0.1.0
   geraldpeng6/wonton-plugin-vllm@v0.1.0
-  geraldpeng6/wonton-plugin-radarr@v0.1.0
+  wontonapp/wonton-plugins/radarr@radarr/v0.1.1
   wontonapp/wonton-plugin-minecraft@v0.1.0
   geraldpeng6/wonton-plugin-bazarr@v0.1.0
   geraldpeng6/wonton-plugin-lidarr@v0.1.0
@@ -18,7 +18,7 @@ plugins=(
   geraldpeng6/wonton-plugin-n8n@v0.1.1
   geraldpeng6/wonton-plugin-sillytavern@v0.1.0
   geraldpeng6/wonton-plugin-node-red@v0.1.0
-  geraldpeng6/wonton-plugin-qinglong@v0.1.0
+  wontonapp/wonton-plugins/qinglong@qinglong/v0.1.1
   geraldpeng6/wonton-plugin-open-notebook@v0.1.0
   geraldpeng6/wonton-plugin-astrbot@v0.1.0
   geraldpeng6/wonton-plugin-searxng@v0.1.0
@@ -26,7 +26,7 @@ plugins=(
   geraldpeng6/wonton-plugin-paperless-ngx@v0.1.2
   geraldpeng6/wonton-plugin-immich@v0.3.6
   geraldpeng6/wonton-plugin-syncthing@v0.1.1
-  geraldpeng6/wonton-plugin-samba@v0.1.2
+  wontonapp/wonton-plugins/samba@samba/v0.1.3
   geraldpeng6/wonton-plugin-files@v0.2.3
   geraldpeng6/wonton-plugin-browser@v0.1.1
   wontonapp/wonton-plugins/memos@memos/v0.1.5
@@ -45,7 +45,7 @@ plugins=(
   wontonapp/wonton-agents/agents/dsh@dsh/v0.1.3
   wontonapp/wonton-agents/agents/opencode@opencode/v0.1.2
   wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.2
-  geraldpeng6/wonton-plugin-proxy@v0.1.2
+  wontonapp/wonton-plugins/proxy@proxy/v0.1.3
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
   geraldpeng6/wonton-plugin-penpot@v0.1.0
   geraldpeng6/wonton-plugin-homebox@v0.1.1
@@ -60,8 +60,8 @@ plugins=(
   geraldpeng6/wonton-plugin-trilium@v0.1.0
   geraldpeng6/wonton-plugin-home-assistant@v0.2.0
   geraldpeng6/wonton-plugin-audiobookshelf@v0.1.0
-  geraldpeng6/wonton-plugin-romm@v0.1.0
-  geraldpeng6/wonton-plugin-prowlarr@v0.1.0
+  wontonapp/wonton-plugins/romm@romm/v0.2.0
+  wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.0
   geraldpeng6/wonton-plugin-tubearchivist@v0.1.0
   geraldpeng6/wonton-plugin-flood@v0.1.0
   wontonapp/wonton-plugins/komga@komga/v0.1.1
@@ -69,14 +69,14 @@ plugins=(
   geraldpeng6/wonton-plugin-frigate@v0.1.0
   geraldpeng6/wonton-plugin-siyuan@v0.1.0
   geraldpeng6/wonton-plugin-karakeep@v0.1.0
-  geraldpeng6/wonton-plugin-qbittorrent@v0.3.0
+  wontonapp/wonton-plugins/qbittorrent@qbittorrent/v0.3.1
   geraldpeng6/wonton-plugin-librephotos@v0.1.1
   geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
   geraldpeng6/wonton-plugin-seerr@v0.1.0
   geraldpeng6/wonton-plugin-nextcloud@v0.2.0
   geraldpeng6/wonton-plugin-ente@v0.1.0
-  geraldpeng6/wonton-plugin-radicale@v0.1.0
+  wontonapp/wonton-plugins/radicale@radicale/v0.1.1
   geraldpeng6/wonton-plugin-drawio@v0.1.0
   geraldpeng6/wonton-plugin-kiwix@v0.1.1
   geraldpeng6/wonton-plugin-music-assistant@v0.1.0
@@ -88,7 +88,7 @@ plugins=(
   geraldpeng6/wonton-plugin-ghostfolio@v0.1.0
   wontonapp/wonton-plugins/wallos@wallos/v0.1.1
   geraldpeng6/wonton-plugin-gramps-web@v0.1.0
-  geraldpeng6/wonton-plugin-reactive-resume@v0.1.1
+  wontonapp/wonton-plugins/reactive-resume@reactive-resume/v0.1.2
   geraldpeng6/wonton-plugin-luanti@v0.1.0
   geraldpeng6/wonton-plugin-halo@v0.1.0
   geraldpeng6/wonton-plugin-esphome@v0.1.0
@@ -104,7 +104,7 @@ plugins=(
   wontonapp/wonton-plugins/babybuddy@babybuddy/v0.1.1
   geraldpeng6/wonton-plugin-traccar@v0.1.2
   geraldpeng6/wonton-plugin-scanservjs@v0.1.0
-  geraldpeng6/wonton-plugin-rsshub@v0.1.0
+  wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
   geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.1
 )
 
