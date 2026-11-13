@@ -11,6 +11,7 @@
         "docker-compose.yml": "decebfd6710b436f3d7815176fe38acf30c20d9c18c9aba37b4f334a06d4f00d",
         "icon.svg": "75f873ed69afd656c99adfae9037adffdc1dbacb8214c6ef7db5e0683b8e8994"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-autobangumi",
       "version": "0.1.0"
     },
@@ -24,6 +25,7 @@
         "web/default.conf": "cb84a56753571be22fdbfa399169a93897b26296559bed8083eafffb5fb42aee",
         "web/entrypoint.sh": "ab0f14736598aa0931feae63b1ee1592354872a0c66090c106c6765101a47c72"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-vllm",
       "version": "0.1.0"
     },
@@ -38,6 +40,7 @@
         "scripts/rootfolder.sh": "ed661f5d31ca5847737e20d9c1b330d34c4a8f29934ff417fa6017f197b81f84",
         "scripts/torrentclient.sh": "5d321f41edbd54d8b533f6cadc05030225232b7847e5eae6a0d6565481a549c8"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-radarr",
       "version": "0.1.0"
     },
@@ -50,6 +53,7 @@
         "icon.svg": "6765fa19ba312624c309484871acf6051f5efd6c524c34a246a033e3b33c95e5",
         "settings.schema.json": "edd89b80469de25ddafe0494afd5b75cb419f99db251a7221a77c3a9594cd65d"
       },
+      "license": "Apache-2.0",
       "source": "github:wontonapp/wonton-plugin-minecraft",
       "version": "0.1.0"
     },
@@ -62,6 +66,7 @@
         "docker-compose.yml": "bc56a63de473281538d8af4816b2eba74ae08105e0b1e3e71a203100e1c7cc36",
         "icon.png": "59f8191f4f63f05040e58c4acbec422b414e34a257ffc56ae0acbb8ab21aa8f6"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-bazarr",
       "version": "0.1.0"
     },
@@ -75,6 +80,7 @@
         "mail.sh": "18592a8d0a3ce90241fe68ca0ab4aa8feea3970e1d9dd17db46f1513a63c2e41",
         "provision.sh": "d2df534773b716bff6de8d3a89f48703928fda0a56d79248b2f0668973fa3d6b"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-lidarr",
       "version": "0.1.0"
     },
@@ -88,6 +94,7 @@
         "mail.sh": "4207267b1922a40f7454b09de2ce05b53b20e1e322fffa78cdd1bca7451e2923",
         "register-download-client.sh": "8289a996beba5b159a37a9d4f87be9fa320092dfe9871858b99230f26500863b"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-sonarr",
       "version": "0.1.0"
     },
@@ -100,6 +107,7 @@
         "docker-compose.yml": "4a3330cdffcd479acb27a81ef2062b439db1d625af5465e9d9581dd7f2fffab4",
         "icon.svg": "f7ea9df33690aa9dc6a44f4221e15aa1b14445ebff187290b815f7840e5f456c"
       },
+      "license": "SUL-1.0",
       "source": "github:geraldpeng6/wonton-plugin-n8n",
       "version": "0.1.1"
     },
@@ -112,6 +120,7 @@
         "icon.png": "d0c1dbe0925f5197e33dc84019ec327fc5af3d4d1fbe9a1f73633993c91c1e45",
         "seed-model.js": "46533950756c93012d5ce5a920c77eded0051e7aa50425bffe16c3aba859ac91"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-sillytavern",
       "version": "0.1.0"
     },
@@ -125,6 +134,7 @@
         "docker-compose.yml": "a0b3fc141ec593abdcabe3eab297e14c2b8115e3b84d72be19afb5157e3ae682",
         "icon.svg": "eb69be616330c577bc0ea697b50dd28c69a07bc7d8bb4b89ae6fe6e7fa67bdc9"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-node-red",
       "version": "0.1.0"
     },
@@ -136,6 +146,7 @@
         "docker-compose.yml": "060f50343d68775eb8b671d34b1afce7c3b7b5a1d163b130338dc963f13fa803",
         "icon.svg": "2b887724d5a28d458123ddb31f69f09072e68e3d45e979ce3a86a2bdca8074ab"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-qinglong",
       "version": "0.1.0"
     },
@@ -147,6 +158,7 @@
         "docker-compose.yml": "1e6e079318340a4202b13ee7bb8d76147791467926e4d9c4163511c401442544",
         "icon.png": "9afb444b42d0e1ed62012f9290beb6702843062252d1c10dcadecf66125f0dd7"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-open-notebook",
       "version": "0.1.0"
     },
@@ -159,6 +171,7 @@
         "icon.svg": "9b51c043f0229413be88c35a3471db7fabb40868bae355d2bd5484ec1652777a",
         "web/init.py": "1c384356ca11456f50a9efc6729ae814a94e4b7ba463b1982b3019872665a5b9"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-astrbot",
       "version": "0.1.0"
     },
@@ -170,6 +183,7 @@
         "docker-compose.yml": "436d8882a6e09992483b248587afe8b6c70219716dfc2930d23b0e3824fcaa79",
         "icon.svg": "2c392fcb9e56c77161bcf3ebb39783bfe0066c8f3b34b2334b36d1d9de69f7d4"
       },
+      "license": "AGPL-3.0-or-later",
       "source": "github:geraldpeng6/wonton-plugin-searxng",
       "version": "0.1.0"
     },
@@ -182,6 +196,7 @@
         "icon.png": "62c9df8a26c4db4ae6861eeae964e744da5300a098879f411a4cc143223f716f",
         "provision.sh": "3fc5d848fb5d1d043994444635f200c8c4949198955ad9e1c1b94b1061d7fe64"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-navidrome",
       "version": "0.1.1"
     },
@@ -193,6 +208,7 @@
         "docker-compose.yml": "6bbc8223fbd13d27a7782528e2af543925e68e5ac4f62ec43f55c6df227f1d81",
         "icon.png": "115fbdefcfc8c31032a01f5a689edd252672d5519cc8754e803c4eac9daae409"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-paperless-ngx",
       "version": "0.1.2"
     },
@@ -205,6 +221,7 @@
         "docker-compose.yml": "f177c2e8c1626594a9313cb2edc2abb406aaa4e1cbe86ca386bd8610d9f5d0ad",
         "icon.png": "f20dcb4e1e803edf9531b7c9a6ef103d7461cf54fa7fefe7d9accc455179125b"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-immich",
       "version": "0.3.6"
     },
@@ -218,6 +235,7 @@
         "gui/valid-langs.js": "c05fd86f8b9c20d537f3013dad0dc39d2100048cd2070d18f82de3be40b8628e",
         "icon.png": "601594eb27125eb8f93c93242772e2027ef9c8b66ca2100f509b39c8b4bc5271"
       },
+      "license": "MPL-2.0",
       "source": "github:geraldpeng6/wonton-plugin-syncthing",
       "version": "0.1.1"
     },
@@ -230,6 +248,7 @@
         "icon.png": "502dec311f5fb89488f950971760f59ea6c4e92415e1bc529cda64e4d5f401f3",
         "web/serve.py": "d838ea7de0bc96aac659f56c2420255993ee75c75106e9241b243dcfd14438f4"
       },
+      "license": "GPL-3.0-or-later",
       "source": "github:geraldpeng6/wonton-plugin-samba",
       "version": "0.1.2"
     },
@@ -241,6 +260,7 @@
         "docker-compose.yml": "730184c25e463104e7aef91fe842245123c53c7cb0cf9b314280679f987ca4ac",
         "icon.svg": "fbcf93c10cf2e554fc487e51ee1cd0293372f0706030bd354f33e7be11de1702"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-files",
       "version": "0.2.3"
     },
@@ -252,6 +272,7 @@
         "docker-compose.yml": "0f9948cbfbb61de9e6beecbf83a162b10a10378785b4b42d6a9abff6be1a3dc3",
         "icon.png": "a1d3a3c519516f703c030ec32ed4ba2aa6bc66c5cb89a39d466ea24df394a13f"
       },
+      "license": "BSD-3-Clause AND Apache-2.0 AND MPL-2.0 AND GPL-2.0-or-later AND LGPL-3.0-only AND BSD-2-Clause AND MIT AND BSD-3-Clause-Modification AND OFL-1.1 AND CC-BY-SA-3.0 AND Zlib",
       "source": "github:geraldpeng6/wonton-plugin-browser",
       "version": "0.1.1"
     },
@@ -265,6 +286,7 @@
         "docker-compose.yml": "e3acbfbdd602a33fb158f8d7078f7ab0bf0bbacbc5b881b87448332ed0b5898d",
         "icon.png": "959dfb06116de1408c11c3037d4ae794350f615df4d75bc873edb2b10ca75626"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-memos",
       "version": "0.1.2"
     },
@@ -276,6 +298,7 @@
         "docker-compose.yml": "e6d283c7aeae51cc1bf2714a01bf67d023d16b91976ecf46936f19892ef64f48",
         "icon.png": "f290fa31ad1e7c4a78e864a7fbe45a2167dce768705e5804381a56d1605a7d2d"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-miniflux",
       "version": "0.1.2"
     },
@@ -288,6 +311,7 @@
         "healthcheck.sh": "c4be0b897e10778274c25381ffeef2553545f2dc8c81d4fb45650536575ae871",
         "icon.png": "1401355af5e01abe43682828a65e66a51ff07a903343d588266b862a79e909e0"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-filebrowser",
       "version": "0.1.3"
     },
@@ -303,6 +327,7 @@
         "mcp/register.mjs": "c83073dac92d8bbfdc9127731c7879f5d0eac258d7cf73d464480865cdb8cf8d",
         "mcp/remote-budget.mjs": "e53d401c369c37e7a4967b5d8ba960e8287bc73248da18076dbf3235a3d934b1"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-actual",
       "version": "0.1.2"
     },
@@ -315,6 +340,7 @@
         "icon.png": "f48978c97f58d90163d2266ad1bde0f01f1acdba296a8252acf5eb72e1a6d06e",
         "setup-admin.mjs": "48faaaa10d2ac5308980cd27d66114c482d39ec401bd44936160cd6239b942eb"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-uptime-kuma",
       "version": "0.2.0"
     },
@@ -327,6 +353,7 @@
         "icon.png": "fffe5d4810bdd95cbcc1c730c14b3be0210f13d627be8fea1cfb2a8b9cf4397c",
         "init/owner.py": "8aecaef8287bb560ce94fd1a0fc3959938a56e5c38ecde18817f91a4e14dd5ce"
       },
+      "license": "LicenseRef-Open-WebUI",
       "source": "github:geraldpeng6/wonton-plugin-open-webui",
       "version": "0.2.1"
     },
@@ -341,6 +368,7 @@
         "web/patch-search.cjs": "2ac2908c44b4662344ec45b441a7e4f83026fb798c8634e32c18452ae1b90edb",
         "web/seed-config.js": "ec26948c775b39e2fbcdccd49b0a8b04cbec8398de26a8f7880884854aaad1b2"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-vane",
       "version": "0.2.0"
     },
@@ -352,6 +380,7 @@
         "docker-compose.yml": "6a0bafae5b84392e453493dc8c1d76a1bca881f32ffa95b57c8b0cfd11b4190d",
         "icon.svg": "ea0c9691256e8deb64caec7bfdf443d7561bcf319196b879def056ed199ff9fb"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-ollama",
       "version": "0.1.1"
     },
@@ -374,6 +403,7 @@
         "wonton/side_chat.py": "c3de42d3036beb1fddbee8bca6dded61f14748fd0fe93037678ba7b8b2c9fd72",
         "wonton/texts.py": "f4a4a724f525dc4656056daf30c6e3cf375b854df0337693f992f387fb5eb4bb"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-hermes",
       "version": "0.7.2"
     },
@@ -386,6 +416,7 @@
         "icon.svg": "56c63d7aee25e45e9c430463c21d8aae150bd7301227b6bda2893358b2f0fd72",
         "wonton-help/SKILL.md": "7565df7913b566c33a687406d80ec8534a0ba286829e1a7f6ae6db52167c0f99"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-openclaw",
       "version": "0.1.4"
     },
@@ -398,6 +429,7 @@
         "icon.svg": "de40f360ab5fcfaf2b68bd2306e440c834dd15d788c076f3aac7ad3fac497743",
         "image/LICENSE.omp": "16c45f9d667442781f03fa198914cc39abcaa48ec5ed8f644643e554ca2fbf63"
       },
+      "license": "MIT",
       "source": "github:wontonapp/wonton-agents/agents/omp",
       "version": "0.1.5"
     },
@@ -409,32 +441,60 @@
         "docker-compose.yml": "9adda03e88a6dbdee2fa35d37a3e4348b48263117e0177fd7e0daa119812de19",
         "icon.svg": "2be28df2334e524a610a1232c04bfb77daa9cd03985f3dfdd30a989dec034795"
       },
+      "license": "Apache-2.0",
       "source": "github:wontonapp/wonton-agents/agents/codex",
       "version": "0.1.2"
     },
     {
-      "commit": "8b9d9fc4d93ac717eb1575c44053917f7be917bc",
-      "compose": "# 本文件由 gen/gen.py 从 agent.yaml 和 template/ 生成：改 agent.yaml 后重新生成，不要手改。\n# bridge 说 ACP、不认识任何一家 Agent；两个服务只共享 ACP socket 所在的 run/ 子目录，\n# bridge 的 crypto store 和 Matrix 令牌不给 agent，agent 的 HOME 和工作区不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/wontonapp/wonton-agents/claude-code:0.1.1@sha256:601a5fa0fb741f4b8b1eb564799091aea941eb9fb68b2c711d206f92e8d390a2\n    # 底座镜像固定用 65532，入口不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # 底座每次启动按有没有值选路：三个 WONTON_MODEL_* 都有值时调网关钩子，任一为空就清掉\n      # 网关配置、用 Agent 自己的登录态。这里不写代理变量，写了空值会把核心注入的顶掉。\n      WONTON_MODEL_BASE_URL: ${WONTON_MODEL_BASE_URL:-}\n      WONTON_MODEL_API_KEY: ${WONTON_MODEL_API_KEY:-}\n      WONTON_MODEL_DEFAULT: ${WONTON_MODEL_DEFAULT:-}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 容器里没有浏览器：登录命令只打链接，用户自己开浏览器拿 code。\n      NO_BROWSER: \"1\"\n      WONTON_MODEL_ANTHROPIC_BASE_URL: ${WONTON_MODEL_ANTHROPIC_BASE_URL:-}\n      ENABLE_TOOL_SEARCH: \"false\"\n      CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: \"1\"\n      DISABLE_AUTOUPDATER: \"1\"\n      DISABLE_TELEMETRY: \"1\"\n      DISABLE_ERROR_REPORTING: \"1\"\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是就绪的标志（首启下载 CLI 可能要几分钟）：有它才算能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 300s\n      start_interval: 2s\n\n  bridge:\n    # 桥镜像的版本和摘要只写这一处；桥升级改这里，再重新生成所有子目录。\n    image: ghcr.io/wontonapp/wonton-acp-bridge:0.2.1@sha256:4523c3cfef196d27521d8eaa4f4bb33784fa0fc01e1fe3071f6eb39ff0721c15\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      # 名单变量 0.9 起改叫 WONTON_MATRIX_ALLOWED_USERS；两个名字都传，新旧桥都能读。\n      WONTON_MATRIX_ALLOWED_USERS: ${WONTON_MATRIX_ALLOWED_USERS:-${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:-${WONTON_MATRIX_ALLOWED_USERS:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # 主会话的 ACP 模式；话题会话要更严的「改前先问」模式时，在 agent.yaml 配 acp_topic_mode。\n      WONTON_ACP_MODE: default\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n  # 登录网页的入口：webui 不能指向 Bot 服务（旧核心仍按这条判），而登录页在 agent 容器里（每个 Bot 一份），\n  # 所以架一个全插件一份的转发。插件页只开默认 Bot 的那一份，聊天里的 /wonton login 用当前 Bot。\n  web:\n    image: ghcr.io/wontonapp/wonton-agents/claude-code:0.1.1@sha256:601a5fa0fb741f4b8b1eb564799091aea941eb9fb68b2c711d206f92e8d390a2\n    user: \"65532:65532\"\n    restart: unless-stopped\n    entrypoint: [\"python3\", \"/usr/local/lib/wonton-agent/web-proxy\"]\n    environment:\n      HOME: /data/agent/home\n      WEB_PORT: \"8080\"\n    healthcheck:\n      # 本地监听和上游都要通：上游没了这台也不该算健康。\n      test: [\"CMD\", \"python3\", \"-c\", \"import socket; [socket.create_connection(a, 3).close() for a in [('127.0.0.1', 8080), ('agent-default', 8080)]]\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.claude-code\n  version: 0.1.1\n  kind: agent\n  title: { zh: AI 编程助手（Claude Code）, en: Coding Bot (Claude Code) }\n  description:\n    zh: Anthropic（Claude）家的编程助手：在聊天里帮你写代码、改文件、跑命令，动手前先弹卡片问你。适合已经有 Claude 付费订阅的人；模型设置不支持它时，要用 Pro 及以上订阅或自己的 key 登录。\n    en: \"Anthropic's Claude as a coding bot: it writes code, edits files and runs commands from your chat, asking with a card before it acts. Good if you already pay for Claude — if your Models setup can't serve it, sign in with a Pro or higher plan or your own key.\"\n  icon: icon.svg\n  notices: [NOTICE, image/LICENSE.claude-agent-acp, image/LICENSE.claude-code]\n  author: { name: Wonton plugin authors }\n  homepage: https://github.com/agentclientprotocol/claude-agent-acp\n  license: Apache-2.0\n  tags: { zh: [AI, 开发], en: [AI, Development] }\n  about:\n    zh: |\n      Claude Code 是 Anthropic 家的编程 AI，住进你的聊天里：改文件、跑命令之前先弹确认卡片问你；\n      你装的应用提供的工具也能在聊天里用。可以走模型设置，也可以用你自己的 Anthropic 账号或 key\n      登录（下面细说）。\n\n      接上模型网关（要提供 Anthropic Messages 接口）时默认走网关，不用账号。没接网关时，在插件页的登录\n      网页（默认 Bot）或聊天里发 /wonton login（这个聊天对应的 Bot）登录：用 Claude 订阅或 Anthropic\n      Console 登录（粘一次登录码），也可以贴一个自己的 Anthropic API key。订阅需要 Pro、Max、Ultra、\n      Team 或 Enterprise；免费版不含 Claude Code。\n    en: |\n      Claude Code is Anthropic's coding AI, living in your chat: it sends an approval request before\n      editing files or running commands, and the tools your apps provide work from the chat too. It\n      can use your Models setup or sign in with your own Anthropic account or key (details below).\n\n      With a model gateway that speaks Anthropic Messages it goes through the gateway by default,\n      with no account. Without one, sign in from the login page on the plugin screen (default bot)\n      or send /wonton login in the chat (this chat's bot): with a Claude subscription or Anthropic\n      Console (paste one login code), or paste your own Anthropic API key.\n      Subscriptions need Pro, Max, Ultra, Team or Enterprise; the free plan has no Claude Code.\n  release_notes:\n    zh: 说明改成更好懂的说法。\n    en: Clearer title and description.\n  webui:\n    service: web\n    port: 8080\n    sso: none\n  agent:\n    protocol: acp\n    login:\n      - id: claudeai\n        title: { zh: Claude 订阅, en: Claude subscription }\n      - id: console\n        title: { zh: Anthropic Console, en: Anthropic Console }\n      - id: api-key\n        title: { zh: Anthropic API key, en: Anthropic API key }\n  bot:\n    display_name: { zh: AI 编程助手（Claude Code）, en: Coding Bot (Claude Code) }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n    # 登录和官方模型请求都要出网；底座首启下载闭源 CLI 也走这里。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 4G\n",
+      "commit": "0e18ba9cfbd0ee5c1485c977a096d4ce598e8267",
+      "compose": "# 本文件由 gen/gen.py 从 agent.yaml 和 template/ 生成：改 agent.yaml 后重新生成，不要手改。\n# bridge 说 ACP、不认识任何一家 Agent；两个服务共享 ACP socket 所在的 run/ 子目录和工作区（bridge 把主人发来的\n# 图片和文件落到工作区的 wonton-attachments/ 下，再把路径交给 Agent）。bridge 的 crypto store 和 Matrix 令牌不给\n# agent，agent 的 HOME 不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/wontonapp/wonton-agents/claude-code:0.1.2@sha256:f0813af8484fc98d620d93e8119d9bf9919158ac91726bd63a86b7f14f3143a4\n    # 底座镜像固定用 65532，入口不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # 底座每次启动按有没有值选路：三个 WONTON_MODEL_* 都有值时调网关钩子，任一为空就清掉\n      # 网关配置、用 Agent 自己的登录态。这里不写代理变量，写了空值会把核心注入的顶掉。\n      WONTON_MODEL_BASE_URL: ${WONTON_MODEL_BASE_URL:-}\n      WONTON_MODEL_API_KEY: ${WONTON_MODEL_API_KEY:-}\n      WONTON_MODEL_DEFAULT: ${WONTON_MODEL_DEFAULT:-}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 容器里没有浏览器：登录命令只打链接，用户自己开浏览器拿 code。\n      NO_BROWSER: \"1\"\n      WONTON_MODEL_ANTHROPIC_BASE_URL: ${WONTON_MODEL_ANTHROPIC_BASE_URL:-}\n      ENABLE_TOOL_SEARCH: \"false\"\n      CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: \"1\"\n      DISABLE_AUTOUPDATER: \"1\"\n      DISABLE_TELEMETRY: \"1\"\n      DISABLE_ERROR_REPORTING: \"1\"\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是就绪的标志（首启下载 CLI 可能要几分钟）：有它才算能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 300s\n      start_interval: 2s\n\n  bridge:\n    # 桥镜像的版本和摘要只写这一处；桥升级改这里，再重新生成所有子目录。\n    image: ghcr.io/wontonapp/wonton-acp-bridge:main-c69aebc@sha256:ce235c94454fdad3fbac729db5d21a8bcdec88688f43e6cd9aebe9efbac2c85d\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      # 名单变量 0.9 起改叫 WONTON_MATRIX_ALLOWED_USERS；两个名字都传，新旧桥都能读。\n      WONTON_MATRIX_ALLOWED_USERS: ${WONTON_MATRIX_ALLOWED_USERS:-${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:-${WONTON_MATRIX_ALLOWED_USERS:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # 主会话的 ACP 模式；话题会话要更严的「改前先问」模式时，在 agent.yaml 配 acp_topic_mode。\n      WONTON_ACP_MODE: default\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n  # 登录网页的入口：webui 不能指向 Bot 服务（旧核心仍按这条判），而登录页在 agent 容器里（每个 Bot 一份），\n  # 所以架一个全插件一份的转发。插件页只开默认 Bot 的那一份，聊天里的 /wonton login 用当前 Bot。\n  web:\n    image: ghcr.io/wontonapp/wonton-agents/claude-code:0.1.2@sha256:f0813af8484fc98d620d93e8119d9bf9919158ac91726bd63a86b7f14f3143a4\n    user: \"65532:65532\"\n    restart: unless-stopped\n    entrypoint: [\"python3\", \"/usr/local/lib/wonton-agent/web-proxy\"]\n    environment:\n      HOME: /data/agent/home\n      WEB_PORT: \"8080\"\n    healthcheck:\n      # 本地监听和上游都要通：上游没了这台也不该算健康。\n      test: [\"CMD\", \"python3\", \"-c\", \"import socket; [socket.create_connection(a, 3).close() for a in [('127.0.0.1', 8080), ('agent-default', 8080)]]\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.claude-code\n  version: 0.1.2\n  kind: agent\n  title: { zh: AI 编程助手（Claude Code）, en: Coding Bot (Claude Code) }\n  description:\n    zh: Anthropic（Claude）家的编程助手：在聊天里帮你写代码、改文件、跑命令，动手前先弹卡片问你。适合已经有 Claude 付费订阅的人；模型设置不支持它时，要用 Pro 及以上订阅或自己的 key 登录。\n    en: \"Anthropic's Claude as a coding bot: it writes code, edits files and runs commands from your chat, asking with a card before it acts. Good if you already pay for Claude — if your Models setup can't serve it, sign in with a Pro or higher plan or your own key.\"\n  icon: icon.svg\n  notices: [NOTICE, image/LICENSE.claude-agent-acp, image/LICENSE.claude-code]\n  author: { name: Wonton plugin authors }\n  homepage: https://github.com/agentclientprotocol/claude-agent-acp\n  license: Apache-2.0\n  tags: { zh: [AI, 开发], en: [AI, Development] }\n  about:\n    zh: |\n      Claude Code 是 Anthropic 家的编程 AI，住进你的聊天里：改文件、跑命令之前先弹确认卡片问你；\n      你装的应用提供的工具也能在聊天里用。可以走模型设置，也可以用你自己的 Anthropic 账号或 key\n      登录（下面细说）。\n\n      接上模型网关（要提供 Anthropic Messages 接口）时默认走网关，不用账号。没接网关时，在插件页的登录\n      网页（默认 Bot）或聊天里发 /wonton login（这个聊天对应的 Bot）登录：用 Claude 订阅或 Anthropic\n      Console 登录（粘一次登录码），也可以贴一个自己的 Anthropic API key。订阅需要 Pro、Max、Ultra、\n      Team 或 Enterprise；免费版不含 Claude Code。\n    en: |\n      Claude Code is Anthropic's coding AI, living in your chat: it sends an approval request before\n      editing files or running commands, and the tools your apps provide work from the chat too. It\n      can use your Models setup or sign in with your own Anthropic account or key (details below).\n\n      With a model gateway that speaks Anthropic Messages it goes through the gateway by default,\n      with no account. Without one, sign in from the login page on the plugin screen (default bot)\n      or send /wonton login in the chat (this chat's bot): with a Claude subscription or Anthropic\n      Console (paste one login code), or paste your own Anthropic API key.\n      Subscriptions need Pro, Max, Ultra, Team or Enterprise; the free plan has no Claude Code.\n  release_notes:\n    zh: AI 正忙时你接着发的消息会直接递给它，不用等这一轮做完；能收图片和文件。\n    en: Messages you send while the AI is busy now reach it right away instead of waiting for the turn to end; it can take images and files.\n  webui:\n    service: web\n    port: 8080\n    sso: none\n  agent:\n    protocol: acp\n    login:\n      - id: claudeai\n        title: { zh: Claude 订阅, en: Claude subscription }\n      - id: console\n        title: { zh: Anthropic Console, en: Anthropic Console }\n      - id: api-key\n        title: { zh: Anthropic API key, en: Anthropic API key }\n  bot:\n    display_name: { zh: AI 编程助手（Claude Code）, en: Coding Bot (Claude Code) }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n    # 登录和官方模型请求都要出网；底座首启下载闭源 CLI 也走这里。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 4G\n",
       "files": {
         "NOTICE": "ea182c2997b785ee3d9502c4078de6cfba99ebd48f4b080dec3fc9c3bbdf343e",
-        "docker-compose.yml": "e3961340a736f91503a086689edda07aa64bdb1b258180a2e3506e306bd0ad92",
+        "docker-compose.yml": "631ce23aa0ea101d14a3c34ea0a4f94a863f9953169c49ef422df5633caa495c",
         "icon.svg": "a39e7b5c1588db92a9f0f7ba6c211d1f1f59cf4c871fd1206ad14a4639ee574d",
         "image/LICENSE.claude-agent-acp": "6ed4f049cce59e05197d585bdf8a39980b45d546d6ea718ee344555f3a867c3a",
         "image/LICENSE.claude-code": "8ce94b9478bb9868f9641f818e06cd722fbe55d4c22e2d2ed11971b20146173a"
       },
+      "license": "Apache-2.0",
       "source": "github:wontonapp/wonton-agents/agents/claude-code",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
-      "commit": "8858858b0cec8860bce90e5ff5078137a170a9f6",
-      "compose": "# 本文件由 gen/gen.py 从 agent.yaml 和 template/ 生成：改 agent.yaml 后重新生成，不要手改。\n# bridge 说 ACP、不认识任何一家 Agent；两个服务只共享 ACP socket 所在的 run/ 子目录，\n# bridge 的 crypto store 和 Matrix 令牌不给 agent，agent 的 HOME 和工作区不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/wontonapp/wonton-agents/dsh:0.1.2@sha256:9f128604e6f87f3c728780e285928f7da72739f3322c15dfa623ded26e01b180\n    # 底座镜像固定用 65532，入口不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # 底座每次启动按有没有值选路：三个 WONTON_MODEL_* 都有值时调网关钩子，任一为空就清掉\n      # 网关配置、用 Agent 自己的登录态。这里不写代理变量，写了空值会把核心注入的顶掉。\n      WONTON_MODEL_BASE_URL: ${WONTON_MODEL_BASE_URL:-}\n      WONTON_MODEL_API_KEY: ${WONTON_MODEL_API_KEY:-}\n      WONTON_MODEL_DEFAULT: ${WONTON_MODEL_DEFAULT:-}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 容器里没有浏览器：登录命令只打链接，用户自己开浏览器拿 code。\n      NO_BROWSER: \"1\"\n      DSH_HOME: /data/agent/home/.dsh\n      DSH_TELEMETRY_MODE: DISABLED\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是就绪的标志（首启下载 CLI 可能要几分钟）：有它才算能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 300s\n      start_interval: 2s\n\n  bridge:\n    # 桥镜像的版本和摘要只写这一处；桥升级改这里，再重新生成所有子目录。\n    image: ghcr.io/wontonapp/wonton-acp-bridge:0.2.1@sha256:4523c3cfef196d27521d8eaa4f4bb33784fa0fc01e1fe3071f6eb39ff0721c15\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      # 名单变量 0.9 起改叫 WONTON_MATRIX_ALLOWED_USERS；两个名字都传，新旧桥都能读。\n      WONTON_MATRIX_ALLOWED_USERS: ${WONTON_MATRIX_ALLOWED_USERS:-${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:-${WONTON_MATRIX_ALLOWED_USERS:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # 主会话的 ACP 模式；话题会话要更严的「改前先问」模式时，在 agent.yaml 配 acp_topic_mode。\n      WONTON_ACP_MODE: workspace-write\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n  # 登录网页的入口：webui 不能指向 Bot 服务（旧核心仍按这条判），而登录页在 agent 容器里（每个 Bot 一份），\n  # 所以架一个全插件一份的转发。插件页只开默认 Bot 的那一份，聊天里的 /wonton login 用当前 Bot。\n  web:\n    image: ghcr.io/wontonapp/wonton-agents/dsh:0.1.2@sha256:9f128604e6f87f3c728780e285928f7da72739f3322c15dfa623ded26e01b180\n    user: \"65532:65532\"\n    restart: unless-stopped\n    entrypoint: [\"python3\", \"/usr/local/lib/wonton-agent/web-proxy\"]\n    environment:\n      HOME: /data/agent/home\n      WEB_PORT: \"8080\"\n    healthcheck:\n      # 本地监听和上游都要通：上游没了这台也不该算健康。\n      test: [\"CMD\", \"python3\", \"-c\", \"import socket; [socket.create_connection(a, 3).close() for a in [('127.0.0.1', 8080), ('agent-default', 8080)]]\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.deepseek.dsh\n  version: 0.1.2\n  kind: agent\n  title: { zh: dsh, en: dsh }\n  description:\n    zh: DeepSeek 的编程 Agent（dsh），在聊天里写代码、跑命令\n    en: DeepSeek's coding agent (dsh) that writes code and runs commands in chat\n  icon: icon.svg\n  notices: [NOTICE, image/LICENSE.dsh]\n  author: { name: Wonton plugin authors }\n  homepage: https://github.com/deepseek-ai/deepseek-harness\n  license: MIT\n  tags: { zh: [AI, 开发], en: [AI, Development] }\n  about:\n    zh: |\n      DeepSeek 的 dsh 以 Bot 的身份住进聊天：模型网关接好时默认走网关，不用账号，也不用填任何 key。\n      它住在自己的容器里，在 /workspace 工作区写代码、跑命令，改工作区之外的文件或出网先经确认卡片问你；\n      Wonton 插件的工具也从聊天里调。没接网关时，在聊天里发 /wonton login（这个聊天对应的 Bot）或从\n      插件页打开登录网页（默认 Bot），贴一个自己的 DeepSeek API key（platform.deepseek.com 创建），\n      登录态存在数据目录，容器重建后还在。\n    en: |\n      DeepSeek's dsh lives in the chat as a bot: when the model gateway is connected it goes through the\n      gateway by default, with no account and no key to fill in. It works in its own container, coding and\n      running commands in /workspace, and asks through confirmation cards before touching files outside it\n      or reaching the network; Wonton plugin tools are called from the chat too. Without the gateway, send\n      /wonton login in the chat (this chat's bot) or open the login page from the plugin screen (default\n      bot) and paste your own DeepSeek API key (created at platform.deepseek.com); the login state stays\n      in the data directory across container rebuilds.\n  release_notes:\n    zh: 随 wonton-agents 仓库首发，Agent 层不变；底座与桥由仓库统一提供。\n    en: First release from the wonton-agents repo; the agent layer is unchanged, with the base image and bridge provided by the repo.\n  webui:\n    service: web\n    port: 8080\n    sso: none\n  agent:\n    protocol: acp\n    login:\n      - id: api-key\n        title: { zh: DeepSeek API key, en: DeepSeek API key }\n  bot:\n    display_name: { zh: dsh, en: dsh }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n    # 登录和官方模型请求都要出网；底座首启下载闭源 CLI 也走这里。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 1G\n",
+      "commit": "4492982e5910d1458641cbdafb76b503821f94ef",
+      "compose": "# 本文件由 gen/gen.py 从 agent.yaml 和 template/ 生成：改 agent.yaml 后重新生成，不要手改。\n# bridge 说 ACP、不认识任何一家 Agent；两个服务共享 ACP socket 所在的 run/ 子目录和工作区（bridge 把主人发来的\n# 图片和文件落到工作区的 wonton-attachments/ 下，再把路径交给 Agent）。bridge 的 crypto store 和 Matrix 令牌不给\n# agent，agent 的 HOME 不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/wontonapp/wonton-agents/dsh:0.1.3@sha256:3b54e91ec4a4da0cd89c5e10865979d9ebcfc014b5d48cbf433f817c9096cc9e\n    # 底座镜像固定用 65532，入口不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # 底座每次启动按有没有值选路：三个 WONTON_MODEL_* 都有值时调网关钩子，任一为空就清掉\n      # 网关配置、用 Agent 自己的登录态。这里不写代理变量，写了空值会把核心注入的顶掉。\n      WONTON_MODEL_BASE_URL: ${WONTON_MODEL_BASE_URL:-}\n      WONTON_MODEL_API_KEY: ${WONTON_MODEL_API_KEY:-}\n      WONTON_MODEL_DEFAULT: ${WONTON_MODEL_DEFAULT:-}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 容器里没有浏览器：登录命令只打链接，用户自己开浏览器拿 code。\n      NO_BROWSER: \"1\"\n      DSH_HOME: /data/agent/home/.dsh\n      DSH_TELEMETRY_MODE: DISABLED\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是就绪的标志（首启下载 CLI 可能要几分钟）：有它才算能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 300s\n      start_interval: 2s\n\n  bridge:\n    # 桥镜像的版本和摘要只写这一处；桥升级改这里，再重新生成所有子目录。\n    image: ghcr.io/wontonapp/wonton-acp-bridge:main-c69aebc@sha256:ce235c94454fdad3fbac729db5d21a8bcdec88688f43e6cd9aebe9efbac2c85d\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      # 名单变量 0.9 起改叫 WONTON_MATRIX_ALLOWED_USERS；两个名字都传，新旧桥都能读。\n      WONTON_MATRIX_ALLOWED_USERS: ${WONTON_MATRIX_ALLOWED_USERS:-${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:-${WONTON_MATRIX_ALLOWED_USERS:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # 主会话的 ACP 模式；话题会话要更严的「改前先问」模式时，在 agent.yaml 配 acp_topic_mode。\n      WONTON_ACP_MODE: default\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n  # 登录网页的入口：webui 不能指向 Bot 服务（旧核心仍按这条判），而登录页在 agent 容器里（每个 Bot 一份），\n  # 所以架一个全插件一份的转发。插件页只开默认 Bot 的那一份，聊天里的 /wonton login 用当前 Bot。\n  web:\n    image: ghcr.io/wontonapp/wonton-agents/dsh:0.1.3@sha256:3b54e91ec4a4da0cd89c5e10865979d9ebcfc014b5d48cbf433f817c9096cc9e\n    user: \"65532:65532\"\n    restart: unless-stopped\n    entrypoint: [\"python3\", \"/usr/local/lib/wonton-agent/web-proxy\"]\n    environment:\n      HOME: /data/agent/home\n      WEB_PORT: \"8080\"\n    healthcheck:\n      # 本地监听和上游都要通：上游没了这台也不该算健康。\n      test: [\"CMD\", \"python3\", \"-c\", \"import socket; [socket.create_connection(a, 3).close() for a in [('127.0.0.1', 8080), ('agent-default', 8080)]]\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.deepseek.dsh\n  version: 0.1.3\n  kind: agent\n  title: { zh: dsh, en: dsh }\n  description:\n    zh: DeepSeek 的编程 Agent（dsh），在聊天里写代码、跑命令\n    en: DeepSeek's coding agent (dsh) that writes code and runs commands in chat\n  icon: icon.svg\n  notices: [NOTICE, image/LICENSE.dsh]\n  author: { name: Wonton plugin authors }\n  homepage: https://github.com/deepseek-ai/deepseek-harness\n  license: MIT\n  tags: { zh: [AI, 开发], en: [AI, Development] }\n  about:\n    zh: |\n      DeepSeek 的 dsh 以 Bot 的身份住进聊天：模型网关接好时默认走网关，不用账号，也不用填任何 key。\n      它住在自己的容器里，在 /workspace 工作区写代码、跑命令，改工作区之外的文件或出网先经确认卡片问你；\n      Wonton 插件的工具也从聊天里调。没接网关时，在聊天里发 /wonton login（这个聊天对应的 Bot）或从\n      插件页打开登录网页（默认 Bot），贴一个自己的 DeepSeek API key（platform.deepseek.com 创建），\n      登录态存在数据目录，容器重建后还在。\n    en: |\n      DeepSeek's dsh lives in the chat as a bot: when the model gateway is connected it goes through the\n      gateway by default, with no account and no key to fill in. It works in its own container, coding and\n      running commands in /workspace, and asks through confirmation cards before touching files outside it\n      or reaching the network; Wonton plugin tools are called from the chat too. Without the gateway, send\n      /wonton login in the chat (this chat's bot) or open the login page from the plugin screen (default\n      bot) and paste your own DeepSeek API key (created at platform.deepseek.com); the login state stays\n      in the data directory across container rebuilds.\n  release_notes:\n    zh: AI 正忙时你接着发的几条消息，等它这一轮做完会合成一条交给它；能收图片和文件。\n    en: Messages you send while the AI is busy are combined into one and handed over when the current turn ends; it can take images and files.\n  webui:\n    service: web\n    port: 8080\n    sso: none\n  agent:\n    protocol: acp\n    login:\n      - id: api-key\n        title: { zh: DeepSeek API key, en: DeepSeek API key }\n  bot:\n    display_name: { zh: dsh, en: dsh }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n    # 登录和官方模型请求都要出网；底座首启下载闭源 CLI 也走这里。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 1G\n",
       "files": {
         "NOTICE": "4d9a33d875afa7f284921f896f1af12e19da4684ae9978b33be6bf98a23f24db",
-        "docker-compose.yml": "d903dabb1128e58ec8d413facea7ba5e78eb78612dc0ae95f2e3df8142327374",
+        "docker-compose.yml": "86c834ca4d161cd125bca4cb862d7c36477240c6157bc59495cf701b6ae0408b",
         "icon.svg": "96e94db325234b16c8eb2e13fd0412183b10b13f9dd47ea804255a945f49656c",
         "image/LICENSE.dsh": "ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be"
       },
+      "license": "MIT",
       "source": "github:wontonapp/wonton-agents/agents/dsh",
+      "version": "0.1.3"
+    },
+    {
+      "commit": "a2c8ea383fb042b819810aeb65e679639577b365",
+      "compose": "# 本文件由 gen/gen.py 从 agent.yaml 和 template/ 生成：改 agent.yaml 后重新生成，不要手改。\n# bridge 说 ACP、不认识任何一家 Agent；两个服务共享 ACP socket 所在的 run/ 子目录和工作区（bridge 把主人发来的\n# 图片和文件落到工作区的 wonton-attachments/ 下，再把路径交给 Agent）。bridge 的 crypto store 和 Matrix 令牌不给\n# agent，agent 的 HOME 不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/wontonapp/wonton-agents/opencode:0.1.2@sha256:4b1d9f41d5bce586f486bd17b77175d59310723fed4ebdf9249f68f4c303f3e1\n    # 底座镜像固定用 65532，入口不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # 底座每次启动按有没有值选路：三个 WONTON_MODEL_* 都有值时调网关钩子，任一为空就清掉\n      # 网关配置、用 Agent 自己的登录态。这里不写代理变量，写了空值会把核心注入的顶掉。\n      WONTON_MODEL_BASE_URL: ${WONTON_MODEL_BASE_URL:-}\n      WONTON_MODEL_API_KEY: ${WONTON_MODEL_API_KEY:-}\n      WONTON_MODEL_DEFAULT: ${WONTON_MODEL_DEFAULT:-}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 容器里没有浏览器：登录命令只打链接，用户自己开浏览器拿 code。\n      NO_BROWSER: \"1\"\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是就绪的标志（首启下载 CLI 可能要几分钟）：有它才算能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 300s\n      start_interval: 2s\n\n  bridge:\n    # 桥镜像的版本和摘要只写这一处；桥升级改这里，再重新生成所有子目录。\n    image: ghcr.io/wontonapp/wonton-acp-bridge:main-c69aebc@sha256:ce235c94454fdad3fbac729db5d21a8bcdec88688f43e6cd9aebe9efbac2c85d\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      # 名单变量 0.9 起改叫 WONTON_MATRIX_ALLOWED_USERS；两个名字都传，新旧桥都能读。\n      WONTON_MATRIX_ALLOWED_USERS: ${WONTON_MATRIX_ALLOWED_USERS:-${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:-${WONTON_MATRIX_ALLOWED_USERS:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # 主会话的 ACP 模式；话题会话要更严的「改前先问」模式时，在 agent.yaml 配 acp_topic_mode。\n      WONTON_ACP_MODE: plan\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n  # 登录网页的入口：webui 不能指向 Bot 服务（旧核心仍按这条判），而登录页在 agent 容器里（每个 Bot 一份），\n  # 所以架一个全插件一份的转发。插件页只开默认 Bot 的那一份，聊天里的 /wonton login 用当前 Bot。\n  web:\n    image: ghcr.io/wontonapp/wonton-agents/opencode:0.1.2@sha256:4b1d9f41d5bce586f486bd17b77175d59310723fed4ebdf9249f68f4c303f3e1\n    user: \"65532:65532\"\n    restart: unless-stopped\n    entrypoint: [\"python3\", \"/usr/local/lib/wonton-agent/web-proxy\"]\n    environment:\n      HOME: /data/agent/home\n      WEB_PORT: \"8080\"\n    healthcheck:\n      # 本地监听和上游都要通：上游没了这台也不该算健康。\n      test: [\"CMD\", \"python3\", \"-c\", \"import socket; [socket.create_connection(a, 3).close() for a in [('127.0.0.1', 8080), ('agent-default', 8080)]]\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.opencode\n  version: 0.1.2\n  kind: agent\n  title: { zh: AI 编程助手（OpenCode）, en: Coding Bot (OpenCode) }\n  description:\n    zh: 开源、不绑定哪一家的编程助手：读代码、改文件、跑命令，改动前先弹卡片问你。直接用模型设置就行，也能用 OpenCode 自家的模型服务。\n    en: \"An open-source coding bot not tied to any one AI company: it reads code, edits files and runs commands, always asking with a card before changes. Works with your Models setup, or OpenCode's own model service.\"\n  icon: icon.svg\n  notices: [NOTICE]\n  author: { name: Wonton plugin authors }\n  homepage: https://github.com/wontonapp/wonton-agents\n  license: MIT\n  tags: { zh: [AI, 工具], en: [AI, Tools] }\n  about:\n    zh: |\n      OpenCode 是开源的编程 AI。装好后用它的官方程序干活（第一次启动时自动下载，稍等一下）；默认用模型\n      设置里配好的 AI（配好后自动接上，不用登录）；想用 OpenCode 自家的模型服务，在聊天里发 /wonton\n      login，或在登录网页里贴上自己的 OpenCode key。主聊天和任务聊天里改文件、跑命令之前都会先弹\n      确认卡片问你。\n\n      模型默认走云吞的模型网关（网关就绪后自动接上，不需要登录）；想用 OpenCode 自己的模型服务时，\n      在聊天里发 /wonton login，或在插件的登录网页里粘贴 OpenCode 的 API key。\n\n      OpenCode 会改文件、跑命令：主会话默认在 plan 模式（只读，改文件被拒），话题会话在 build 模式，\n      改文件和跑命令都会先弹确认卡片。\n    en: |\n      OpenCode is an open-source coding AI. It runs the official program (downloaded automatically on\n      first start, so give it a moment); by default it uses the AI set up in Models (connected\n      automatically once ready, no sign-in). To use OpenCode's own model service, send /wonton login\n      in the chat or paste your OpenCode key on the sign-in page. In both the main chat and task\n      chats it sends an approval request before editing files or running commands.\n\n      Models go through the Wonton model gateway by default (connected automatically once the gateway is\n      ready, no login needed); to use OpenCode's own model service instead, send /wonton login in chat or\n      paste your OpenCode API key on the plugin's login page.\n\n      OpenCode edits files and runs commands: the main session runs in plan mode and topic sessions\n      follow it, so edits and commands always ask first via confirmation cards.\n  release_notes:\n    zh: AI 正忙时你接着发的消息会直接递给它，不用等这一轮做完；能收图片和文件。\n    en: Messages you send while the AI is busy now reach it right away instead of waiting for the turn to end; it can take images and files.\n  webui:\n    service: web\n    port: 8080\n    sso: none\n  agent:\n    protocol: acp\n    login:\n      - id: opencode\n        title: { zh: OpenCode 账号（粘贴 API key）, en: OpenCode account (paste API key) }\n  bot:\n    display_name: { zh: AI 编程助手（OpenCode）, en: Coding Bot (OpenCode) }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n    # 登录和官方模型请求都要出网；底座首启下载闭源 CLI 也走这里。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 512M\n",
+      "files": {
+        "NOTICE": "e89c703b59ae86f31466681e605628e527ee145d1a68ccb77366286c3a2c7ebf",
+        "docker-compose.yml": "72ffd5a04211b3a73dc45d3a727fa9fdc91749631076d7f6a4535dbc0fa4c448",
+        "icon.svg": "f98f1f61a331b014341dd766d766097db83c20790b8399db006e7c6ccec03ca5"
+      },
+      "license": "MIT",
+      "source": "github:wontonapp/wonton-agents/agents/opencode",
+      "version": "0.1.2"
+    },
+    {
+      "commit": "ef1324aea87380f8bc64dc2324882dee72681dbd",
+      "compose": "# 本文件由 gen/gen.py 从 agent.yaml 和 template/ 生成：改 agent.yaml 后重新生成，不要手改。\n# bridge 说 ACP、不认识任何一家 Agent；两个服务共享 ACP socket 所在的 run/ 子目录和工作区（bridge 把主人发来的\n# 图片和文件落到工作区的 wonton-attachments/ 下，再把路径交给 Agent）。bridge 的 crypto store 和 Matrix 令牌不给\n# agent，agent 的 HOME 不给 bridge。\nservices:\n  agent:\n    image: ghcr.io/wontonapp/wonton-agents/qwen-code:0.1.2@sha256:5bc0a4e734e850c2b5c9ec23a63c5f0dc3a61df8ac83a48fa370070d6f62d7a9\n    # 底座镜像固定用 65532，入口不再降权；bridge 挂同一个 run/ 目录，两个服务的属主必须相同。\n    user: \"65532:65532\"\n    restart: unless-stopped\n    environment:\n      HOME: /data/agent/home\n      # 底座每次启动按有没有值选路：三个 WONTON_MODEL_* 都有值时调网关钩子，任一为空就清掉\n      # 网关配置、用 Agent 自己的登录态。这里不写代理变量，写了空值会把核心注入的顶掉。\n      WONTON_MODEL_BASE_URL: ${WONTON_MODEL_BASE_URL:-}\n      WONTON_MODEL_API_KEY: ${WONTON_MODEL_API_KEY:-}\n      WONTON_MODEL_DEFAULT: ${WONTON_MODEL_DEFAULT:-}\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      # 容器里没有浏览器：登录命令只打链接，用户自己开浏览器拿 code。\n      NO_BROWSER: \"1\"\n      OPENAI_BASE_URL: https://dashscope.aliyuncs.com/compatible-mode/v1\n      OPENAI_MODEL: qwen3-coder-plus\n    volumes:\n      - ${WONTON_BOT_DATA:?需要 Bot 数据目录}/agent:/data/agent\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      # socket 是就绪的标志（首启下载 CLI 可能要几分钟）：有它才算能接连接。\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 300s\n      start_interval: 2s\n\n  bridge:\n    # 桥镜像的版本和摘要只写这一处；桥升级改这里，再重新生成所有子目录。\n    image: ghcr.io/wontonapp/wonton-acp-bridge:main-c69aebc@sha256:ce235c94454fdad3fbac729db5d21a8bcdec88688f43e6cd9aebe9efbac2c85d\n    user: \"65532:65532\"\n    restart: unless-stopped\n    depends_on:\n      agent:\n        condition: service_started\n    environment:\n      HOME: /data/bridge\n      WONTON_BOT_DATA: /data\n      WONTON_BRIDGE_DATA: /data/bridge\n      WONTON_ACP_SOCKET: /data/run/acp.sock\n      WONTON_AGENT_WORKSPACE: /workspace\n      WONTON_MATRIX_HOMESERVER: ${WONTON_MATRIX_HOMESERVER:?需要 Matrix 地址}\n      WONTON_MATRIX_ACCESS_TOKEN: ${WONTON_MATRIX_ACCESS_TOKEN:?需要 Bot 的 Matrix 访问令牌}\n      # 名单变量 0.9 起改叫 WONTON_MATRIX_ALLOWED_USERS；两个名字都传，新旧桥都能读。\n      WONTON_MATRIX_ALLOWED_USERS: ${WONTON_MATRIX_ALLOWED_USERS:-${WONTON_MATRIX_OWNER:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_OWNER: ${WONTON_MATRIX_OWNER:-${WONTON_MATRIX_ALLOWED_USERS:?需要主人的 Matrix 用户 ID}}\n      WONTON_MATRIX_HOME_ROOM: ${WONTON_MATRIX_HOME_ROOM:?需要主人与 Bot 的主房间}\n      WONTON_MCP_URL: ${WONTON_MCP_URL:?需要 MCP 总线地址}\n      # 主会话的 ACP 模式；话题会话要更严的「改前先问」模式时，在 agent.yaml 配 acp_topic_mode。\n      WONTON_ACP_MODE: default\n    volumes:\n      - ${WONTON_BOT_DATA}/bridge:/data/bridge\n      - ${WONTON_BOT_DATA}/run:/data/run\n      - ${WONTON_BOT_DATA}/workspace:/workspace\n    healthcheck:\n      test: [\"CMD\", \"test\", \"-S\", \"/data/run/acp.sock\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n  # 登录网页的入口：webui 不能指向 Bot 服务（旧核心仍按这条判），而登录页在 agent 容器里（每个 Bot 一份），\n  # 所以架一个全插件一份的转发。插件页只开默认 Bot 的那一份，聊天里的 /wonton login 用当前 Bot。\n  web:\n    image: ghcr.io/wontonapp/wonton-agents/qwen-code:0.1.2@sha256:5bc0a4e734e850c2b5c9ec23a63c5f0dc3a61df8ac83a48fa370070d6f62d7a9\n    user: \"65532:65532\"\n    restart: unless-stopped\n    entrypoint: [\"python3\", \"/usr/local/lib/wonton-agent/web-proxy\"]\n    environment:\n      HOME: /data/agent/home\n      WEB_PORT: \"8080\"\n    healthcheck:\n      # 本地监听和上游都要通：上游没了这台也不该算健康。\n      test: [\"CMD\", \"python3\", \"-c\", \"import socket; [socket.create_connection(a, 3).close() for a in [('127.0.0.1', 8080), ('agent-default', 8080)]]\"]\n      interval: 30s\n      timeout: 5s\n      start_period: 30s\n      start_interval: 2s\n\nx-wonton:\n  spec: \"0.6\"\n  id: ai.qwen-code\n  version: 0.1.2\n  kind: agent\n  title: { zh: AI 编程助手（Qwen Code）, en: Coding Bot (Qwen Code) }\n  description:\n    zh: 阿里巴巴（通义千问）家的编程助手：在聊天里帮你写代码、改文件、跑命令，动手前先弹卡片问你。直接用模型设置就行，也能填自己的千问 key。\n    en: \"Alibaba's Qwen coding bot: it writes code, edits files and runs commands from your chat, asking with a card before it acts. Works with your Models setup, or your own Qwen key.\"\n  icon: icon.svg\n  notices: [NOTICE, image/LICENSE.qwen-code]\n  author: { name: Wonton plugin authors }\n  homepage: https://github.com/QwenLM/qwen-code\n  license: Apache-2.0\n  tags: { zh: [AI, 开发], en: [AI, Development] }\n  about:\n    zh: |\n      Qwen Code 是阿里巴巴家的编程 AI，住进你的聊天里。默认用模型设置里配好的 AI，不用账号、不用填\n      key；也可以贴上自己的千问 key：在应用页打开登录网页（管默认 Bot）或在聊天里发 /wonton login\n      （管这个聊天的 Bot），贴上 key（阿里云百炼的 key；其他平台的 key 请在模型设置里加）。\n\n      会话按 default 模式跑：改文件、跑命令之前经确认卡片问你；Wonton 插件的工具也从聊天里调。\n      和它的对话是核心建的加密私聊，重启后接着聊。\n    en: |\n      Qwen Code is Alibaba's coding AI, living in your chat. By default it uses the AI set up in\n      Models — no account, no key. Or paste your own Qwen key: open the sign-in page on the app\n      screen (for the default bot) or send /wonton login in the chat (for this chat's bot) and\n      paste the key (from Alibaba Cloud Model Studio; add keys from other platforms in Models).\n\n      Sessions run in default mode: it asks through confirmation cards before editing files or running\n      commands; Wonton plugin tools are called from the chat.\n      The chat is an encrypted direct message the core creates, and it carries on after a restart.\n  release_notes:\n    zh: AI 正忙时你接着发的几条消息，等它这一轮做完会合成一条交给它；能收图片和文件。\n    en: Messages you send while the AI is busy are combined into one and handed over when the current turn ends; it can take images and files.\n  webui:\n    service: web\n    port: 8080\n    sso: none\n  agent:\n    protocol: acp\n    login:\n      - id: api-key\n        title: { zh: Qwen API key, en: Qwen API key }\n  bot:\n    display_name: { zh: AI 编程助手（Qwen Code）, en: Coding Bot (Qwen Code) }\n  bots:\n    services: [agent, bridge]\n  permissions:\n    - matrix.bot\n    - tools\n    - models\n    # 登录和官方模型请求都要出网；底座首启下载闭源 CLI 也走这里。\n    - network.egress\n  requirements:\n    arch: [amd64, arm64]\n    memory: 3G\n",
+      "files": {
+        "NOTICE": "74ac4ac07e67b311aa7ab5927323b325485e84f9954623a44eef86234ecc4dc9",
+        "docker-compose.yml": "c4f15189b0d6cf59d03f7acf0b399d9eeae0c9ef9bee16b0f42ca82a4615570f",
+        "icon.svg": "48d392296517a01f12d0e552e4e5230fab410272be37ac9e4f67ad9c09916bbd",
+        "image/LICENSE.qwen-code": "55367b61ccd2a016a0159ad886bd66a3ee6cb5e873d0c75c803c897dd245b075"
+      },
+      "license": "Apache-2.0",
+      "source": "github:wontonapp/wonton-agents/agents/qwen-code",
       "version": "0.1.2"
     },
     {
@@ -449,6 +509,7 @@
         "web/subscription.html": "5b99893dac17f41cbb6f897aa3e0ebb463e5d6824f9333eb3c0835a89a52201f",
         "web/subscription.py": "5016e0715004fd21a3622daa9f3f9b44896f6af1b4f4ad8188abdd67baa13814"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-proxy",
       "version": "0.1.2"
     },
@@ -460,6 +521,7 @@
         "docker-compose.yml": "ac28972e5da29057a92148ae6e3c9a0eb55dd2111bbaae3d262e5ba08e1e2cfb",
         "icon.svg": "1bdb0451fa046e73ef0244da14a284e6f8fe8ba1a302d5fb495ef04e75e577d1"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-excalidraw",
       "version": "0.1.0"
     },
@@ -471,6 +533,7 @@
         "docker-compose.yml": "95e5f13437cf27fb46d81542065a866527cc04fc8b67c022149dba50da151864",
         "icon.svg": "c77680b311d0b9736a3ed1d67f893185b5385b4a8a36527826d905953f8dc66e"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-homebox",
       "version": "0.1.1"
     },
@@ -483,6 +546,7 @@
         "docker-compose.yml": "ce26095a2c27729663d2e526dc0239dfd3701bd86074cda32d864e39a48eb492",
         "icon.svg": "233c40c91213bfb5ca534068b0ec41301dc3016c7dcb2be4a59f80dc0d0ab877"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-gitea",
       "version": "0.1.0"
     },
@@ -494,6 +558,7 @@
         "docker-compose.yml": "5df88566087cb859f9745d558ab14100e239e403fdf316b6dfbfebd0f2fd0e49",
         "icon.png": "f85846fea37a8f9301bdf32f7b62fa0eef1591728042108081d62a4315484325"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-copyparty",
       "version": "0.1.0"
     },
@@ -505,6 +570,7 @@
         "docker-compose.yml": "c32d36be28465239c36a958fa131930c87abe7705d1709474c0394b11b560bf8",
         "icon.png": "49aa4702e66ecac550d01d6faa2d5dfb97c3d6b35e5057468c7617a71a134dea"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-changedetection",
       "version": "0.1.0"
     },
@@ -516,6 +582,7 @@
         "docker-compose.yml": "d581dd24c92049c29a8700d85d6bf353884f4116cd9426fb64580b4140f0ca4e",
         "icon.png": "a2c6cb38d21fee1052e09d6f859c2a2d5719dfb9a797c2f5738156c16d9340ab"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-bookstack",
       "version": "0.1.0"
     },
@@ -527,6 +594,7 @@
         "docker-compose.yml": "ece5cc14c2c550e72b4ecabfe49e2153cf23a91ef7c2efdee161f8b3780f8305",
         "icon.png": "39baa1c697d6471b6e2e3e721044e79b42a51ffc9ee73c82b1e36c1079433e1b"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-cloudreve",
       "version": "0.1.0"
     },
@@ -540,6 +608,7 @@
         "docker-compose.yml": "3d3a31c459f98746eecc1946fd73a252827d2d567bcb27dde0b26c5485cee69c",
         "icon.svg": "459f7c851fb803c77557fd509db0cadc4692dbfa436fee9d84b59f80e623defa"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-kavita",
       "version": "0.1.0"
     },
@@ -551,6 +620,7 @@
         "docker-compose.yml": "bcd68f48a5ca177497a9b5fd1bb710c0248cbaeae2e547703528411930ce6bd3",
         "icon.svg": "6e06065d814547417547816a97d0bd68b41e5e37aba03bdb4a4ed97097de96ca"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-koel",
       "version": "0.1.0"
     },
@@ -563,6 +633,7 @@
         "icon.png": "fccd64897d17cbf6a5572b5c8a8d724e829bdff8eab630236df4cfa82b27a307",
         "prelogin-hook.sh": "064eb1fb3a8888ff2ec003bffe760e7e0737d22f30f02bbbbd39cb84f6323997"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-sftpgo",
       "version": "0.1.0"
     },
@@ -574,6 +645,7 @@
         "docker-compose.yml": "4e542f1f5d0f9741e0df7d20dd622da54900d57ffd4b14ab00ad9ede43c0d3af",
         "icon.svg": "d0d6ba6e300de880bfa0bb2f912e6215849e26c9d16696668db244121dfd7985"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-trilium",
       "version": "0.1.0"
     },
@@ -590,6 +662,7 @@
         "init/start.py": "187ac8145d544024f37d434d581298ed505466c6f8f3b066c6dbafaada99a22c",
         "web/default.conf": "60217637fa032668b0d161d607fef791114b4c36c4b26ec001ace743dd0f5b3e"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-home-assistant",
       "version": "0.2.0"
     },
@@ -602,6 +675,7 @@
         "icon.png": "e68a7555f94aac4f9732b954c81ebc45f82fbb01694bd929aec11b3a9cd09e2f",
         "provision.cjs": "3629a6f41550e69d71beed117db20e283e8a93bfdb01c5498df4a674c941cd1c"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-audiobookshelf",
       "version": "0.1.0"
     },
@@ -613,6 +687,7 @@
         "docker-compose.yml": "a29b06298e08186847993fd002d72c3732aee3d4c74de41f93cf634b29b3c6e4",
         "icon.svg": "7a490fa3f7c66f4d0609b1048a7ae66205383b5157a8e96483883ea766f59416"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-romm",
       "version": "0.1.0"
     },
@@ -625,6 +700,7 @@
         "icon.svg": "0cc1440ba6b81f31f8b6109392f4704f098f9f9908fd6eff53b275cc60f0e687",
         "provision.sh": "f3bf4b909d44c34b5a986ad9be02616a79c921c2387fbb6e09affd21cff7c529"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-prowlarr",
       "version": "0.1.0"
     },
@@ -636,6 +712,7 @@
         "docker-compose.yml": "b82ecb11e524343f5e5153db48166b05ae7448a62042be72371fd871b555cb86",
         "icon.svg": "1c5263846c4b9d90da13789d6d079f311261b844a69844b05914e969963894af"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-tubearchivist",
       "version": "0.1.0"
     },
@@ -647,6 +724,7 @@
         "docker-compose.yml": "8c02769234379c3969d8316d85a86ad9f72f5ffb2ab1c2682befa6072adba19c",
         "icon.svg": "50707e61c4e007431c5d71f4d85668ba2ee2fa45afb6f20115ec91f9467e8e51"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-flood",
       "version": "0.1.0"
     },
@@ -658,6 +736,7 @@
         "docker-compose.yml": "09bf6974697ae96f555a4fa4c77f89da800048961a1aaf5a6d5573d47cb9d0d2",
         "icon.svg": "5fae6482708008757c7b51ebc470cf53e6b23c799b7a590e520e52e7b95e056f"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-komga",
       "version": "0.1.0"
     },
@@ -670,6 +749,7 @@
         "icon.svg": "9facc45e02cc6ffcdde38d15cf0a309f03d7501d560cc323339b2c2de5eae1b5",
         "init-sso.sh": "eaf952b3428c472899767ef672f1a11f060f7ef5daa9c5062e0b35c86ff04abd"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-openlist",
       "version": "0.1.0"
     },
@@ -681,6 +761,7 @@
         "docker-compose.yml": "bf88fb41e5bc08d0bfaf1b3c7f7e83586845505b5e1739c27f020baa1d1e97f9",
         "icon.svg": "c5fada33d66f51ed84f372e72051870e76f2d0c62ef7b8e5e66b5983cf4a4f95"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-frigate",
       "version": "0.1.0"
     },
@@ -694,6 +775,7 @@
         "icon.svg": "d8c0c6303b740ef179cfd53041f0b2a702cd67dbbbe036e8ea46cc5f0eb6a214",
         "web/default.conf": "7b0cbd9fc1e2029f85eeab74a3e4f65b27af6a4cd74940c8293795c91b9f009e"
       },
+      "license": "AGPL-3.0-or-later",
       "source": "github:geraldpeng6/wonton-plugin-siyuan",
       "version": "0.1.0"
     },
@@ -705,6 +787,7 @@
         "docker-compose.yml": "d52822a542a15aca2057a948dc5cbe6f2877feabdfcce3a2429e0909df7d0dc0",
         "icon.png": "c969f380d9eafcfeeee69546cb1853cb0cd886f6b973e647c2d0f4672d620776"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-karakeep",
       "version": "0.1.0"
     },
@@ -718,6 +801,7 @@
         "docker-compose.yml": "79b3ffb2a89473daa60d213282874298e2f5f32769f1859ca3b10e27598b8381",
         "icon.svg": "5a90bdf55374652f8709ebf68a07e34a38665e116e156d9ed074fb4b74af05ba"
       },
+      "license": "GPL-2.0-or-later",
       "source": "github:geraldpeng6/wonton-plugin-qbittorrent",
       "version": "0.3.0"
     },
@@ -730,6 +814,7 @@
         "docker-compose.yml": "21304aa683025bb142cc71f8d80fdc1879044dfc82089ae47ead87f4bd0b6849",
         "icon.png": "6a4e2956d98d16fa5279c2dd682880da511b83e0e0d30d7cfcce3bc88d2a742f"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-librephotos",
       "version": "0.1.1"
     },
@@ -741,6 +826,7 @@
         "docker-compose.yml": "28040dbbbd9abceebce23bdc385c3103b310c0cba316b2ad65a2ca145e253eae",
         "icon.svg": "49739442ea258e5b0ed35a972809dd443c7615593bc69533dd883ff521b192e6"
       },
+      "license": "MIT AND LicenseRef-Stirling-PDF-User-License",
       "source": "github:geraldpeng6/wonton-plugin-stirling-pdf",
       "version": "0.1.1"
     },
@@ -752,6 +838,7 @@
         "docker-compose.yml": "9fb04a4a28a997913190c96f2846f5459818d8dcd6a3185a440d3760cfa28a2d",
         "icon.png": "dbfd79b13224283505f1587114690a4528f7b134e48dea25b516d5c68f5af4be"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-vikunja",
       "version": "0.2.0"
     },
@@ -764,6 +851,7 @@
         "icon.svg": "341f40937b9102d6fb5c2babc7f64c5d5f07df383df57fcc52f67018722c3e24",
         "init/init-settings.js": "b684de4b04079caccee408ab08f639473b8fae94c6ed0374e61a384ecb70f773"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-seerr",
       "version": "0.1.0"
     },
@@ -779,6 +867,7 @@
         "oidc-relay/probe.sh": "59ea9fb89ee5da56cc51253cb4ea02da6e867019a98622387fb7fdcad744f779",
         "setup/nextcloud-setup.sh": "b577348aef40364f525605b601ef7856ff5043919569f10a110070017bc88c75"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-nextcloud",
       "version": "0.2.0"
     },
@@ -791,6 +880,7 @@
         "icon.png": "27051d8d18a9f32440c6a8197b5cf0dbe255aa9b2fd34c4326de84e7987268ff",
         "web/default.conf": "541b4713acbe98aafddcafa51e2496af4848cf98bae71c7c6011f846a4e9699e"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-ente",
       "version": "0.1.0"
     },
@@ -803,6 +893,7 @@
         "docker-compose.yml": "bac1d0f19b58bfef1a6826ccc413ae487428f9b2aceccc64b4716841315bcfbd",
         "icon.svg": "2b3665b8f480ea612c62e1f20cd0ad8bf5ce83f300fe45e98ba0fa01ebdcd6e9"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-radicale",
       "version": "0.1.0"
     },
@@ -814,6 +905,7 @@
         "docker-compose.yml": "b676966846e8092ce2ae05dc2670bcbe6a921e9cbf5bf0c57b8d86ab9ada9485",
         "icon.svg": "bc8a999bc3a2efabebf45736848f1321613f13e79eff5d77cd9245cced16881f"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-drawio",
       "version": "0.1.0"
     },
@@ -830,6 +922,7 @@
         "web/down.html": "c7d07732f3da0dd765195ec964ca25a3ad0c08524f2e697058cd5e1642c1c99b",
         "web/empty.html": "42799502a15a05dd321c9963a2d530fdb7e9527f9c321f0452946d847a52d889"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-kiwix",
       "version": "0.1.1"
     },
@@ -841,6 +934,7 @@
         "docker-compose.yml": "ee59e6a28e2ff96ddf8bd695b1656dc6505371859a0871aed29f0a08d9ace461",
         "icon.svg": "af4f21d0df3c07a2ca4b06d8f95923aa82bea2876457cf11f0b4892052e3442c"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-music-assistant",
       "version": "0.1.0"
     },
@@ -854,6 +948,7 @@
         "sso-setup.py": "1be8dd66cc3fd7892548e00296b681e0760412fe118ca71936b25dc92a50d7f4",
         "sso-setup.sh": "1e8d53d2d8640ba019738dd654c02e9fe6302d7293b3429e11633cb002b67d46"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-calibre-web-automated",
       "version": "0.1.2"
     },
@@ -867,6 +962,7 @@
         "mosquitto.conf": "9768d810200509f08a98715e23a47bac0c90d476454927b64f59c57e1c58ce03",
         "passwd-init.sh": "7a938e83800dbe6a3162caea1814d1491aa5ea36f9df72a7da7da99377411332"
       },
+      "license": "EPL-2.0 OR BSD-3-Clause",
       "source": "github:geraldpeng6/wonton-plugin-mosquitto",
       "version": "0.1.0"
     },
@@ -879,6 +975,7 @@
         "docker-compose.yml": "b59f2398c409e24384ee388fbe4c5fcac73ab07f92d904335fdb3c26379332a8",
         "icon.svg": "50d19ab3383938c268f9a24ed5889819d0d2f999ee8b2eeb91421a8f087c3a60"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-homebridge",
       "version": "0.1.0"
     },
@@ -894,6 +991,7 @@
         "tabs/stock-fill.svg": "8775cfc12a6abfa2e9ca4a100557941ca133c58f823c1b9900311410ca9f088c",
         "tabs/stock.svg": "64622dd2f6aece2b7d0c49c35b4e4c6868565e8aa3b066e020b603dad8805ae0"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-grocy",
       "version": "0.1.0"
     },
@@ -909,6 +1007,7 @@
         "tabs/home-fill.svg": "dc5635284ac288f7e69a4b63ecfc71499fae488a0353c88399b484fb7fc2756e",
         "tabs/home.svg": "ed025a859a7092a178abd0a01bdc8001a559b65839244af5fe308e639267626b"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-donetick",
       "version": "0.1.0"
     },
@@ -920,6 +1019,7 @@
         "docker-compose.yml": "dfe6af3a94ece88551ebf53b87a6c100b6bf9b016cbcec2d5c8d4b6b21886e16",
         "icon.png": "ac44a0550444b6d5c66faf5857a451d25105d8d54bbf1ffcf1aab2ee4fd29e38"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-ghostfolio",
       "version": "0.1.0"
     },
@@ -935,6 +1035,7 @@
         "tabs/subscriptions.svg": "e1a8ddade801f03f76737d96bb43c8917b95bf3d6e570cc6bface605e17cb9e6",
         "wonton-login.php": "161de5a03e89a7174e1b1b6923a595f433441247d2223a46d84296d61b453e29"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-wallos",
       "version": "0.1.0"
     },
@@ -948,6 +1049,7 @@
         "tabs/tree-fill.svg": "f4cb99adcf71a52a73ac291b4b788142ff7bf5e1d20b45a3bf8e77c67f84e685",
         "tabs/tree.svg": "b750d94facb043ad8b46770bdbd4d8d249e4f66724f9c28531e4af65ea9f2a66"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-gramps-web",
       "version": "0.1.0"
     },
@@ -960,6 +1062,7 @@
         "icon.svg": "8a712095cb19b522eadd18ed0f8c6dfc1232bf05c514da4eefcbe307c3e04927",
         "tabs/resumes.svg": "b3f97b6b9364857a29a7294693451f5734c8beb92357eedef817365cb19b28e1"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-reactive-resume",
       "version": "0.1.1"
     },
@@ -973,6 +1076,7 @@
         "icon.png": "8d793d84196813fe5c5276eb03faccec25cf2f3d8cdbce3627207557c9624fef",
         "settings.schema.json": "9bcf60b1cc677629ac89e233c980251bb3079c7774b01f5eb2eb8cae0641fef5"
       },
+      "license": "LGPL-2.1-or-later",
       "source": "github:geraldpeng6/wonton-plugin-luanti",
       "version": "0.1.0"
     },
@@ -985,6 +1089,7 @@
         "icon.png": "ea8dfb0c395265fc7826f50c435025a8569c46cc2b4570b3e01a3211d20f86bb",
         "init.sh": "9bebfbce36a6afc77f904bc37e075df6acaa13853ed4f71e925badac650aa4c4"
       },
+      "license": "GPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-halo",
       "version": "0.1.0"
     },
@@ -996,6 +1101,7 @@
         "docker-compose.yml": "0582cc24eecb97ec9f309a050ac98a88a8c6e6a3583215c42f12695ec33977a5",
         "icon.svg": "07961f87b4f0cee97dfa909b0bbbefa2a04025f065a019739c5efda19e7bdda2"
       },
+      "license": "MIT AND GPL-3.0-only AND Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-esphome",
       "version": "0.1.0"
     },
@@ -1009,6 +1115,7 @@
         "wonton-owner-init.rb": "3620845ea437cc4b2ff0c6aea39357a462800bd1acc46612e2de91b92a6c28f1",
         "wonton-web-entrypoint.sh": "eef8170a78713fd275ba66c8e8fb23ceefcd69f3cdfaa768f08bdd53694f62d3"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-dawarich",
       "version": "0.1.0"
     },
@@ -1021,6 +1128,7 @@
         "icon.png": "6338b683ee88973ab3433f40197f7c380caabd0546381ac4fcc048555e260160",
         "mcp/openapi.json": "38cd26d09bc0a0a9a621d55bdfbba56663c04eb305187d5aeaa56fb492eebac6"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-mtranserver",
       "version": "0.1.1"
     },
@@ -1032,6 +1140,7 @@
         "docker-compose.yml": "5ed4ae1dc3e2acc7ba70d8b101d9d62da862c08c45e93b3e5eda3d018a9b5c16",
         "icon.png": "3b2903353b55b70126883fc348a0847e3919e663bf5c4b63a328250a5946f1da"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-grist",
       "version": "0.1.0"
     },
@@ -1047,6 +1156,7 @@
         "tabs/home-fill.svg": "dc5635284ac288f7e69a4b63ecfc71499fae488a0353c88399b484fb7fc2756e",
         "tabs/home.svg": "ed025a859a7092a178abd0a01bdc8001a559b65839244af5fe308e639267626b"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-glance",
       "version": "0.1.1"
     },
@@ -1061,6 +1171,7 @@
         "tabs/ledger-fill.svg": "2737f4dcf965944abdad1aeeb3c0af8b89b2541c8c65af719b72b9d7114de7e3",
         "tabs/ledger.svg": "7d051019da00ae5cce2b92ba055fc6724ca7551aaf4f057ad0d1cbdf06ab6cdc"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-ezbookkeeping",
       "version": "0.1.0"
     },
@@ -1073,6 +1184,7 @@
         "icon.svg": "07703da81ce7ddb8affac299ab500bb1565b25430596ec875aa10b27911fa15c",
         "settings.schema.json": "c6a6f29f9263cc4d6dd585fdbd8613228e4b50d8262d2d60a3308851d6ac089b"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-convertx",
       "version": "0.1.0"
     },
@@ -1088,6 +1200,7 @@
         "tabs/play-fill.svg": "bcd14cdd5b218a1cb4d930262b61bc5ce02fa8efe4f99e8bf6557e8593e550c1",
         "tabs/play.svg": "342ab82a2ba9e5bd6bebf1e00463d2b0d9c2b980c8d572b66b7ff6a1954d7dc6"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-razzia",
       "version": "0.1.0"
     },
@@ -1101,6 +1214,7 @@
         "tabs/home-fill.svg": "e1fc0839f8504d5d7e6ebb6ec97b9d4b30d720d925f264ff481a949ff1025d8c",
         "tabs/home.svg": "93f6bc88ece66300bbf5bc745115c635f68648ce80410d4632a4fe4a75b1a0e7"
       },
+      "license": "MIT",
       "source": "github:geraldpeng6/wonton-plugin-spliit",
       "version": "0.1.1"
     },
@@ -1113,6 +1227,7 @@
         "icon.png": "ae3d5d859940e5785933bcb053c0324db15c990105ba5f71d4620308a4550a1b",
         "nginx/default.conf": "ded30bd845985aab44b8bb806989ffbb262f53e4d29f0a8d4d942e3f75d89dc1"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-wger",
       "version": "0.1.0"
     },
@@ -1124,6 +1239,7 @@
         "docker-compose.yml": "5e5f18d2f6b132116fcfb370430d679e82cfb841f8c346c2f7dad6b797d631d4",
         "icon.png": "d98b3b0175d0c12a8fdfdb188c4948eea8762cb4da55bea02711636270a6830e"
       },
+      "license": "BSD-2-Clause",
       "source": "github:geraldpeng6/wonton-plugin-babybuddy",
       "version": "0.1.0"
     },
@@ -1135,6 +1251,7 @@
         "docker-compose.yml": "c2fd09e76a903ce677c6fe99430e8af2936b513ac838f7ead18bea47cd8af261",
         "icon.svg": "eadd70dd76f2214f800f76bcb1433fdafb24471692b78da85ded40c5c6744d11"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-traccar",
       "version": "0.1.2"
     },
@@ -1148,6 +1265,7 @@
         "icon.png": "b0365e698518cd327c6e03ab3a8862ce62e70a2a8d81e941c2c666d1f0e1b390",
         "settings.schema.json": "d12fbf712ed1e28223a87ac35e5c4518327e7f885d77fc5d22a303a5baeda410"
       },
+      "license": "GPL-2.0-only",
       "source": "github:geraldpeng6/wonton-plugin-scanservjs",
       "version": "0.1.0"
     },
@@ -1159,6 +1277,7 @@
         "docker-compose.yml": "3b89880e132e2b7b249639bd12a42aa68bff857b79dbac6da7d47b46fba373ec",
         "icon.svg": "0d4be4c541820f79fd027b6d29003be203137f7a575c115eb5b64dc6e2333aaf"
       },
+      "license": "AGPL-3.0-only",
       "source": "github:geraldpeng6/wonton-plugin-rsshub",
       "version": "0.1.0"
     },
@@ -1171,6 +1290,7 @@
         "icon.png": "bc5dc8836bf8e7cd0ae9e6042e4dd746eba3bfaf3475428470195255224d7865",
         "images/wonton-plugin-agent-orchestrator/LICENSE.agent-orchestrator": "1a2219722b7ef58364065e9073a2cb2831891eb147a785742a31431c9cddad1d"
       },
+      "license": "Apache-2.0",
       "source": "github:geraldpeng6/wonton-plugin-agent-orchestrator",
       "version": "0.1.1"
     }
@@ -1181,7 +1301,8 @@
       "ai.openclaw.agent",
       "ai.omp.agent",
       "ai.codex",
-      "ai.claude-code"
+      "ai.claude-code",
+      "ai.deepseek.dsh"
     ],
     "needs": [
       {
@@ -1429,7 +1550,7 @@
   },
   "docs": {
     "source": "github:wontonapp/wonton-docs",
-    "commit": "39d397be74fdef9be05a8ccf54ea127446816bbf",
+    "commit": "3ee9219caa53f3b1b689720b4517acd6612bc57a",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
