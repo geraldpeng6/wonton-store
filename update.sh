@@ -96,7 +96,7 @@ plugins=(
   geraldpeng6/wonton-plugin-mtranserver@v0.1.1
   geraldpeng6/wonton-plugin-grist@v0.1.0
   geraldpeng6/wonton-plugin-glance@v0.1.1
-  wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.1
+  wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.2
   geraldpeng6/wonton-plugin-convertx@v0.1.0
   wontonapp/wonton-plugins/razzia@razzia/v0.1.1
   geraldpeng6/wonton-plugin-spliit@v0.1.1
