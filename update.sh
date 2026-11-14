@@ -35,7 +35,7 @@ plugins=(
   wontonapp/wonton-plugins/actual@actual/v0.1.5
   wontonapp/wonton-plugins/uptime-kuma@uptime-kuma/v0.2.1
   wontonapp/wonton-plugins/open-webui@open-webui/v0.2.2
-  geraldpeng6/wonton-plugin-vane@v0.2.0
+  wontonapp/wonton-plugins/vane@vane/v0.2.1
   wontonapp/wonton-plugins/ollama@ollama/v0.1.2
   wontonapp/wonton-plugin-hermes@v0.7.4
   wontonapp/wonton-plugin-openclaw@v0.2.1
@@ -50,16 +50,16 @@ plugins=(
   wontonapp/wonton-plugins/excalidraw@excalidraw/v0.1.1
   wontonapp/wonton-plugins/penpot@penpot/v0.1.1
   wontonapp/wonton-plugins/homebox@homebox/v0.2.0
-  geraldpeng6/wonton-plugin-gitea@v0.1.0
+  wontonapp/wonton-plugins/gitea@gitea/v0.2.0
   wontonapp/wonton-plugins/copyparty@copyparty/v0.1.1
   wontonapp/wonton-plugins/changedetection@changedetection/v0.1.1
   wontonapp/wonton-plugins/bookstack@bookstack/v0.1.1
   wontonapp/wonton-plugins/cloudreve@cloudreve/v0.1.1
   wontonapp/wonton-plugins/kavita@kavita/v0.1.1
-  geraldpeng6/wonton-plugin-koel@v0.1.0
+  wontonapp/wonton-plugins/koel@koel/v0.2.0
   wontonapp/wonton-plugins/sftpgo@sftpgo/v0.2.0
-  geraldpeng6/wonton-plugin-trilium@v0.1.0
-  geraldpeng6/wonton-plugin-home-assistant@v0.2.0
+  wontonapp/wonton-plugins/trilium@trilium/v0.1.1
+  wontonapp/wonton-plugins/home-assistant@home-assistant/v0.2.1
   wontonapp/wonton-plugins/audiobookshelf@audiobookshelf/v0.2.0
   wontonapp/wonton-plugins/romm@romm/v0.2.0
   wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.0
@@ -101,7 +101,7 @@ plugins=(
   wontonapp/wonton-plugins/convertx@convertx/v0.1.1
   wontonapp/wonton-plugins/razzia@razzia/v0.1.1
   wontonapp/wonton-plugins/spliit@spliit/v0.1.2
-  geraldpeng6/wonton-plugin-wger@v0.1.0
+  wontonapp/wonton-plugins/wger@wger/v0.1.1
   wontonapp/wonton-plugins/babybuddy@babybuddy/v0.1.1
   wontonapp/wonton-plugins/traccar@traccar/v0.1.3
   wontonapp/wonton-plugins/scanservjs@scanservjs/v0.1.1
