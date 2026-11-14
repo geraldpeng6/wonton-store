@@ -1444,126 +1444,6 @@
         ]
       }
     ],
-    "providers": {
-      "zh": [
-        {
-          "id": "deepseek",
-          "key_url": "https://platform.deepseek.com/api_keys"
-        },
-        {
-          "id": "zhipu",
-          "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys"
-        },
-        {
-          "id": "moonshot-cn",
-          "key_url": "https://platform.moonshot.cn/console/api-keys"
-        },
-        {
-          "id": "qwen-cn",
-          "key_url": "https://bailian.console.aliyun.com/?tab=model#/api-key"
-        }
-      ],
-      "en": [
-        {
-          "id": "openai",
-          "key_url": "https://platform.openai.com/api-keys"
-        },
-        {
-          "id": "anthropic",
-          "key_url": "https://console.anthropic.com/settings/keys"
-        },
-        {
-          "id": "google",
-          "key_url": "https://aistudio.google.com/apikey"
-        },
-        {
-          "id": "openrouter",
-          "key_url": "https://openrouter.ai/settings/keys"
-        }
-      ]
-    },
-    "more_providers": [
-      {
-        "id": "openai",
-        "key_url": "https://platform.openai.com/api-keys"
-      },
-      {
-        "id": "anthropic",
-        "key_url": "https://console.anthropic.com/settings/keys"
-      },
-      {
-        "id": "google",
-        "key_url": "https://aistudio.google.com/apikey"
-      },
-      {
-        "id": "deepseek",
-        "key_url": "https://platform.deepseek.com/api_keys"
-      },
-      {
-        "id": "zhipu",
-        "key_url": "https://open.bigmodel.cn/usercenter/proj-mgmt/apikeys"
-      },
-      {
-        "id": "moonshot-cn",
-        "key_url": "https://platform.moonshot.cn/console/api-keys"
-      },
-      {
-        "id": "qwen-cn",
-        "key_url": "https://bailian.console.aliyun.com/?tab=model#/api-key"
-      },
-      {
-        "id": "openrouter",
-        "key_url": "https://openrouter.ai/settings/keys"
-      },
-      {
-        "id": "xai",
-        "key_url": "https://console.x.ai/team/default/api-keys"
-      },
-      {
-        "id": "zai",
-        "key_url": "https://z.ai/manage-apikey/apikey-list"
-      },
-      {
-        "id": "moonshot",
-        "key_url": "https://platform.kimi.ai/console/api-keys"
-      },
-      {
-        "id": "qwen",
-        "key_url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/model/settings/api-key"
-      },
-      {
-        "id": "minimax",
-        "key_url": "https://platform.minimax.io/console/keys"
-      },
-      {
-        "id": "minimax-cn",
-        "key_url": "https://platform.minimax.cn/console/keys?tab=api-keys"
-      },
-      {
-        "id": "mistral",
-        "key_url": "https://console.mistral.ai/api-keys/"
-      },
-      {
-        "id": "groq",
-        "key_url": "https://console.groq.com/keys"
-      },
-      {
-        "id": "volcengine",
-        "key_url": "https://console.volcengine.com/ark/region:cn-beijing/apiKey"
-      },
-      {
-        "id": "baidu-qianfan",
-        "key_url": "https://console.bce.baidu.com/iam/#/iam/apikey/list"
-      },
-      {
-        "id": "tencent-cloud",
-        "key_url": "https://console.cloud.tencent.com/tokenhub/tokenplan"
-      },
-      {
-        "id": "stepfun",
-        "key_url": "https://platform.stepfun.ai/interface-key"
-      }
-    ],
     "prompts": [
       {
         "zh": "你能帮我做什么",
@@ -1597,7 +1477,7 @@
   },
   "docs": {
     "source": "github:wontonapp/wonton-docs",
-    "commit": "3a4939833013da127d86beb30ab88d05bc4b58fe",
+    "commit": "51c6784b1f410b8ababe2043f3b189ef2637c050",
     "min_core": "0.1.0-beta.1",
     "files": {
       "user/en/backup.md": "ec54bb4669bfe0ab6aab08cfe3206d97dcbd92a525ddc779ce49979187234f7f",
