@@ -8,11 +8,11 @@ set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 core="${WONTON_CORE:-wonton-core}"
 plugins=(
-  geraldpeng6/wonton-plugin-autobangumi@v0.1.0
+  wontonapp/wonton-plugins/autobangumi@autobangumi/v0.1.1
   wontonapp/wonton-plugins/vllm@vllm/v0.1.1
   wontonapp/wonton-plugins/radarr@radarr/v0.1.1
   wontonapp/wonton-plugin-minecraft@v0.1.0
-  geraldpeng6/wonton-plugin-bazarr@v0.1.0
+  wontonapp/wonton-plugins/bazarr@bazarr/v0.1.1
   wontonapp/wonton-plugins/lidarr@lidarr/v0.1.1
   wontonapp/wonton-plugins/sonarr@sonarr/v0.1.1
   wontonapp/wonton-plugins/n8n@n8n/v0.1.2
@@ -20,7 +20,7 @@ plugins=(
   wontonapp/wonton-plugins/node-red@node-red/v0.1.1
   wontonapp/wonton-plugins/qinglong@qinglong/v0.1.1
   wontonapp/wonton-plugins/open-notebook@open-notebook/v0.1.1
-  geraldpeng6/wonton-plugin-astrbot@v0.1.0
+  wontonapp/wonton-plugins/astrbot@astrbot/v0.1.1
   wontonapp/wonton-plugins/searxng@searxng/v0.1.1
   wontonapp/wonton-plugins/navidrome@navidrome/v0.1.2
   wontonapp/wonton-plugins/paperless-ngx@paperless-ngx/v0.1.3
@@ -32,7 +32,7 @@ plugins=(
   wontonapp/wonton-plugins/memos@memos/v0.1.5
   wontonapp/wonton-plugins/miniflux@miniflux/v0.1.3
   geraldpeng6/wonton-plugin-filebrowser@v0.1.3
-  geraldpeng6/wonton-plugin-actual@v0.1.4
+  wontonapp/wonton-plugins/actual@actual/v0.1.5
   wontonapp/wonton-plugins/uptime-kuma@uptime-kuma/v0.2.1
   wontonapp/wonton-plugins/open-webui@open-webui/v0.2.2
   geraldpeng6/wonton-plugin-vane@v0.2.0
@@ -52,15 +52,15 @@ plugins=(
   geraldpeng6/wonton-plugin-homebox@v0.1.1
   geraldpeng6/wonton-plugin-gitea@v0.1.0
   geraldpeng6/wonton-plugin-copyparty@v0.1.0
-  geraldpeng6/wonton-plugin-changedetection@v0.1.0
+  wontonapp/wonton-plugins/changedetection@changedetection/v0.1.1
   wontonapp/wonton-plugins/bookstack@bookstack/v0.1.1
-  geraldpeng6/wonton-plugin-cloudreve@v0.1.0
+  wontonapp/wonton-plugins/cloudreve@cloudreve/v0.1.1
   wontonapp/wonton-plugins/kavita@kavita/v0.1.1
   geraldpeng6/wonton-plugin-koel@v0.1.0
   wontonapp/wonton-plugins/sftpgo@sftpgo/v0.2.0
   geraldpeng6/wonton-plugin-trilium@v0.1.0
   geraldpeng6/wonton-plugin-home-assistant@v0.2.0
-  geraldpeng6/wonton-plugin-audiobookshelf@v0.1.0
+  wontonapp/wonton-plugins/audiobookshelf@audiobookshelf/v0.2.0
   wontonapp/wonton-plugins/romm@romm/v0.2.0
   wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.0
   wontonapp/wonton-plugins/tubearchivist@tubearchivist/v0.2.0
@@ -81,7 +81,7 @@ plugins=(
   geraldpeng6/wonton-plugin-drawio@v0.1.0
   geraldpeng6/wonton-plugin-kiwix@v0.1.1
   wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.1
-  geraldpeng6/wonton-plugin-calibre-web-automated@v0.1.2
+  wontonapp/wonton-plugins/calibre-web-automated@calibre-web-automated/v0.1.3
   wontonapp/wonton-plugins/mosquitto@mosquitto/v0.1.1
   geraldpeng6/wonton-plugin-homebridge@v0.1.0
   wontonapp/wonton-plugins/grocy@grocy/v0.1.1
@@ -98,7 +98,7 @@ plugins=(
   geraldpeng6/wonton-plugin-grist@v0.1.0
   geraldpeng6/wonton-plugin-glance@v0.1.1
   wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.2
-  geraldpeng6/wonton-plugin-convertx@v0.1.0
+  wontonapp/wonton-plugins/convertx@convertx/v0.1.1
   wontonapp/wonton-plugins/razzia@razzia/v0.1.1
   wontonapp/wonton-plugins/spliit@spliit/v0.1.2
   geraldpeng6/wonton-plugin-wger@v0.1.0
