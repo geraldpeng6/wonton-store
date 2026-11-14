@@ -14,18 +14,18 @@ plugins=(
   wontonapp/wonton-plugin-minecraft@v0.1.0
   geraldpeng6/wonton-plugin-bazarr@v0.1.0
   wontonapp/wonton-plugins/lidarr@lidarr/v0.1.1
-  geraldpeng6/wonton-plugin-sonarr@v0.1.0
+  wontonapp/wonton-plugins/sonarr@sonarr/v0.1.1
   wontonapp/wonton-plugins/n8n@n8n/v0.1.2
-  geraldpeng6/wonton-plugin-sillytavern@v0.1.0
+  wontonapp/wonton-plugins/sillytavern@sillytavern/v0.1.1
   wontonapp/wonton-plugins/node-red@node-red/v0.1.1
   wontonapp/wonton-plugins/qinglong@qinglong/v0.1.1
   wontonapp/wonton-plugins/open-notebook@open-notebook/v0.1.1
   geraldpeng6/wonton-plugin-astrbot@v0.1.0
-  geraldpeng6/wonton-plugin-searxng@v0.1.0
+  wontonapp/wonton-plugins/searxng@searxng/v0.1.1
   wontonapp/wonton-plugins/navidrome@navidrome/v0.1.2
   wontonapp/wonton-plugins/paperless-ngx@paperless-ngx/v0.1.3
   geraldpeng6/wonton-plugin-immich@v0.3.6
-  geraldpeng6/wonton-plugin-syncthing@v0.1.1
+  wontonapp/wonton-plugins/syncthing@syncthing/v0.1.2
   wontonapp/wonton-plugins/samba@samba/v0.1.3
   geraldpeng6/wonton-plugin-files@v0.2.3
   geraldpeng6/wonton-plugin-browser@v0.1.1
@@ -57,7 +57,7 @@ plugins=(
   geraldpeng6/wonton-plugin-cloudreve@v0.1.0
   wontonapp/wonton-plugins/kavita@kavita/v0.1.1
   geraldpeng6/wonton-plugin-koel@v0.1.0
-  geraldpeng6/wonton-plugin-sftpgo@v0.1.0
+  wontonapp/wonton-plugins/sftpgo@sftpgo/v0.2.0
   geraldpeng6/wonton-plugin-trilium@v0.1.0
   geraldpeng6/wonton-plugin-home-assistant@v0.2.0
   geraldpeng6/wonton-plugin-audiobookshelf@v0.1.0
@@ -68,13 +68,13 @@ plugins=(
   wontonapp/wonton-plugins/komga@komga/v0.1.1
   wontonapp/wonton-plugins/openlist@openlist/v0.1.1
   geraldpeng6/wonton-plugin-frigate@v0.1.0
-  geraldpeng6/wonton-plugin-siyuan@v0.1.0
+  wontonapp/wonton-plugins/siyuan@siyuan/v0.1.1
   wontonapp/wonton-plugins/karakeep@karakeep/v0.1.1
   wontonapp/wonton-plugins/qbittorrent@qbittorrent/v0.3.1
   wontonapp/wonton-plugins/librephotos@librephotos/v0.1.2
-  geraldpeng6/wonton-plugin-stirling-pdf@v0.1.1
+  wontonapp/wonton-plugins/stirling-pdf@stirling-pdf/v0.2.0
   geraldpeng6/wonton-plugin-vikunja@v0.2.0
-  geraldpeng6/wonton-plugin-seerr@v0.1.0
+  wontonapp/wonton-plugins/seerr@seerr/v0.2.0
   wontonapp/wonton-plugins/nextcloud@nextcloud/v0.2.1
   geraldpeng6/wonton-plugin-ente@v0.1.0
   wontonapp/wonton-plugins/radicale@radicale/v0.1.1
@@ -100,11 +100,11 @@ plugins=(
   wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.2
   geraldpeng6/wonton-plugin-convertx@v0.1.0
   wontonapp/wonton-plugins/razzia@razzia/v0.1.1
-  geraldpeng6/wonton-plugin-spliit@v0.1.1
+  wontonapp/wonton-plugins/spliit@spliit/v0.1.2
   geraldpeng6/wonton-plugin-wger@v0.1.0
   wontonapp/wonton-plugins/babybuddy@babybuddy/v0.1.1
   geraldpeng6/wonton-plugin-traccar@v0.1.2
-  geraldpeng6/wonton-plugin-scanservjs@v0.1.0
+  wontonapp/wonton-plugins/scanservjs@scanservjs/v0.1.1
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
   wontonapp/wonton-plugins/neko@neko/v0.1.0
   geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.2
