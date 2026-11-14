@@ -9,7 +9,7 @@ here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 core="${WONTON_CORE:-wonton-core}"
 plugins=(
   geraldpeng6/wonton-plugin-autobangumi@v0.1.0
-  geraldpeng6/wonton-plugin-vllm@v0.1.0
+  wontonapp/wonton-plugins/vllm@vllm/v0.1.1
   wontonapp/wonton-plugins/radarr@radarr/v0.1.1
   wontonapp/wonton-plugin-minecraft@v0.1.0
   geraldpeng6/wonton-plugin-bazarr@v0.1.0
@@ -63,7 +63,7 @@ plugins=(
   geraldpeng6/wonton-plugin-audiobookshelf@v0.1.0
   wontonapp/wonton-plugins/romm@romm/v0.2.0
   wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.0
-  geraldpeng6/wonton-plugin-tubearchivist@v0.1.0
+  wontonapp/wonton-plugins/tubearchivist@tubearchivist/v0.2.0
   geraldpeng6/wonton-plugin-flood@v0.1.0
   wontonapp/wonton-plugins/komga@komga/v0.1.1
   wontonapp/wonton-plugins/openlist@openlist/v0.1.1
@@ -73,7 +73,7 @@ plugins=(
   wontonapp/wonton-plugins/qbittorrent@qbittorrent/v0.3.1
   wontonapp/wonton-plugins/librephotos@librephotos/v0.1.2
   wontonapp/wonton-plugins/stirling-pdf@stirling-pdf/v0.2.0
-  geraldpeng6/wonton-plugin-vikunja@v0.2.0
+  wontonapp/wonton-plugins/vikunja@vikunja/v0.3.0
   wontonapp/wonton-plugins/seerr@seerr/v0.2.0
   wontonapp/wonton-plugins/nextcloud@nextcloud/v0.2.1
   geraldpeng6/wonton-plugin-ente@v0.1.0
@@ -103,7 +103,7 @@ plugins=(
   wontonapp/wonton-plugins/spliit@spliit/v0.1.2
   geraldpeng6/wonton-plugin-wger@v0.1.0
   wontonapp/wonton-plugins/babybuddy@babybuddy/v0.1.1
-  geraldpeng6/wonton-plugin-traccar@v0.1.2
+  wontonapp/wonton-plugins/traccar@traccar/v0.1.3
   wontonapp/wonton-plugins/scanservjs@scanservjs/v0.1.1
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
   wontonapp/wonton-plugins/neko@neko/v0.1.0
