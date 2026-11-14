@@ -31,7 +31,7 @@ plugins=(
   geraldpeng6/wonton-plugin-browser@v0.1.1
   wontonapp/wonton-plugins/memos@memos/v0.1.5
   wontonapp/wonton-plugins/miniflux@miniflux/v0.1.3
-  geraldpeng6/wonton-plugin-filebrowser@v0.1.3
+  wontonapp/wonton-plugins/filebrowser@filebrowser/v0.1.4
   wontonapp/wonton-plugins/actual@actual/v0.1.5
   wontonapp/wonton-plugins/uptime-kuma@uptime-kuma/v0.2.1
   wontonapp/wonton-plugins/open-webui@open-webui/v0.2.2
@@ -47,11 +47,11 @@ plugins=(
   wontonapp/wonton-agents/agents/opencode@opencode/v0.1.2
   wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.2
   wontonapp/wonton-plugins/proxy@proxy/v0.1.3
-  geraldpeng6/wonton-plugin-excalidraw@v0.1.0
+  wontonapp/wonton-plugins/excalidraw@excalidraw/v0.1.1
   wontonapp/wonton-plugins/penpot@penpot/v0.1.1
   wontonapp/wonton-plugins/homebox@homebox/v0.2.0
   geraldpeng6/wonton-plugin-gitea@v0.1.0
-  geraldpeng6/wonton-plugin-copyparty@v0.1.0
+  wontonapp/wonton-plugins/copyparty@copyparty/v0.1.1
   wontonapp/wonton-plugins/changedetection@changedetection/v0.1.1
   wontonapp/wonton-plugins/bookstack@bookstack/v0.1.1
   wontonapp/wonton-plugins/cloudreve@cloudreve/v0.1.1
@@ -64,10 +64,10 @@ plugins=(
   wontonapp/wonton-plugins/romm@romm/v0.2.0
   wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.0
   wontonapp/wonton-plugins/tubearchivist@tubearchivist/v0.2.0
-  geraldpeng6/wonton-plugin-flood@v0.1.0
+  wontonapp/wonton-plugins/flood@flood/v0.1.1
   wontonapp/wonton-plugins/komga@komga/v0.1.1
   wontonapp/wonton-plugins/openlist@openlist/v0.1.1
-  geraldpeng6/wonton-plugin-frigate@v0.1.0
+  wontonapp/wonton-plugins/frigate@frigate/v0.1.1
   wontonapp/wonton-plugins/siyuan@siyuan/v0.1.1
   wontonapp/wonton-plugins/karakeep@karakeep/v0.1.1
   wontonapp/wonton-plugins/qbittorrent@qbittorrent/v0.3.1
@@ -76,24 +76,24 @@ plugins=(
   wontonapp/wonton-plugins/vikunja@vikunja/v0.3.0
   wontonapp/wonton-plugins/seerr@seerr/v0.2.0
   wontonapp/wonton-plugins/nextcloud@nextcloud/v0.2.1
-  geraldpeng6/wonton-plugin-ente@v0.1.0
+  wontonapp/wonton-plugins/ente@ente/v0.1.1
   wontonapp/wonton-plugins/radicale@radicale/v0.1.1
-  geraldpeng6/wonton-plugin-drawio@v0.1.0
+  wontonapp/wonton-plugins/drawio@drawio/v0.1.1
   geraldpeng6/wonton-plugin-kiwix@v0.1.1
   wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.1
   wontonapp/wonton-plugins/calibre-web-automated@calibre-web-automated/v0.1.3
   wontonapp/wonton-plugins/mosquitto@mosquitto/v0.1.1
   wontonapp/wonton-plugins/homebridge@homebridge/v0.1.1
   wontonapp/wonton-plugins/grocy@grocy/v0.1.1
-  geraldpeng6/wonton-plugin-donetick@v0.1.0
+  wontonapp/wonton-plugins/donetick@donetick/v0.1.1
   wontonapp/wonton-plugins/ghostfolio@ghostfolio/v0.1.1
   wontonapp/wonton-plugins/wallos@wallos/v0.1.1
   wontonapp/wonton-plugins/gramps-web@gramps-web/v0.1.1
   wontonapp/wonton-plugins/reactive-resume@reactive-resume/v0.1.2
   wontonapp/wonton-plugins/luanti@luanti/v0.1.1
   wontonapp/wonton-plugins/halo@halo/v0.1.1
-  geraldpeng6/wonton-plugin-esphome@v0.1.0
-  geraldpeng6/wonton-plugin-dawarich@v0.1.0
+  wontonapp/wonton-plugins/esphome@esphome/v0.1.1
+  wontonapp/wonton-plugins/dawarich@dawarich/v0.1.1
   geraldpeng6/wonton-plugin-mtranserver@v0.1.1
   wontonapp/wonton-plugins/grist@grist/v0.1.1
   wontonapp/wonton-plugins/glance@glance/v0.1.2
