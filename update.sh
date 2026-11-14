@@ -49,7 +49,7 @@ plugins=(
   wontonapp/wonton-plugins/proxy@proxy/v0.1.3
   geraldpeng6/wonton-plugin-excalidraw@v0.1.0
   wontonapp/wonton-plugins/penpot@penpot/v0.1.1
-  geraldpeng6/wonton-plugin-homebox@v0.1.1
+  wontonapp/wonton-plugins/homebox@homebox/v0.2.0
   geraldpeng6/wonton-plugin-gitea@v0.1.0
   geraldpeng6/wonton-plugin-copyparty@v0.1.0
   wontonapp/wonton-plugins/changedetection@changedetection/v0.1.1
@@ -83,20 +83,20 @@ plugins=(
   wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.1
   wontonapp/wonton-plugins/calibre-web-automated@calibre-web-automated/v0.1.3
   wontonapp/wonton-plugins/mosquitto@mosquitto/v0.1.1
-  geraldpeng6/wonton-plugin-homebridge@v0.1.0
+  wontonapp/wonton-plugins/homebridge@homebridge/v0.1.1
   wontonapp/wonton-plugins/grocy@grocy/v0.1.1
   geraldpeng6/wonton-plugin-donetick@v0.1.0
-  geraldpeng6/wonton-plugin-ghostfolio@v0.1.0
+  wontonapp/wonton-plugins/ghostfolio@ghostfolio/v0.1.1
   wontonapp/wonton-plugins/wallos@wallos/v0.1.1
-  geraldpeng6/wonton-plugin-gramps-web@v0.1.0
+  wontonapp/wonton-plugins/gramps-web@gramps-web/v0.1.1
   wontonapp/wonton-plugins/reactive-resume@reactive-resume/v0.1.2
   wontonapp/wonton-plugins/luanti@luanti/v0.1.1
-  geraldpeng6/wonton-plugin-halo@v0.1.0
+  wontonapp/wonton-plugins/halo@halo/v0.1.1
   geraldpeng6/wonton-plugin-esphome@v0.1.0
   geraldpeng6/wonton-plugin-dawarich@v0.1.0
   geraldpeng6/wonton-plugin-mtranserver@v0.1.1
-  geraldpeng6/wonton-plugin-grist@v0.1.0
-  geraldpeng6/wonton-plugin-glance@v0.1.1
+  wontonapp/wonton-plugins/grist@grist/v0.1.1
+  wontonapp/wonton-plugins/glance@glance/v0.1.2
   wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.2
   wontonapp/wonton-plugins/convertx@convertx/v0.1.1
   wontonapp/wonton-plugins/razzia@razzia/v0.1.1
